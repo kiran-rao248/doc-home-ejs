@@ -1,0 +1,1302 @@
+/*
+Table of contents
+1.0 Global Styles
+2.0 Header
+3.0 Navigation
+4.0 Main
+5.0 Search Section
+6.0 Partnership Section
+7.0 E-Pharmacy
+8.0 How DoctorOnCall Work
+9.0 Health Related Questions
+10.0 Read About Diseases
+11.0 Find Doctors
+12.0 Read Health Articles
+13.0 Connect With Doctors
+14.0 Featured On
+15.0 Subsribe-email
+16.0 Footer
+*/
+
+  /*----------------------------------------------------
+1.0 Global Styles */
+html{
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+html::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	background-color: #F5F5F500;
+}
+
+html::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5F5;
+}
+
+html::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+	background-color: #CCC;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.search-container{ 
+padding: 0px;
+}
+
+.mobile-only{
+display: none;
+}
+
+.desktop-only{
+display: block;
+}
+
+.main-nextpage-btn-2{
+background-color: #41C0F1;
+display: block;
+justify-content: center;
+border: none;
+border-radius: 4px;
+color: #fff;
+width: 31%;
+height: 43px; 
+margin: 0 auto;
+} 
+
+@media (max-width: 576px){
+.mobile-only{
+  display: block;
+}
+
+.desktop-only{
+  display: none;
+}
+}
+
+/*5.0 Search Section*/
+
+.main-search-section { 
+  background-color: #2e5aa9;
+  color: #fff;
+  text-align: center;
+}
+
+.main-search-section h1{  
+  padding-top: 7%;
+}
+
+.main-title{
+  color: #fdfffe;
+  font-size: 36px;
+  font-weight: bold;
+  height: 49px;
+  margin-top: 85px;
+}
+
+.main-search-bar{
+  border-radius: 6px 0 0 6px;
+  border: none;
+  display: inline-block;
+  height: 100%;
+  width: 65%;
+}
+
+.main-search-bar::placeholder {
+  font-size: 14px; 
+  padding-left: 20px;
+}
+
+.main-dropdown{ 
+  -webkit-appearance: none;
+  background-image: url("https://img.icons8.com/ios/50/000000/sort-down.png");
+  background-position: right .7em top 50%, 0 0;
+  background-size: 1em auto, 100%;
+  background-repeat: no-repeat;
+  border: none;   
+  color: #3C3C3C;
+  display: inline-block;
+  height: 100%;
+  margin-left: -4px;
+  padding-left: .5em;
+  width: 20%;
+}
+
+.main-dropdown::-ms-expand {
+  display: none;
+}
+.main-dropdown:hover {
+  border-color: #888;
+}
+  .main-dropdown:focus { 
+    box-shadow: 0 0 1px 3px #41C0F1;
+    box-shadow: 0 0 0 3px -moz-mac-focusring; 
+    outline: none;
+}
+.main-dropdown option {
+  font-weight:normal;
+}
+
+.main-search-part{
+  height: 48px;
+  margin: 0 auto;
+  white-space: nowrap;
+  width:75%;
+} 
+
+.search-btn {
+  background-color: #41C0F1;
+  border-radius: 0 6px 6px 0  ;
+  border: none;
+  display: inline-block;
+  height: 100%;
+  margin-left: -4px;
+  vertical-align: top;
+  width: 8%;
+}
+
+.search-btn-icon{
+  fill : #fff;
+  height: 5px;
+}
+.search-btn img {
+  height: 20px;
+    width: 20px;
+}
+
+.main-search-desc{
+  color:#fdfffe;
+  margin-top: 33px; 
+} 
+.book{
+  color:#fff;
+  border: 1px solid #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: 14px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.main-search-button-container{
+  margin-top: 50px;
+  padding-bottom: 35px;
+}
+
+.main-search-button-container button{
+  border: 1px solid #fff;
+  background-color: #2e5aa9;
+  color: #fff;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 4px;
+  white-space: nowrap;
+} 
+.main-search-icon{
+  fill:#fff;
+  margin-right: 2px;  
+  position: relative;
+  top: 3px;
+  width: 20px; 
+  cursor: pointer;
+}
+
+.main-read-search{ 
+  margin: 2%;
+  display: inline-block;
+} 
+
+@media (max-width: 576px) {
+  .main-search-part {
+    width: 100%;
+  }
+}
+
+@media(max-width: 576px){
+  .main-dropdown{
+    display: none;
+  }
+} 
+
+@media (max-width:836px){
+  .main-epharm-slider-3{
+    display: flex;
+    overflow: auto;
+  }
+} 
+
+ /*----------------------------------------------------
+6.0 Partnership Section*/
+
+.main-partner-logo{
+  height: auto;
+  text-align: center;
+  width: 100%;
+  background-color: #F6F6F6;
+}
+
+.main-partner-logo img{
+  height: 45px;
+}
+
+.main-partner-1{
+  display: block;
+  margin-bottom: -18px;
+  text-align: center;
+}
+
+.main-partner-2{
+display: block;
+text-align: center;
+}
+
+/*----------------------------------------------------
+7.0 E-Pharmacy */   
+
+.pharmacy h2{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1px;
+  height:auto;
+}
+
+.pharmacy p{
+  font-size: 14px;
+}
+
+.main-epharma-price{
+  margin-bottom: 1px;
+  margin-top: 36px;
+}  
+
+.main-epharma-slider{
+  display: flex;
+  overflow: auto;
+}
+
+.main-e-pharm-btn{
+  border : none;
+  background-color: #41C0F1;
+  color: #fff;
+  width:max-content;
+  padding: 15px;
+  border-radius: 4px;
+  text-decoration: none; 
+  padding-right: 34px;
+  display: none;  
+}
+
+.main-ephrama-cliente:hover a{ 
+  display: block; 
+}
+
+.main-ephrama-cliente:hover{ 
+  transform: scale(1.1);
+  transition: all 0.5s; 
+  box-shadow: inset 2px #fff;  
+}
+
+.main-ephrama-stars{
+  margin-bottom: 20px;
+}
+
+.main-epharma-img{
+  height: 20px;
+  vertical-align: top; 
+  margin-right: 19px;
+  margin-left: 15px;
+}
+
+.main-epharma-price-2{
+  color: #9D9D9D;
+  display: inline-block;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.main-medicine-image{
+  margin-top: 31px; 
+  margin-left: 39px; 
+}
+
+.main-epharma-discount{
+  background-color: #B51D1D;
+  color: #fff;
+  float: right;
+  text-align: center;
+  width: max-content;
+  padding-left: 7px;
+  padding-right: 5px; 
+}
+
+.main-tabs-epharma:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.main-tabs-epharma input[type=radio] {
+  display:none;
+}
+
+.main-tabs-epharma label {
+  display: block;
+  float: left;
+  width: 33.3333%; 
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  line-height: 2;
+  cursor: pointer; 
+  border-bottom: 4px solid #ccc;
+  -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+  transition: all 0.5s;
+}
+
+.main-tabs-epharma label span {
+  display: none;
+}
+
+.main-tabs-epharma label i {
+  padding: 5px;
+  margin-right: 0;
+}
+
+.main-tabs-epharma label:hover {
+  color: #3498db; 
+  border-bottom: 4px solid #3498db;
+}
+
+.main-ephrama-tab-content {
+  display: none;
+  width: 100%;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-top: 20px; 
+}
+
+.main-ephrama-tab-content * {
+  -webkit-animation: scale 0.7s ease-in-out;
+  -moz-animation: scale 0.7s ease-in-out;
+  animation: scale 0.7s ease-in-out;
+}
+@keyframes scale {
+0% {
+  transform: scale(0.9);
+  opacity: 0;
+  }
+50% {
+  transform: scale(1.01);
+  opacity: 0.5;
+  }
+100% {
+  transform: scale(1);
+  opacity: 1;
+}
+}
+
+.main-tabs-epharma [id^="main-ephrma-tab-"]:checked + label { 
+  border-bottom: 4px solid #3498db;
+  color: #3498db;
+}
+
+#main-ephrma-tab-1:checked ~ #main-epharma-tab-content1,
+#main-ephrma-tab-2:checked ~ #main-epharma-tab-content2,
+#main-ephrma-tab-3:checked ~ #main-epharma-tab-content3 {
+  display: block;
+} 
+
+.main-tabs-epharma i {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.main-tabs-epharma label span {
+  display: inline-block;
+  font-size: 16px;
+} 
+
+/*----------------------------------------------------
+8.0 How DoctorOnCall Works */
+
+.main-howdocworks-title h2{
+  font-size: 30px;
+}
+
+.main-howdocworks-title p{
+  font-size: 16px; 
+}
+
+.main-docworks-signup{
+color:#41C0F1;
+}
+
+.main-docworks-steps-desc-p-1{
+margin-bottom: 20px;
+text-align: left;
+}
+.main-docworks-steps-desc-p-2{
+margin-bottom: 20px;
+text-align: left;
+}
+.main-docworks-steps-desc-p-3{
+margin-bottom: 20px;
+text-align: left;
+}
+.main-docworks-steps-desc-p-4{
+margin-bottom: 20px;
+text-align: left;
+}
+
+.main-docworks-nuumber{
+background-color: #41C0F1;
+color: #fff;
+border-radius: 50%;
+width: 2%;
+text-align: center;
+display: inline-block;
+margin: 102px;
+} 
+
+@media (max-width: 836px){
+.main-epharm-slider-2{
+display: flex;
+overflow: auto;
+} 
+
+}
+
+@media (max-width: 991px){
+  .main-howdocworks-slider{
+   display: flex;
+   overflow: auto; 
+  }
+}
+
+
+/*----------------------------------------------------
+9.0 Health Related Questions*/
+
+.main-health-div-1{
+border: 1px solid #EBEBEB;
+display: inline-block;
+border-style: solid; 
+height: auto;
+margin-left: 11px;
+margin-bottom: 11px;
+width: 31%;
+}
+
+.main-health-text-p{
+color: #bebebe;
+text-align: left;
+margin-left: 10px;
+} 
+
+.main-health-text{
+margin-left: 10px;
+text-align: left; 
+width: 94%;
+}
+
+.main-health-diagram1-2{ 
+border-color: #8b8585;
+display: inline-block; 
+} 
+
+.main-health-diagram1 img{ 
+width: 100%;
+}
+
+.main-health-diagram1-2{ 
+border-color: #8b8585;
+display: inline-block; 
+width:290px
+} 
+
+.main-health-diagram1-2 img{ 
+width: 100%;
+}
+
+.main-docworks-product{
+margin: 20px;
+display: inline-block;
+}
+
+.main-health-questions{
+height: auto;
+text-align: left;
+width: 90%;
+}
+
+.main-health-questions-mobile-only{
+height: auto;
+display: flex;
+overflow: auto;
+text-align: left;
+width: 2000px;
+}
+
+.main-health-question-1{
+display: block;
+}
+
+.main-health-questions-2{
+display: block;
+margin-top: 1%;
+}
+
+.main-dr-img{ 
+border: 1px solid #EBEBEB; 
+margin-top: -1px;
+}
+
+.main-dr-img-2 img{ 
+border: 1px solid #EBEBEB; 
+height: 20%;
+margin-top: -1px;
+}  
+
+.main-health-dr-img{
+float: left;
+height: 40px;
+margin-top: 13px;
+margin-left: 6px;  
+margin-right: 10px;
+}
+
+.main-health-dr-img-2{
+float: left;
+height: 40px; 
+margin-right: 10px;
+}
+
+.main-health-dr-img-3{
+float: left;
+height: 40px; 
+margin-right: 10px;
+width: 8%;
+}
+
+.main-health-text-dr{
+color: #bebebe;
+margin-top: -13px;
+text-align: left;
+}
+
+.main-health-p{ 
+text-align: left;
+} 
+
+.main-health-p-2{
+margin-left: 64px;
+} 
+
+.main-health-p-HPV{
+text-align: left; 
+}
+
+.main-health-p-HPV-2{
+width: 42%;
+text-align: left; 
+}
+
+.main-health-articles-desc{
+margin-top: 18px;
+}
+
+.main-health-articles-desc-2{
+margin-top: 18px;
+}
+
+.main-howdocworks-part{  
+  text-align: left;  
+}
+
+.main-docworks-product-1{
+  height: 130px;
+  margin-bottom: 52px;
+}  
+
+.main-docworks-product-2{
+height: 130px;
+margin-bottom: 40px;
+}  
+.main-docworks-product-3{
+height: 130px;
+margin-bottom: 20px;
+}  
+.main-docworks-product-4{
+height: 130px;
+margin-bottom: 40px;
+}  
+
+.main-howdocworks-part-2{  
+text-align: center;  
+}
+
+.main-howdocworks-part-2 img{
+height: 130px;
+margin-bottom: 40px;
+} 
+
+.main-read-health-articles-diagram{
+  height: auto;
+  margin: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.main-read-health-articles-diagram-1{
+  border: 1px dashed pink;
+  display: inline-block;
+  height: 180px;
+  margin: 1%;
+  position: relative;
+  text-align: center;
+  width: 310px;
+} 
+
+.main-connect-text{ 
+margin-bottom: 17%;
+}
+
+.main-connect-text h2{ 
+font-size: 250%; 
+}
+
+.main-connect-text p{
+font-size: 130%;
+}
+
+.main-featured-on{
+  background-color: #F6F6F6; 
+  margin-top: -7px;
+} 
+
+ /*----------------------------------------------------
+10.0 Read About Diseases*/ 
+ 
+.main-read-1{
+  display: inline-block; 
+  border-style: solid ;
+  border-color: #f0ebeb; 
+  margin: 1%;
+  width: 154px;
+  height: 127px;
+  text-align: center; 
+} 
+
+.main-read-1 img{
+  margin-top: 15px;
+} 
+
+.main-read-disease {
+  margin: 85px auto;
+} 
+
+.main-health-related-tabs { 
+  float: none;
+  list-style: none;
+  padding: 0;   
+}
+
+.main-health-related-tabs:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.main-health-related-tabs input[type=radio] {
+  display:none;
+}
+
+.main-health-related-tabs label {
+  display: block;
+  float: left;
+  width: 15%;
+  color: #3C3C3C;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  line-height: 2;
+  cursor: pointer; 
+  border-bottom: 4px solid #EBEBEB;
+  -webkit-transition: all 0.5s;  
+  transition: all 0.5s;
+}
+
+.main-health-related-tabs label span {
+  display: none;
+}
+
+.main-health-related-tabs label i {
+  padding: 5px;
+  margin-right: 0;
+}
+
+.main-health-related-tabs label:hover {
+  color: #3498db; 
+  border-bottom: 4px solid #3498db;
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box; 
+}
+
+.main-health-related-tabs i {
+  padding: 5px;
+  margin-right: 10px; 
+}
+.main-health-related-tabs label span {
+  display: inline-block; 
+} 
+
+/*Animation*/
+
+.tab-content * {
+  -webkit-animation: scale 0.7s ease-in-out;
+  -moz-animation: scale 0.7s ease-in-out;
+  animation: scale 0.7s ease-in-out;
+}
+@keyframes scale {
+0% {
+  transform: scale(0.9);
+  opacity: 0;
+  }
+50% {
+  transform: scale(1.01);
+  opacity: 0.5;
+  }
+100% {
+  transform: scale(1);
+  opacity: 1;
+}
+}
+
+.main-tab-header{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.main-tab1{
+  width: 15%;
+}
+
+.main-tab2{
+  width: 15%;
+}
+
+.main-tab3{
+  width: 15%;
+}
+
+/*Mechanism*/
+
+.main-health-related-tabs [id^="main-tab"]:checked + label { 
+  border-bottom: 4px solid #41C0F1;
+  color: #41C0F1;
+  width: 13%;
+}
+#main-tab1:checked ~ #main-tab-content1,
+#main-tab2:checked ~ #main-tab-content2,
+#main-tab3:checked ~ #main-tab-content3,
+#main-tab4:checked ~ #main-tab-content4 {
+  display: block;
+}
+
+/*11.0 Find Doctors*/
+
+.main-find-doctor h2{
+  font-size: 30px;
+}
+
+.main-find-doc-diagram{
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+display: inline-block;
+height:180px;
+margin: 1%;
+position: relative;
+text-align: center;
+min-width: 310px;
+}
+
+.main-find-doc-diagram-1{ 
+background-image: url("/images/specilaist/paediatric.jpg"); 
+}
+
+.main-find-doc-diagram-2{ 
+background-image: url("/images/specilaist/psychiatrist.jpg"); 
+}
+
+.main-find-doc-diagram-3{ 
+background-image: url("/images/specilaist/obgyn.jpg"); 
+}
+
+.main-find-doc-diagram-4{ 
+background-image: url("/images/specilaist/plastic_surgery.jpg"); 
+}
+
+.main-find-doc-diagram-5{ 
+background-image: url("/images/specilaist/ENT_Specialist.jpg"); 
+}
+
+.main-find-doc-diagram-6{ 
+background-image: url("/images/specilaist/dermatology.jpg"); 
+}
+
+.main-find-doc-1-text{
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #fff;
+font-size: 20px;
+font-weight: bold;
+}
+
+.main-find-doc-2-text{
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #fff;
+font-size: 20px;
+font-weight: bold;
+}
+
+.main-find-doc-3-text{
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #fff;
+font-size: 20px;
+font-weight: bold;
+}
+
+.main-find-doc-4-text{
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #fff;
+font-size: 20px;
+font-weight: bold;
+}
+
+.main-find-doc-5-text{
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #fff;
+font-size: 20px;
+font-weight: bold;
+}
+
+.main-find-doc-6-text{
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #fff;
+font-size: 20px;
+font-weight: bold;
+}
+
+.main-find-doc-diagram-section{
+height: auto;
+margin: 16px;
+text-align: left;
+width: 100%;
+}
+
+/*12.0 Read Health Articles*/
+
+.main-read-health-articles h2{
+  font-size: 30px;
+}
+
+.main-health-articles-img-1{ 
+border: none;
+float: left;
+height: auto; 
+margin-right: 16px; 
+width: 26%;
+}
+
+.main-health-articles-diagram-1{ 
+background-image: url("/images/AdobeStock_86851276.png");
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+display: inline-block;
+height: 390px;
+position: relative;
+text-align: center; 
+}
+
+.main-health-articles-diagram-2 {
+background-image: url("/images/Group\ 1016.png");
+width: 49%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: inline-block;
+height: 179px;
+position: relative;
+text-align: center;
+}
+
+.main-health-articles-diagram-2 img{
+margin-top: 0px; 
+width: 100%;
+}
+
+.main-health-articles-diagram-3 {     
+background-image: url("/images/AdobeStock_239340372.png");
+width: 50%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: inline-block;
+height: 179px;
+position: relative;
+text-align: center;
+} 
+
+.main-health-articles-diagram-3 img{
+width: 100%;
+}
+
+.main-health-articles-HPV{
+color: #fff;
+background-color: #41C0F1;
+border-radius: 24px;
+text-align: center;
+height: 31px;
+width: 19%;
+position: absolute;
+top: 8%;
+left: 13%;
+transform: translate(-50%, -50%); 
+padding-top: 7px; 
+} 
+
+.main-health-articles-HPV-2 {
+color: #fff;
+background-color: #41C0F1;
+border-radius: 24px;
+text-align: center;
+height: 31px;
+width: 28%;
+position: absolute;
+top: 12%;
+left: 21%;
+transform: translate(-50%, -50%);
+padding-top: 7px;
+font-size: 13px;
+}
+
+.main-health-link1{ 
+border: 1px solid #dfdcdc;
+width: 100%;
+height: auto;
+position: relative;
+display: inline-block;
+overflow: hidden;
+margin: 0;
+}
+
+.main-health-link1 > .main-health-articles-img-1{
+display: block;
+position: absolute;
+top: 50%;
+left: 50%;
+min-height: 100%;
+min-width: 100%;
+transform: translate(-50%, -50%);
+}
+
+
+
+.main-health-link1:hover{
+background-color: #41C0F1;
+border: none;
+color: #fff;
+transform: scale(1.1);
+transition: all 0.5s; 
+cursor: pointer;
+}
+
+.main-health-link1:hover span{
+  color: #fff;
+}
+
+.main-health-articles-dr{
+color: #fff;
+margin-top: -13px;
+text-align: left;
+}
+
+.main-health-articles-desc{ 
+color: #fff;
+position: absolute;
+top: 83%;
+left: 23%;
+transform: translate(-50%, -50%); 
+}   
+
+.main-health-articles-desc-2 {
+position: absolute;
+top: 65%;
+left: 100%;
+transform: translate(-50%, -50%);
+width: 194%;
+font-size: 13px;
+color: #fff;
+}
+
+.main-health-articles-desc-3{
+position: absolute;
+top: 72%;
+left: 100%;
+transform: translate(-50%, -50%);
+width: 194%;
+font-size: 13px;
+color: #fff;
+}
+
+.main-health-articles-desc-3 img{
+width: 6%;
+}
+
+.main-health-articles-desc-2 img{ 
+margin-bottom: 27px;
+width: 6%; 
+}
+   
+.main-read-articles-part{
+margin-top: 20px;
+}
+
+@media(max-width: 991px){
+.main-health-link1 {
+  border: 1px solid #dfdcdc;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.main-health-articles-img-1 {
+border: none;
+float: left;
+height: auto;
+margin-right: 16px;
+width: 14%;
+}
+}
+
+@media(min-width: 991px){
+
+.main-health-articles-img-1 {
+  border: none;
+  border-width: thin;
+  float: left;
+  height: auto;
+  margin-right: 16px;
+  width: 30%;
+}
+}
+
+@media(min-width: 1199px){
+.main-health-articles-img-1 {
+  border: none;
+  float: left;
+  height: auto;
+  margin-right: 16px;
+  width: 25%;
+}
+}
+
+@media (max-width:576px){
+  .main-read-articles-slider{
+    display: flex;
+    overflow: auto;
+  }
+}
+
+
+
+/*13.0 Connect With Doctors*/
+
+.main-connect-1{
+display: inline-block;
+width: 50%;
+}
+
+.main-connect-2{
+display: inline-block;
+width: 49%;
+margin-top: 50px;
+}
+
+.main-connect-doc-instantly-part{
+background-color: #2E5AA9;
+color: #fff;  
+margin-bottom: -17px;
+margin-top: 80px;
+}
+
+.main-connect-textbox{
+border: none;
+border-radius: 4px;
+display: block;
+height: 50px;
+width: 82%;
+}
+
+.main-connect-textbox::placeholder{
+font-size: 14px;
+padding-left: 20px;
+}
+
+.main-connect-btn{
+background-color: #41C0F1;
+border: none;
+border-radius: 4px;
+color: #fff;
+height: 50px;
+margin-top: 24px;
+margin-bottom: -17px;
+width: 82%;
+}
+
+.main-connect-text-desktop h2{
+  font-size: 30px;
+}
+
+.main-connect-text-desktop p{
+  font-size: 16px;
+}
+
+@media (max-width: 768px){
+.main-connect-text{
+  margin-left: 6%;
+}
+}
+
+/*----------------------------------------------------
+15.0 Subsribe-email*/
+
+.main-subscribe-health{
+border: 0.2px solid #fff;
+background-color: #2e5aa9;
+color: #fff;
+height: auto;
+text-align: center;
+width: 100%;
+}
+
+.main-subscribe-email{
+display: inline-block;
+height: 48px;
+margin-bottom: 42px;
+margin-top: 45px;
+white-space: nowrap;
+width: 75%;
+}
+
+.main-subscribe-email-input {
+  border: none;
+  border-radius: 4px 0 0 4px;
+  height: 48px;
+  white-space: nowrap;
+  width: 96%;
+  margin-left: -39px;
+}
+
+.main-subscribe-email-input::placeholder{
+font-size: 14px;
+padding-left: 20px;
+}
+
+.main-subscribe-email-btn {
+  background-color: #41C0F1;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  display: inline-block;
+  height: 100%;
+  margin-left: -4px;
+  vertical-align: top;
+  width: 94px;
+}
+
+.main-subscribe-health-desc{
+display: inline-block;
+}
+
+.main-subscribe-email-text{
+text-align: left; 
+}
+
+.main-subscribe-email-text h2{
+font-size: 230%;
+}
+
+.main-subscribe-email-text p{
+font-size: 120%;
+} 
+
+/*14.0 Featured On*/
+
+.main-featured-on h2{
+  font-size: 30px;
+  margin-left: 6%;
+  }
+
+.main-featured-logo img{
+  height: 80px;
+}
+
+.main-featured-diagram{
+  padding-bottom: 32px;
+}
+
+.main-featured-diagram{
+  display: inline-block;
+  margin-bottom: 2%;
+}
