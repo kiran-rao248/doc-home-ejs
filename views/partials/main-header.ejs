@@ -1,0 +1,71 @@
+<!-- start of header -->
+<!-- start container for header -->
+<header class="container-fluid header">
+  <!-- start a tag for logo -->
+  <a href="<%= url.doc_page %>"> <img class="header-logo" src="/images/doctorOnCall-icon.png" alt="DoctorOnCall logo">
+  </a>
+  <!-- end of a tag for logo -->
+  <input class="header-menu-btn" type="checkbox" id="menu-btn" />
+  <label class="header-menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+  <!-- start ul for content in header -->
+  <div class="header-menu">
+
+    <!--Mobile only login design-->
+    <div class="icon-userlogin mobile-only">
+      <!--<img src="/images/default-user.svg"> Container for user image-->
+      <svg viewBox="0 0 172 172">
+        <path d="M0,172v-172h172v172z" fill="none"></path>
+        <path
+          d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+          fill="#ebebeb"></path>
+        <path
+          d="M103.01725,106.50563c-0.4085,-4.43975 -0.24725,-7.53575 -0.24725,-11.5885c2.01025,-1.0535 5.6115,-7.77225 6.2135,-13.44825c1.58025,-0.129 4.07425,-1.66625 4.80525,-7.75075c0.387,-3.268 -1.17175,-5.10625 -2.1285,-5.68675c2.56925,-7.72925 7.912,-31.648 -9.8685,-34.1205c-1.83825,-3.21425 -6.52525,-4.8375 -12.60975,-4.8375c-24.37025,0.4515 -27.305,18.404 -21.96225,38.958c-0.95675,0.5805 -2.5155,2.41875 -2.1285,5.68675c0.74175,6.0845 3.225,7.62175 4.80525,7.75075c0.602,5.676 4.343,12.39475 6.364,13.44825c0,4.05275 0.1505,7.14875 -0.258,11.5885c-4.816,12.9645 -37.3455,9.32025 -38.8505,34.32475h104.576c-1.505,-25.0045 -33.89475,-21.36025 -38.71075,-34.32475z">
+        </path>
+        <path
+          d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+          fill="none"></path>
+        <path
+          d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56v0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z"
+          fill="none"></path>
+      </svg>
+
+      <a href="<%= url.signup_login %>"> <%= lang.signuplogin %></a>
+    </div>
+
+    <div class="header-menu-div"> <a class="header-link" href="<%= url.medicine%>"><%= lang.header_order_medicine %></a>
+    </div>
+    <div class="header-menu-div"> <a class="header-link"
+        href="<%= url.find_doctor %>"><%= lang. header_book_appointment %></a></div>
+    <div class="header-menu-div"> <a class="header-link"
+        href="<%= url.signup_login %>"><%= lang.header_consult_doctor %></a></div>
+    <div class="header-menu-div header-more-content">
+      <a class="header-link desktop-only"><%= lang.header_more %> <svg class="header-more-icon" viewBox="0 0 50 50">
+          <path d="M 4.84375 12.90625 L 2.75 15 L 25 37.25 L 47.25 15 L 45.15625 12.90625 L 25 33.0625 Z ">
+          </path>
+        </svg></a>
+      <!-- start div for header content in desktop -->
+      <div class="header-dropdown-content">
+        <a href="<%= url.about_us %>"><%= lang.header_about_us %></a>
+        <a href="<%= url.tanya%>"><%= lang.header_ask_question %></a>
+        <a href="<%= url.article %>"><%= lang.header_read_article %></a>
+        <a href="<%= url.faq %>"><%= lang.header_faq %></a>
+        <a href="<%= url.media %>"><%= lang.header_media %></a>
+        <a href="<%= url.careers %>"><%= lang.header_careers %></a>
+        <a href="<%= url.panel_doctors %>"><%= lang.header_panel_doctors %></a>
+        <a href="<%= url.corporate_partnerships %>"><%= lang.header_corporate_partnerships %></a>
+        <a href="<%= url.email %>"><%= lang.header_contact_us %></a>
+      </div>
+    </div>
+
+    <!--Desktop only design-->
+    <!-- <div class="header-menu-div"><a class="header-link" href="#"><%= lang.header_bm_eng %></a></div> -->
+    <div class="header-menu-div-signup">
+      <a class="button-login-signup desktop-only" onclick="redirectSignUp()" href="#"><%= lang.header_button_signuplogin %></a>
+    </div>
+
+  </div>
+  <!-- end of ul for content in header -->
+</header>
+<!-- end of header container -->
+<!-- end of header -->
