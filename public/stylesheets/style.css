@@ -1009,7 +1009,7 @@ overflow: auto;
   height: auto;
   margin-left: 11px;
   margin-bottom: 11px;
-  width: 335px;
+  width: 29.5%;
   }
 
 .main-health-text-p{
@@ -1022,9 +1022,7 @@ text-align: left;
 margin-left: 10px;
 text-align: left; 
 width: 94%;
-font-size: 10px;
-margin-top: 20px;
-margin-bottom: 20px;
+font-size: 10px; 
 }
 
 .main-health-text-2{
@@ -1060,8 +1058,7 @@ display: inline-block;
 width: 100%;
 }
 
-.main-health-diagram-2 img{ 
-  height: 150px;
+.main-health-diagram-2 img{  
 width: 100%;
 }
 
@@ -1102,8 +1099,7 @@ margin-top: 1%;
 }
 
 .main-dr-img{ 
-border: 1px solid #EBEBEB; 
-margin-top: -1px;
+border: 1px solid #EBEBEB;  
 }
 
 .main-dr-img-2 img{ 
@@ -1597,7 +1593,7 @@ height: auto;
 position: relative;
 display: inline-block;
 overflow: hidden;
-margin: 0;
+margin-bottom: 3.7px;
 }
 
 .main-health-articles-p{
@@ -1679,22 +1675,11 @@ margin-top: 20px;
 .main-health-articles-desc{ 
   color: #fff;
   position: absolute;
-  top: 83%;
+  top: 85%;
   left: 36%;
   transform: translate(-50%, -50%); 
   }  
-}
-
-@media(max-width: 1200px){
-  
-  .main-health-articles-desc{ 
-    color: #fff;
-    position: absolute;
-    top: 78%;
-    left: 36%;
-    transform: translate(-50%, -50%); 
-    }  
-  }
+} 
 
 @media(max-width: 991px){
   
