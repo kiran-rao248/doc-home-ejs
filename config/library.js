@@ -110,7 +110,7 @@ var library = {
     footer_terms_of_use: "Terms of Use",
     footer_doctors_login: "Doctors Login",
     footer_media: "Media",
-    footer_reach_us: "Reach Us",
+    footer_reach_us: "Contact Us",
     footer_social: "Social",
     footer_maps: "Map",
     footer_english: "English",
