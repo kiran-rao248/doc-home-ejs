@@ -87,60 +87,6 @@ margin: 0 auto;
 
 /*2.0 Header*/
 
-/* 1.1 custom scrollbar */
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #fff;
-  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0);
-}
-
-::-webkit-scrollbar-thumb {
-  background: #ccc;
-  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #aaa;
-}
-
-::-webkit-scrollbar-thumb:active {
-  background: #888;
-  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-/*Horizontal scrollers*/
-.scroller::-webkit-scrollbar-track
-{
-	border-radius: 4px;
-	background-color: transparent;
-}
-
-.scroller::-webkit-scrollbar
-{
-	width: 4px;
-  height: 0px;
-	background-color: transparent;
-}
-
-.scroller::-webkit-scrollbar-thumb
-{
-	border-radius: 4px;
-	background-color: rgba(0,0,0,0.2);
-}
-.scroller{
-  overflow: auto;
-  white-space: nowrap;
-}
-@media(max-width:768px)
-{
-  .scroller{
-    width:105%;
-  }
-}
 /*1.2. Stars*/
   .star{
     position:relative;
@@ -640,6 +586,15 @@ _    _ ______          _____  ______ _____
   display: inline-block;
 } 
 
+.main-read-search-2{ 
+  margin: 2%;
+  display: inline-block;
+} 
+
+.main-read-search-2 img{
+  width: 10vw;
+}
+
 @media (max-width: 576px) {
   .main-search-part {
     width: 100%;
@@ -831,7 +786,7 @@ margin-top: -2%;
   margin-top: 20px; 
   /* overflow: scroll; */
   white-space: nowrap; 
-  width: 100%;
+  width: 116%;
 }
 
 .main-ephrama-tab-content * {
@@ -915,9 +870,15 @@ margin-top: -2%;
   }
 }   
 
-@media (max-width: 387px){
+@media (min-width: 325px){
   .main-epharma-tab-3{
-    margin-bottom: 14px; 
+    margin-bottom: 34px; 
+  }
+}
+
+@media (min-width: 514px){
+  .main-epharma-tab-2{
+    margin-bottom: 34px;
   }
 }
 
@@ -981,15 +942,28 @@ width: 2%;
 .main-epharm-slider-2{
 display: flex;
 overflow: auto;
-} 
-
+margin-left: -24px;
+}  
 }
+
+@media (max-width: 836px){
+  .main-finddoc-slider-2{
+  display: flex;
+  overflow: auto;
+  margin-left: -29px;
+  }  
+  }
 
 @media (max-width: 991px){
   .main-howdocworks-slider{
    display: flex;
    overflow: auto; 
+   margin-left: -32px;
   }
+}
+
+.main-epharm-slider-4{
+  overflow: auto;
 }
 
 
@@ -1341,8 +1315,7 @@ font-size: 14px;
 
 .main-health-related-tabs [id^="main-tab"]:checked + label { 
   border-bottom: 4px solid #41C0F1;
-  color: #41C0F1;
-  /* width: 20%; */
+  color: #41C0F1; 
 }
 #main-tab1:checked ~ #main-tab-content1,
 #main-tab2:checked ~ #main-tab-content2,
@@ -1371,7 +1344,7 @@ font-size: 14px;
 }
 
 .main-upside-down-img{
-  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
 }
 
 /*11.0 Find Doctors*/
