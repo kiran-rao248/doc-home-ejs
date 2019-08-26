@@ -1370,6 +1370,10 @@ font-size: 14px;
   }
 }
 
+.main-upside-down-img{
+  transform: rotate(225deg);
+}
+
 /*11.0 Find Doctors*/
 
 .main-find-doctor h2{
