@@ -950,9 +950,12 @@ width: 117%;
   }
 }
 
-.main-epharm-slider-4{
-  overflow: auto;
+@media(max-width: 1194px){
+  .main-epharm-slider-4{
+    overflow: auto;
+  }
 }
+
 
 
 /*----------------------------------------------------
