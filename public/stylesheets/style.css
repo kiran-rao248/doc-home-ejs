@@ -662,17 +662,9 @@ margin-top: -2%;
 /*----------------------------------------------------
 7.0 E-Pharmacy */    
 
-.main-pharmacy-section h2{
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 1px;
-  margin-top: 7%;
-  height:auto;
-}
-
-.main-pharmacy-section p{
-  font-size: 14px;
-}
+.main-pharmacy-section h2{ 
+  margin-top: 7%; 
+} 
 
 .main-epharma-price{
   margin-bottom: 1px;
@@ -897,14 +889,9 @@ margin-top: -2%;
   margin-left: 5%;
 }
 
-.main-howdocworks-title h2{
-  font-size: 24px;
+.main-howdocworks-title h2{ 
   margin-top: 7%;
-}
-
-.main-howdocworks-title p{
-  font-size: 14px; 
-}
+} 
 
 .main-docworks-signup{
 color:#41C0F1;
@@ -974,6 +961,7 @@ width: 117%;
 .main-health-div-1 {
   border: 1px solid #EBEBEB; 
   margin-left: 11px; 
+  cursor: pointer;
   min-width: 240px;
 }
 
@@ -991,6 +979,10 @@ width: 117%;
 color: #bebebe;
 margin-left: 10px;
 text-align: left;
+text-decoration: none;
+display: inline-block;
+margin-right: 46%;
+width: 200%;
 } 
 
 .main-health-text{
@@ -998,20 +990,26 @@ margin-left: 10px;
 text-align: left; 
 width: 94%;
 font-size: 10px; 
+text-decoration: none;
+margin-right: 2%;
+margin-top: 32px;
+color: #3C3C3C;
+display: inline-block;
 }
 
 .main-health-text-2{
-  margin-left: 10px;
-  text-align: left; 
-  width: 94%;
-  font-size: 10px;
-  margin-top: 17px; 
+  margin-left: 10px; 
+  color: #3C3C3C;
+  font-size: 10px; 
+  margin-top: 18px; 
   }
 
 .main-health-text-3{
   margin-left: 10px;
   text-align: left; 
   width: 94%;
+  color: #3C3C3C;
+  margin-top: 16px;
   font-size: 10px; 
   margin-bottom: -1px;
   }
@@ -1020,8 +1018,10 @@ font-size: 10px;
   margin-left: 10px;
   text-align: left; 
   width: 94%;
+  color: #3C3C3C;
   font-size: 10px; 
   margin-bottom: 14px;
+  margin-top: 15px;
   }
 
 .main-health-diagram1-2{ 
@@ -1109,12 +1109,59 @@ width: 8%;
 color: #bebebe;
 margin-top: -13px;
 text-align: left;
+font-size: 11px; 
 }
+
+.main-health-drsash{ 
+  font-size: 13px;   
+  font-weight: bold;
+  text-align: left; 
+} 
 
 .main-health-p{ 
   font-size: 11px;
+  display: inline-block;  
+  color: #6E6868;
   text-align: left;
+  text-decoration: none;
 } 
+
+@media (min-width:769px){
+  .main-health-p{ 
+    font-size: 11px;
+    display: inline-block;  
+    color: #6E6868;
+    text-align: left;
+    text-decoration: none;
+    margin-right: 26%;
+  } 
+}
+
+@media (min-width:992px){
+  .main-health-p{ 
+    font-size: 11px;
+    display: inline-block;  
+    color: #6E6868;
+    text-align: left;
+    text-decoration: none;
+    margin-right: 43%;
+  } 
+}
+
+@media (min-width:1200px){
+  .main-health-p{ 
+    font-size: 11px;
+    display: inline-block;  
+    color: #6E6868;
+    text-align: left;
+    text-decoration: none;
+    margin-right: 53%;
+  } 
+}
+
+.main-dr-img generalpractiti{
+  color: #9D9D9D;
+}
 
 .main-health-p-2{
   margin-left: 64px;
@@ -1215,6 +1262,11 @@ font-size: 14px;
   height: 89px;
   text-align: center; 
 } 
+
+.main-read-1 , .main-read-1:hover , .main-read-1:visited, .main-read-1:active{
+  color: #3C3C3C;
+  text-decoration: none;
+}
 
 .main-read-1 img{
   margin-top: 15px;
@@ -1350,8 +1402,7 @@ font-size: 14px;
 
 /*11.0 Find Doctors*/
 
-.main-find-doctor h2{
-  font-size: 24px;
+.main-find-doctor h2{ 
   margin-left: 5%;
   margin-top: 7%;
 }
@@ -1476,8 +1527,7 @@ text-align: center;
 
 /*12.0 Read Health Articles*/
 
-.main-read-health-articles h2{
-  font-size: 24px;
+.main-read-health-articles h2{ 
   margin-left: 5%;
   margin-top: 7%;
 }
@@ -1564,6 +1614,11 @@ padding-top: 7px;
 font-size: 13px;
 }
 
+.main-health-link1 , .main-health-link1:hover, .main-health-link1:visited , .main-health-link1:active{
+  text-decoration: none;
+  color: #3C3C3C;
+}
+
 .main-health-link1{ 
 border: 1px solid #dfdcdc;
 width: 100%;
@@ -1636,8 +1691,7 @@ width: 6%;
 margin-top: 20px;
 }
 
-.main-read-articles-part h2{
-  font-size: 24px;
+.main-read-articles-part h2{ 
   margin-top: 7%;
   margin-left: 1%;
 }
@@ -1856,8 +1910,7 @@ font-size: 14px;
 
 /*14.0 Featured On*/
 
-.main-featured-on h2{
-  font-size: 24px;
+.main-featured-on h2{ 
   margin-left: 13%;
   padding-top: 3%;
   }
