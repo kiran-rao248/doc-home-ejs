@@ -468,8 +468,10 @@ _    _ ______          _____  ______ _____
 .main-search-bar{
   border-radius: 6px 0 0 6px;
   border: none;
+  color: #000;
   display: inline-block;
   height: 100%;
+  padding-left: 20px;
   width: 65%;
 }
 
@@ -687,17 +689,32 @@ margin-top: -2%;
   padding-right: 34px; 
 } 
 
-.main-ephrama-cliente{ 
-  display: inline-block;
-  margin-left: 2%;
-  margin-right: 6%;
+.main-e-pharm-btn:hover, .main-e-pharm-btn:visited, .main-e-pharm-btn:active{
+  text-decoration: none;
 }
 
-/* .main-ephrama-cliente:hover{ 
+.main-ephrama-cliente{ 
+  display: inline-block;
+  margin-left: 2%; 
+}
+
+.main-ephrama-cliente-2{ 
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: 12%;
+}
+
+.main-ephrama-cliente:hover{ 
   transform: scale(1.1);
   transition: all 0.5s; 
   box-shadow: inset 2px #fff;  
-} */
+}
+
+.main-ephrama-cliente-2:hover{ 
+  transform: scale(1.1);
+  transition: all 0.5s; 
+  box-shadow: inset 2px #fff;  
+}
 
 .main-ephrama-stars{
   margin-bottom: 20px;
@@ -1545,7 +1562,7 @@ height: auto;
 margin-right: 16px; 
 width: 86px;
 }
-
+ 
 .main-health-articles-diagram-1{ 
 background-image: url("/images/AdobeStock_86851276.png");
 width: 100%;
@@ -1812,8 +1829,10 @@ margin-top: 80px;
 .main-connect-textbox{
 border: none;
 border-radius: 4px;
+color: #000;  
 display: block;
 height: 50px;
+padding-left: 20px;
 width: 99%;
 }
 
@@ -1876,6 +1895,8 @@ width: 75%;
 .main-subscribe-email-input {
   border: none;
   border-radius: 4px 0 0 4px;
+  color: #000;
+  padding-left: 20px;
   height: 48px;
   white-space: nowrap;
   width: 96%;
