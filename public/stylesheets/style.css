@@ -2159,7 +2159,7 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
   	padding-top: 12px;
     padding-bottom: 14px;
     outline:none;
-    width: calc(100% - 57px);
+    width: calc(85% - 57px);
   }
   .searchbar-icon-crosshair {
   	position: relative;
