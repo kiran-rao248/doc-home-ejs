@@ -2,16 +2,39 @@
     <div class="row">
         <div class="main-search-section">
             <h1>Search DoctorOnCall</h1>
+
             <div class="main-search-part">
-            <input type="text" class="main-search-bar" placeholder="Search">
-            <select class="main-dropdown">
-            <option value="medicine">Medicine</option>
-            <option value="doctor">Doctor</option>
-            </select>
-            <button class="search-btn">
-                <img src="images/icons8-search-50 (1).svg" alt="Search | DoctorOnCall" class="search-btn-icon">
-            </button>
+            <form class="searchbar-form" id="searchbar-form" onSubmit="return false" action="">
+                <input type="text" id="searchInput" autocomplete="off" class="main-search-bar searchbar-input" onblur="hideSuggest()" onclick="makeSearchbarMobile()" onkeyup="searchAlgolia()"  placeholder="Search">
+
+                <!-- <select class="main-dropdown">
+                    <option value="medicine">Medicine</option>
+                    <option value="doctor">Doctor</option>
+                </select> -->
+                
+                <div id="searchBtn" class="search-btn search-button" onclick="searchClear()">
+                    <img src="images/icons8-search-50 (1).svg" alt="Search | DoctorOnCall" class="search-btn-icon">
+                </div> 
+
+                <div class="search-result" id="search-result">
+
+                </div>
+
+                <div class="search-result search-suggest" id="search-suggest">
+                    <div onclick="searchTerm('Glucose Control')">Glucose Control</div>
+                    <div onclick="searchTerm('Cholestrol Management')">Cholestrol Management</div>
+                    <div onclick="searchTerm('Blood Pressure Control')">Blood Pressure Control</div>
+                    <div onclick="searchTerm('Men\'s Condition')">Men's Condition</div>
+                    <div onclick="searchTerm('Birth Control')">Birth Control</div>
+                    <div class="search-history-title">Search History</div>
+                    <section id="search-hist-suggest"></section>
+                </div>
+            </form>
             </div>
+            
+
+
+
             <div class="main-search-desc">Find your medications, health articles, and other health problems</div>
             <div class="main-search-button-container"> 
 

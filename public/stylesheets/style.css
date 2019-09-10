@@ -172,8 +172,8 @@ _    _ ______          _____  ______ _____
 |  __  |  __|   / /\ \ | |  | |  __| |  _  /
 | |  | | |____ / ____ \| |__| | |____| | \ \
 |_|  |_|______/_/    \_\_____/|______|_|  \_\
-
-*/
+ */
+ 
 /* 2. header */
 
 .header {
@@ -741,9 +741,7 @@ margin-top: -2%;
 }
 
 .main-medicine-image{
-  height: 100px;
-  margin-top: 31px; 
-  margin-left: 39px; 
+  height: 100px; 
 } 
 
 .main-tabs-epharma:after {
@@ -2123,4 +2121,264 @@ font-size: 14px;
 
 .footer-tab a:nth-child(1)~a::before {
   content: "  |  ";
-}
+} 
+
+/*
+_____ ______          _____   _____ _    _ ____          _____
+/ ____|  ____|   /\   |  __ \ / ____| |  | |  _ \   /\   |  __ \
+| (___ | |__     /  \  | |__) | |    | |__| | |_) | /  \  | |__) |
+\___ \|  __|   / /\ \ |  _  /| |    |  __  |  _ < / /\ \ |  _  /
+____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
+|_____/|______/_/    \_\_|  \_\\_____|_|  |_|____/_/    \_\_|  \_\
+*/
+
+  /*4.3. Searchbar */
+  .searchbar-col{
+    align-items: center;
+    display: flex;
+  }
+  .searchbar-form {
+    width: 100%;
+  }
+  .searchbar-input,.searchbar-input:active {
+  	border: none;
+    border-radius: 6px 0 0 6px;
+    font-size: 16px;
+    height: 48px;
+    vertical-align: top;
+  	padding-left: 14px;
+  	padding-top: 12px;
+    padding-bottom: 14px;
+    outline:none;
+    width: calc(100% - 57px);
+  }
+  .searchbar-icon-crosshair {
+  	position: relative;
+  	top: 5px
+  }
+  .search-button {
+    align-items: center;
+    background: #41C0F1;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    color: white;
+    cursor: pointer;
+    display:inline-flex;
+    height: 48px;
+    justify-content: center;
+    margin-left: -5px;
+    outline:none;
+    vertical-align: top;
+    width: 56px;
+  }
+
+  .search-button:hover {
+  	background: #0b7dda;
+  }
+  .search-button svg{
+    fill:#fff;
+    width:24px;
+  }
+
+  @media(max-width:576px){
+    .searchbar-col{
+      padding:0;
+    }
+  }
+
+
+    /* 4.3.1 Search result */
+
+    .search-result {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 2px #ddd;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      width: calc(100% - 30px);
+      z-index: 999;
+    }
+
+    .search-back-btn{
+      display:none;
+    }
+
+    @media (max-width: 768px) {
+      .search-result {
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+
+
+
+    .result-detail:first-child {
+      border-top:1px solid #eee;
+    }
+
+    .result-detail {
+      border-bottom:1px solid #eee;
+      color: #333;
+      display: inline-flex;
+      padding: 5px 0;
+      text-decoration: none;
+      width: 100%;
+    }
+
+    .result-image {
+      align-items: center;
+      display:flex;
+      justify-content: center;
+      width: 20%;
+    }
+
+    @media (max-width: 768px) {
+      .result-image {
+        width: 20%;
+      }
+      .result-detail {
+        height: 72px;
+        overflow: hidden;
+      }
+    }
+
+    .result-image div {
+      height: 50px;
+      width: 80px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .result-title-price {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+      .result-title-price {
+        display: block;
+        margin-top: 5px;
+        padding-left: 5px;
+        width: 70%;
+      }
+      .result-title{
+        font-weight: bold;
+      }
+    }
+
+    .result-title {
+      display: inline;
+      margin-left: 0;
+      max-width: 60%;
+    }
+
+    .result-title span{
+      color:#777;
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    .result-price {
+      float: right;
+      margin-right: 10px;
+      width:80px;
+    }
+
+    .result-buy-icon {
+      display:none;
+    }
+
+    .result-buy-icon svg {
+      width: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .result-price {
+        float: none;
+      }
+      .result-buy-icon {
+        display: flex;
+        width: 10%;
+      }
+    }
+
+    .search-back-btn {
+      background: #fff;
+      border: none;
+    }
+    .search-back-btn svg {
+      width: 25px;
+    }
+
+    .clear-btn svg {
+      width: 30px;
+    }
+
+    /*4.3.1.1. Search Suggestions*/
+
+    .search-suggest{
+      display:none;
+    }
+    .searchSuggestShow{
+      display:block;
+    }
+    @media(max-width:576px){
+      .searchSuggestShowMobile{
+          display:block;
+      }
+    }
+
+
+    .search-suggest .search-history-title{
+      background:none;
+      display:block;
+    }
+    .search-suggest div{
+      background-color: #eee;
+      border-radius: 5px;
+      color: #777;
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 20px;
+    }
+
+
+    /*4.3.2. Apply styles for mobile phone search*/
+
+    @media (max-width: 768px) {
+      .searchShow{
+        display:inline-block;
+      }
+      .searchbar-mobile {
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        max-width: 100%;
+        z-index: 1000;
+      }
+      .searchbar-form-mobile{
+        position: absolute;
+        top:5px;
+      }
+      .search-back-btn svg{
+        width: 50px;
+        padding: 10px;
+      }
+      .searchbar-input-mobile, .searchbar-input-mobile:active{
+        display: inline-block;
+        margin-top: 5px;
+        width: calc(100% - 120px);
+      }
+      .searchbar-btn-mobile,.searchbar-btn-mobile:hover,.searchbar-btn-mobile:active{
+        background-color:transparent
+      }
+      .searchbar-btn-mobile svg{
+        fill:#000;
+      }
+    }
