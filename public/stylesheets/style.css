@@ -515,13 +515,6 @@ _    _ ______          _____  ______ _____
   font-weight:normal;
 }
 
-.main-search-part{
-  height: 48px;
-  margin: 0 auto;
-  white-space: nowrap;
-  width:75%;
-} 
-
 .search-btn {
   background-color: #41C0F1;
   border-radius: 0 6px 6px 0  ;
@@ -600,13 +593,29 @@ _    _ ______          _____  ______ _____
 
 .main-read-search-2 img{
   width: 10vw;
-}
+} 
+
+.main-search-part{
+  height: 48px;
+  margin: 0 auto;
+  white-space: nowrap;
+  width:75%; 
+} 
 
 @media (max-width: 576px) {
   .main-search-part {
-    width: 100%;
+    width: 100%; 
   }
 }
+@media (max-width: 768px){ 
+.main-search-part input, .main-search-part input:active, .search-button {
+    display: inline-block;
+    margin-top: 5px;
+    width: calc(100% - 120px);
+    vertical-align: top;
+}
+}
+
 
 @media(max-width: 576px){
   .main-dropdown{
@@ -2346,7 +2355,7 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
 
     /*4.3.2. Apply styles for mobile phone search*/
 
-    @media (max-width: 768px) {
+    @media (max-width: 576px) {
       .searchShow{
         display:inline-block;
       }
