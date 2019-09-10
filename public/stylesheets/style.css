@@ -2220,7 +2220,7 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
     .result-detail {
       border-bottom:1px solid #eee;
       color: #333;
-      display: inline-flex;
+      display: flex;
       padding: 5px 0;
       text-decoration: none;
       width: 100%;
@@ -2296,10 +2296,7 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
       width: 25px;
     }
 
-    @media (max-width: 768px) {
-      .result-price {
-        float: none;
-      }
+    @media (max-width: 768px) { 
       .result-buy-icon {
         display: flex;
         width: 10%;
