@@ -1372,7 +1372,7 @@ font-size: 14px;
 }
 
 .main-health-related-tabs label {
-  border-bottom: 4px solid #EBEBEB;
+  border-bottom: 2px solid #EBEBEB;
   cursor: pointer; 
   color: #3C3C3C;
   display: block;
@@ -1397,7 +1397,7 @@ font-size: 14px;
 
 .main-health-related-tabs label:hover {
   color: #3498db; 
-  border-bottom: 4px solid #3498db;
+  border-bottom: 2px solid #3498db;
 }
 
 .tab-content {
@@ -1441,7 +1441,7 @@ font-size: 14px;
 /*Mechanism*/
 
 .main-health-related-tabs [id^="main-tab"]:checked + label { 
-  border-bottom: 4px solid #41C0F1;
+  border-bottom: 2px solid #41C0F1;
   color: #41C0F1; 
 }
 #main-tab1:checked ~ #main-tab-content1,
