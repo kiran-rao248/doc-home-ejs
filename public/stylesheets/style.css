@@ -482,7 +482,7 @@ _    _ ______          _____  ______ _____
 
 .main-search-bar::placeholder {
   font-size: 14px; 
-  padding-left: 20px;
+  padding-left: 4px;
 }
 
 .main-dropdown{ 
@@ -2259,9 +2259,10 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
       cursor: pointer;
       overflow: hidden;
       position: relative;
-      width: calc(100% - 30px);
+      width: 84%;
       z-index: 999;
-    }
+      left: 8%;
+  }
 
     .search-back-btn{
       display:none;
