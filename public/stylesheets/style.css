@@ -191,7 +191,7 @@ _    _ ______          _____  ______ _____
   padding: 0;
 }
 
-.header-link {
+.header-link , .header-link:hover , .header-link:active , .header-link:visited , .header-link:checked {
   color: #000;
   display: inline-block;
   margin: 0 10px;
@@ -455,6 +455,7 @@ _    _ ______          _____  ______ _____
   background-color: #2e5aa9;
   color: #fff;
   text-align: center;
+  margin-top: -18px;
 }
 
 .main-search-section h1{  
@@ -566,19 +567,21 @@ _    _ ______          _____  ______ _____
   padding: 12px;
   border-radius: 4px;
   margin: 4px;
-  white-space: nowrap;
-  width: 152px;
+  white-space: nowrap; 
+  width: 162px;
+  display: inline-flex;
+  vertical-align: top;
+  height: 50px;
 } 
 
 .main-search-icon {
-  fill: #fff; 
+  fill: #fff;
   position: relative;
-  top: 3px;
+  top: -3px;
   width: 20px;
   cursor: pointer;
-  margin-right: 10px;
-  padding: 0;
-  margin-left: -5px;
+  margin-right: 10px; 
+  vertical-align: top;;  
 }
 
 .main-read-search{ 
@@ -670,17 +673,72 @@ margin-top: -2%;
 }
 
 .main-partner-3{
-  display: block;
-  margin-top: 7%;
+  display: block; 
   text-align: center;
+  margin-top: -2%;
   }
+
+.main-partner-4{
+  display: block; 
+  text-align: center;
+  margin-top: -2%;
+  } 
+
+  .main-partner-1-mobile{
+    display: block;
+    margin-bottom: -18px;
+    text-align: center;
+  }
+  
+  .main-partner-2-mobile{
+  display: block; 
+  text-align: center;
+  margin-top: -2%;
+  }
+  
+  .main-partner-3-mobile{
+    display: block; 
+    text-align: center;
+    margin-top: -2%;
+    }
+  
+  .main-partner-4-mobile{
+    display: block; 
+    text-align: center;
+    margin-top: -2%;
+    } 
+ 
+.main-partner-1-mobile img{
+  width: 70px;
+  height: 87px;
+}
+
+.main-partner-2-mobile img{
+  width: 70px;
+  height: 87px;
+}
+
+.main-partner-3-mobile img{
+  width: 70px;
+  height: 87px;
+}
+
+.main-partner-4-mobile img{
+  width: 70px;
+  height: 87px;
+}
 
 /*----------------------------------------------------
 7.0 E-Pharmacy */    
 
 .main-pharmacy-section h2{ 
   margin-top: 7%; 
+  margin-left: 4%;
 } 
+
+.main-pharmacy-subtitle{
+  margin-left: 4%;
+}
 
 .main-epharma-price{
   margin-bottom: 1px;
@@ -716,19 +774,7 @@ margin-top: -2%;
   display: inline-block;
   margin-left: 2%;
   margin-right: 12%;
-}
-
-.main-ephrama-cliente:hover{ 
-  transform: scale(1.1);
-  transition: all 0.5s; 
-  box-shadow: inset 2px #fff;  
-}
-
-.main-ephrama-cliente-2:hover{ 
-  transform: scale(1.1);
-  transition: all 0.5s; 
-  box-shadow: inset 2px #fff;  
-}
+} 
 
 .main-ephrama-stars{
   margin-bottom: 20px;
@@ -771,7 +817,7 @@ margin-top: -2%;
   text-decoration: none;
   text-align: center; 
   cursor: pointer; 
-  border-bottom: 4px solid #ccc;
+  border-bottom: 2px solid #ccc;
   -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
   transition: all 0.5s;
   width: 32%;
@@ -788,7 +834,7 @@ margin-top: -2%;
 
 .main-tabs-epharma label:hover {
   color: #3498db; 
-  border-bottom: 4px solid #3498db;
+  border-bottom: 2px solid #3498db;
 } 
 
 .main-ephrama-tab-content {
@@ -823,17 +869,17 @@ margin-top: -2%;
 }
 
 .main-tabs-epharma [id^="main-ephrma-tab-1"]:checked + label { 
-  border-bottom: 4px solid #3498db;
+  border-bottom: 2px solid #3498db;
   color: #3498db; 
 }
 
 .main-tabs-epharma [id^="main-ephrma-tab-2"]:checked + label { 
-  border-bottom: 4px solid #3498db;
+  border-bottom: 2px solid #3498db;
   color: #3498db; 
 }
 
 .main-tabs-epharma [id^="main-ephrma-tab-3"]:checked + label { 
-  border-bottom: 4px solid #3498db;
+  border-bottom: 2px solid #3498db;
   color: #3498db; 
 }
 
@@ -1008,7 +1054,8 @@ text-align: left;
 text-decoration: none;
 display: inline-block;
 margin-right: 46%;
-width: 200%;
+width: 62%;
+font-size: 12px;
 } 
 
 .main-health-text{
@@ -1287,6 +1334,7 @@ font-size: 14px;
   width: 108px;
   height: 89px;
   text-align: center; 
+  vertical-align: top;
 } 
 
 .main-read-1 , .main-read-1:hover , .main-read-1:visited, .main-read-1:active{
@@ -1557,6 +1605,13 @@ text-align: center;
 
 /*12.0 Read Health Articles*/
 
+.main-health-articles-div{
+  color: #41C0F1;
+  margin-top: 18px;
+  margin-bottom: 7px;
+
+}
+
 .main-read-health-articles h2{ 
   margin-left: 5%;
   margin-top: 7%;
@@ -1660,8 +1715,7 @@ margin-bottom: 3.7px;
 }
 
 .main-health-articles-p{
-  font-size: 9px;
-  font-weight: bold;
+  font-size: 12px; 
 }
 
 .main-health-link1 > .main-health-articles-img-1{
@@ -1917,13 +1971,13 @@ padding-left: 20px;
 
 .main-subscribe-email-btn {
   background-color: #41C0F1;
-  border-radius: 0 4px 4px 0;
+  border-radius: 4px;
   border: none;
   display: inline-block;
   height: 100%;
   margin-left: -4px;
   vertical-align: top;
-  width: 94px;
+  width: 100%;
 }
 
 .main-subscribe-health-desc{
@@ -2330,7 +2384,9 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
       display:none;
     }
     .searchSuggestShow{
-      display:block;
+      display:block; 
+      white-space: initial;
+    text-align: left;
     }
     @media(max-width:576px){
       .searchSuggestShowMobile{
