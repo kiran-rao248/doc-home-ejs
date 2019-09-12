@@ -920,13 +920,21 @@ text-align: center;
 /*----------------------------------------------------
 8.0 How DoctorOnCall Works */  
 
+.main-howdocworks-heading h2{
+margin-left: 5%;
+}
+
+.main-howdocworks-heading p{
+  margin-left: 5%;
+  font-size: 16px;
+}
+
 .main-docworks-label{
   color: #fff;
   background-color: #41C0F1;
   border-radius: 50%; 
   height: 20px;
-  width: 20px;
-  position: absolute;
+  width: 20px; 
 } 
 
 .main-docworks-signup{
@@ -937,8 +945,9 @@ margin-bottom: -10px;
 .main-docworks-steps-desc-p-1{ 
   margin: 0;
   padding: 0;
-text-align: left;
+text-align: center;
 }
+
 .main-docworks-steps-desc-p-2{
 margin-bottom: 20px;
 text-align: left;
@@ -996,6 +1005,14 @@ width: 117%;
 /*----------------------------------------------------
 9.0 Health Related Questions*/
 
+.main-read-articles-part h2{
+  margin-left: 1%;
+}
+
+.main-health-articles-tagline{
+  font-size: 16px;
+  margin-left: 1%;
+}
 .main-health-div-1 {
   border: 1px solid #EBEBEB; 
   cursor: pointer;
@@ -1091,8 +1108,8 @@ display: inline-block;
 min-width: 250px;
 vertical-align: top;
 text-align: center;
-margin-right: 45px;
-margin-left: 45px; 
+margin-right: 35px;
+margin-left: 35px; 
 }
 
 .main-docworks-product img{
@@ -1412,6 +1429,15 @@ font-size: 14px;
 
 /*11.0 Find Doctors*/
 
+.main-doc-headings h2{
+  margin-left: 5%;
+}
+
+.main-doc-headings p{
+  font-size: 16px;
+  margin-left: 5%;
+}
+
 .main-find-doctor h2{ 
   margin-left: 5%;
   margin-top: 7%;
@@ -1540,6 +1566,15 @@ width: 120%;
 }
 
 /*12.0 Read Health Articles*/
+
+.main-read-health-articles h2{
+  margin-left: 5%;
+}
+
+.main-read-health-articles p{
+  font-size: 16px;
+  margin-left: 5%;
+}
 
 .main-health-articles-div{
 color: #41C0F1;
