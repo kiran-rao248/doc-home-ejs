@@ -27,22 +27,22 @@ html{
 
 html::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
-	border-radius: 10px;
 	background-color: #F5F5F500;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
 }
 
 html::-webkit-scrollbar
 {
-	width: 12px;
 	background-color: #F5F5F5F5;
+	width: 12px;
 }
 
 html::-webkit-scrollbar-thumb
 {
+	background-color: #CCC;
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
-	background-color: #CCC;
 }
 
 body {
@@ -65,14 +65,14 @@ display: block;
 
 .main-nextpage-btn-2{
 background-color: #41C0F1;
-display: block;
-justify-content: center;
 border: none;
 border-radius: 4px;
 color: #fff;
-width: 31%;
+display: block;
+justify-content: center;
 height: 43px; 
 margin: 0 auto;
+width: 31%;
 } 
 
 @media (max-width: 768px){
@@ -360,14 +360,14 @@ _    _ ______          _____  ______ _____
 }
 
 .icon-userlogin svg {
-  width: 40px;
   margin-right: 24px;
+  width: 40px;
 }
 
 .icon-userlogin img {
   height: 40px;
-  width: 40px;
   margin-right: 24px;
+  width: 40px;
 }
 
 /* 2.4 header dropdown */
@@ -454,8 +454,8 @@ _    _ ______          _____  ______ _____
 .main-search-section { 
   background-color: #2e5aa9;
   color: #fff;
-  text-align: center;
   margin-top: -18px;
+  text-align: center;
 }
 
 .main-search-section h1{  
@@ -533,7 +533,7 @@ _    _ ______          _____  ______ _____
 }
 .search-btn img {
   height: 20px;
-    width: 20px;
+  width: 20px;
 }
 
 .main-search-desc{
@@ -559,45 +559,37 @@ _    _ ______          _____  ______ _____
   padding-bottom: 35px;
 }
 
+.main-docworks-text{
+  display: inline-block;
+  margin: 26px 45px 0 45px;
+}
+
 .main-search-button-container button{
+  align-items: center;
   border: 1px solid #fff;
   background-color: #2e5aa9;
-  color: #fff;
-  font-size: 12px;
-  padding: 12px;
   border-radius: 4px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 12px;
+  height: 50px;
+  padding: 12px;
   margin: 4px;
+  vertical-align: top;
   white-space: nowrap; 
   width: 162px;
-  display: inline-flex;
-  vertical-align: top;
-  height: 50px;
 } 
 
 .main-search-icon {
+  cursor: pointer;
   fill: #fff;
+  margin-right: 10px; 
   position: relative;
   top: -3px;
+  vertical-align: top;  
   width: 20px;
-  cursor: pointer;
-  margin-right: 10px; 
-  vertical-align: top;;  
 }
-
-.main-read-search{ 
-  margin: 2%;
-  display: inline-block;
-} 
-
-.main-read-search-2{ 
-  margin: 2%;
-  display: inline-block;
-} 
-
-.main-read-search-2 img{
-  width: 10vw;
-} 
-
+ 
 .main-search-part{
   height: 48px;
   margin: 0 auto;
@@ -649,91 +641,89 @@ _    _ ______          _____  ______ _____
  /*----------------------------------------------------
 6.0 Partnership Section*/
 
-.main-partner-logo{
-  height: auto;
+.main-partner-1{
+  display: block;
   text-align: center;
-  width: 100%;
-  background-color: #F6F6F6;
+} 
+.main-partner-2{
+  display: block;
+  margin-top: 20px;
+  text-align: center;
 }
+
+.main-partner-image-group{
+  display: inline-block; 
+  margin-top: 20px;
+  text-align: center; 
+}
+
+.main-partner-image-group img{ 
+  margin: 0 auto;
+  text-align: center; 
+  width: 25%;
+} 
+
+.main-partner-image-group-2 img{ 
+  margin: 0 auto;
+  text-align: center; 
+  width: 20%;
+} 
+
 
 .main-partner-logo img{
   height: 45px;
-}
+}  
 
-.main-partner-1{
+.main-partner-1-mobile{
   display: block;
   margin-bottom: -18px;
   text-align: center;
 }
 
-.main-partner-2{
+.main-partner-2-mobile{
 display: block; 
-text-align: center;
 margin-top: -2%;
+text-align: center;
 }
 
-.main-partner-3{
+.main-partner-3-mobile{
   display: block; 
   text-align: center;
   margin-top: -2%;
   }
 
-.main-partner-4{
+.main-partner-4-mobile{
   display: block; 
   text-align: center;
   margin-top: -2%;
   } 
-
-  .main-partner-1-mobile{
-    display: block;
-    margin-bottom: -18px;
-    text-align: center;
-  }
-  
-  .main-partner-2-mobile{
-  display: block; 
-  text-align: center;
-  margin-top: -2%;
-  }
-  
-  .main-partner-3-mobile{
-    display: block; 
-    text-align: center;
-    margin-top: -2%;
-    }
-  
-  .main-partner-4-mobile{
-    display: block; 
-    text-align: center;
-    margin-top: -2%;
-    } 
  
 .main-partner-1-mobile img{
-  width: 70px;
   height: 87px;
+  width: 70px;
 }
 
 .main-partner-2-mobile img{
-  width: 70px;
   height: 87px;
+  width: 70px;
 }
 
 .main-partner-3-mobile img{
-  width: 70px;
   height: 87px;
+  width: 70px;
 }
 
 .main-partner-4-mobile img{
-  width: 70px;
   height: 87px;
+  width: 70px;
 }
 
 /*----------------------------------------------------
 7.0 E-Pharmacy */    
 
 .main-pharmacy-section h2{ 
-  margin-top: 7%; 
   margin-left: 4%;
+  margin-top: 7%; 
 } 
 
 .main-pharmacy-subtitle{
@@ -753,14 +743,17 @@ margin-top: -2%;
 .main-e-pharm-btn{
   border : none;
   background-color: #41C0F1;
-  color: #fff;
-  width:max-content;
-  padding: 15px;
   border-radius: 4px;
-  text-decoration: none; 
+  color: #fff;
+  padding: 15px;
   padding-right: 34px; 
-} 
-
+  text-decoration: none; 
+  width:max-content;
+}  
+.main-epharma-a-tag a {
+  text-decoration: none;
+  color: #fff;
+}
 .main-e-pharm-btn:hover, .main-e-pharm-btn:visited, .main-e-pharm-btn:active{
   text-decoration: none;
 }
@@ -776,15 +769,19 @@ margin-top: -2%;
   margin-right: 12%;
 } 
 
+.main-epharma-medicine-img {
+  text-align: center;
+}
+
 .main-ephrama-stars{
   margin-bottom: 20px;
 }
 
 .main-epharma-img{
   height: 20px;
-  vertical-align: top; 
   margin-right: 19px;
   margin-left: 15px;
+  vertical-align: top; 
 }
 
 .main-epharma-price-2{
@@ -801,8 +798,8 @@ margin-top: -2%;
 
 .main-tabs-epharma:after {
   content: '';
-  display: table;
   clear: both;
+  display: table;
 }
 
 .main-tabs-epharma input[type=radio] {
@@ -810,17 +807,16 @@ margin-top: -2%;
 }
 
 .main-tabs-epharma label {
+  cursor: pointer; 
+  border-bottom: 2px solid #ccc;
   display: block;
   float: left;
-  width: 25%;  
   font-weight: normal;
   text-decoration: none;
   text-align: center; 
-  cursor: pointer; 
-  border-bottom: 2px solid #ccc;
-  -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
   transition: all 0.5s;
-  width: 32%;
+  -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+  width: 33%; 
 }
 
 .main-tabs-epharma label span {
@@ -828,8 +824,8 @@ margin-top: -2%;
 }
 
 .main-tabs-epharma label i {
-  padding: 5px;
   margin-right: 0;
+  padding: 5px;
 }
 
 .main-tabs-epharma label:hover {
@@ -840,9 +836,8 @@ margin-top: -2%;
 .main-ephrama-tab-content {
   display: none;
   float: left; 
+  margin-top: 20px;  
   padding: 15px;
-  margin-top: 20px; 
-  /* overflow: scroll; */
   white-space: nowrap; 
   width: 116%;
 }
@@ -855,16 +850,16 @@ margin-top: -2%;
 
 @keyframes scale {
 0% {
-  transform: scale(0.9);
   opacity: 0;
+  transform: scale(0.9);
   }
 50% {
-  transform: scale(1.01);
   opacity: 0.5;
+  transform: scale(1.01);
   }
 100% {
-  transform: scale(1);
   opacity: 1;
+  transform: scale(1);
 }
 }
 
@@ -911,50 +906,30 @@ margin-top: -2%;
 }
 
 
-
-@media (min-width: 320px){
-  .main-epharma-tab-1{
+@media(max-width: 440px){
+  .main-epharma-tab-1 {
+    font-weight: bold;
     margin-bottom: 34px;
-  }
 }
-@media (min-width: 387px){
-  .main-epharma-tab-3{
-    margin-bottom: 34px; 
-  }
-}
-@media (min-width: 606px){
-  .main-epharma-tab-2{
-    margin-bottom: 34px; 
-  }
-}   
-
-@media (min-width: 325px){
-  .main-epharma-tab-3{
-    margin-bottom: 34px; 
-  }
-}
-
-@media (min-width: 514px){
-  .main-epharma-tab-2{
+} 
+@media(max-width: 440px){
+  .main-epharma-tab-3 {
+    font-weight: bold;
     margin-bottom: 34px;
-  }
 }
-
-@media (max-width: 514px){
-  .main-epharma-tab-2{
-    margin-bottom: 34px;
-  }
 }
-
-
-@media (max-width: 452px){
-  .main-epharma-tab-2{
-    margin-bottom: 14px;
-  }
-}
-
+ 
 /*----------------------------------------------------
 8.0 How DoctorOnCall Works */
+
+
+.main-docworks-label{
+  color: #fff;
+  background-color: #41C0F1;
+  border-radius: 50%;
+  padding: 3px;
+  width: 13%;
+}
 
 .main-howdocworks-title{
   margin-left: 5%;
@@ -969,8 +944,9 @@ color:#41C0F1;
 margin-bottom: -10px;
 }
 
-.main-docworks-steps-desc-p-1{
-margin-bottom: 20px;
+.main-docworks-steps-desc-p-1{ 
+  margin: 0;
+  padding: 0;
 text-align: left;
 }
 .main-docworks-steps-desc-p-2{
@@ -1032,15 +1008,15 @@ width: 117%;
 
 .main-health-div-1 {
   border: 1px solid #EBEBEB; 
-  margin-left: 11px; 
   cursor: pointer;
+  margin-left: 11px; 
   min-width: 240px;
 }
 
 .main-health-div-2{
   border: 1px solid #EBEBEB;
-  display: inline-block;
   border-style: solid; 
+  display: inline-block;
   height: auto;
   margin-left: 11px;
   margin-bottom: 11px;
@@ -1049,52 +1025,52 @@ width: 117%;
 
 .main-health-text-p{
 color: #bebebe;
+display: inline-block;
+font-size: 12px;
 margin-left: 10px;
+margin-right: 46%;
 text-align: left;
 text-decoration: none;
-display: inline-block;
-margin-right: 46%;
 width: 62%;
-font-size: 12px;
 } 
 
 .main-health-text{
-margin-left: 10px;
-text-align: left; 
-width: 94%;
-font-size: 10px; 
-text-decoration: none;
-margin-right: 2%;
-margin-top: 32px;
 color: #3C3C3C;
 display: inline-block;
+font-size: 12px; 
+margin-left: 10px;
+margin-right: 2%;
+margin-top: 32px;
+text-align: left; 
+text-decoration: none;
+width: 94%;
 }
 
 .main-health-text-2{
-  margin-left: 10px; 
   color: #3C3C3C;
   font-size: 10px; 
+  margin-left: 10px; 
   margin-top: 18px; 
   }
 
 .main-health-text-3{
+  color: #3C3C3C;
+  font-size: 10px; 
   margin-left: 10px;
+  margin-top: 16px;
+  margin-bottom: -1px;
   text-align: left; 
   width: 94%;
-  color: #3C3C3C;
-  margin-top: 16px;
-  font-size: 10px; 
-  margin-bottom: -1px;
   }
 
 .main-health-text-4{
-  margin-left: 10px;
-  text-align: left; 
-  width: 94%;
   color: #3C3C3C;
   font-size: 10px; 
+  margin-left: 10px;
   margin-bottom: 14px;
   margin-top: 15px;
+  text-align: left; 
+  width: 94%;
   }
 
 .main-health-diagram1-2{ 
@@ -1192,44 +1168,23 @@ font-size: 11px;
 } 
 
 .main-health-p{ 
-  font-size: 11px;
-  display: inline-block;  
   color: #6E6868;
+  display: inline-block;  
+  font-size: 11px; 
   text-align: left;
   text-decoration: none;
-} 
+}   
 
-@media (min-width:769px){
+@media (min-width: 992px){
   .main-health-p{ 
-    font-size: 11px;
-    display: inline-block;  
     color: #6E6868;
+    display: inline-block;  
+    font-size: 11px;
+    margin-right: 28%;
     text-align: left;
     text-decoration: none;
-    margin-right: 26%;
-  } 
-}
+  }   
 
-@media (min-width:992px){
-  .main-health-p{ 
-    font-size: 11px;
-    display: inline-block;  
-    color: #6E6868;
-    text-align: left;
-    text-decoration: none;
-    margin-right: 43%;
-  } 
-}
-
-@media (min-width:1200px){
-  .main-health-p{ 
-    font-size: 11px;
-    display: inline-block;  
-    color: #6E6868;
-    text-align: left;
-    text-decoration: none;
-    margin-right: 53%;
-  } 
 }
 
 .main-dr-img generalpractiti{
@@ -1263,21 +1218,13 @@ margin-top: 18px;
 }
 
 .main-docworks-product-1{
-height: 130px;
-margin-bottom: 52px;
-}  
-
-.main-docworks-product-2{
-height: 130px;
-margin-bottom: 40px;
-}  
+height: 130px; 
+}    
 .main-docworks-product-3{
-height: 130px;
-margin-bottom: 20px;
+height: 130px; 
 }  
 .main-docworks-product-4{
-height: 130px;
-margin-bottom: 40px;
+height: 130px; 
 }  
 
 .main-howdocworks-part-2{  
@@ -1327,14 +1274,14 @@ font-size: 14px;
 10.0 Read About Diseases*/ 
  
 .main-read-1{
-  display: inline-block; 
   border-style: solid ;
   border-color: #f0ebeb; 
-  margin: 1%;
-  width: 108px;
+  display: inline-block; 
   height: 89px;
+  margin: 1%;
   text-align: center; 
   vertical-align: top;
+  width: 108px;
 } 
 
 .main-read-1 , .main-read-1:hover , .main-read-1:visited, .main-read-1:active{
@@ -1363,8 +1310,8 @@ font-size: 14px;
 
 .main-health-related-tabs:after {
   content: '';
-  display: table;
   clear: both;
+  display: table;
 }
 
 .main-health-related-tabs input[type=radio] {
@@ -1391,21 +1338,21 @@ font-size: 14px;
 }
 
 .main-health-related-tabs label i {
-  padding: 5px;
   margin-right: 0;
+  padding: 5px;
 }
 
 .main-health-related-tabs label:hover {
-  color: #3498db; 
   border-bottom: 2px solid #3498db;
+  color: #3498db; 
 }
 
 .tab-content {
+  box-sizing: border-box; 
   display: none;
-  width: 100%;
   float: left;
   padding: 15px;
-  box-sizing: border-box; 
+  width: 100%;
 }
 
 .main-health-related-tabs i {
@@ -1487,10 +1434,10 @@ background-repeat: no-repeat;
 background-size: cover; 
 display: inline-block;
 height:180px;
+min-width: 243px;
 margin: 4px;
 position: relative;
 text-align: center;
-min-width: 243px;
 }
 
 .main-find-doc-diagram-desktop{
@@ -1500,9 +1447,9 @@ min-width: 243px;
   display: inline-block;
   height:180px;
   margin: 7px;
+  min-width: 29%;
   position: relative;
   text-align: center;
-  min-width: 29%;
   }
 
 .main-find-doc-diagram-1{ 
@@ -1530,91 +1477,90 @@ background-image: url("/images/specilaist/cardiologist-min (1).png");
 }
 
 .main-find-doc-1-text{
-text-align: center;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
 color: #fff;
 font-size: 20px;
 font-weight: bold;
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
+top: 50%;
+text-align: center;
 }
 
 .main-find-doc-2-text{
-text-align: center;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
 color: #fff;
 font-size: 20px;
 font-weight: bold;
+position: absolute;
+left: 50%;
+text-align: center;
+top: 50%;
+transform: translate(-50%, -50%);
 }
 
 .main-find-doc-3-text{
-text-align: center;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
 color: #fff;
 font-size: 20px;
 font-weight: bold;
+position: absolute;
+left: 50%;
+text-align: center;
+top: 50%;
+transform: translate(-50%, -50%);
 }
 
 .main-find-doc-4-text{
-text-align: center;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
 color: #fff;
 font-size: 20px;
 font-weight: bold;
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
+top: 50%;
+text-align: center;
 }
 
 .main-find-doc-5-text{
-text-align: center;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
 color: #fff;
 font-size: 20px;
 font-weight: bold;
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
+top: 50%;
+text-align: center;
 }
 
 .main-find-doc-6-text{
-text-align: center;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
 color: #fff;
 font-size: 20px;
 font-weight: bold;
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
+top: 50%;
+text-align: center;
 }
 
 .main-find-doc-diagram-section{ 
 text-align: center;  
 }
 .main-find-doc-diagram-section-mobile{ 
-  text-align: center;  
-  width: 120%;
-  }
+text-align: center;  
+width: 120%;
+}
 
 /*12.0 Read Health Articles*/
 
 .main-health-articles-div{
-  color: #41C0F1;
-  margin-top: 18px;
-  margin-bottom: 7px;
-
+color: #41C0F1;
+margin-top: 18px;
+margin-bottom: 7px; 
 }
 
 .main-read-health-articles h2{ 
-  margin-left: 5%;
-  margin-top: 7%;
+margin-left: 5%;
+margin-top: 7%;
 }
 
 .main-health-articles-img-1{ 
@@ -1627,7 +1573,6 @@ width: 86px;
  
 .main-health-articles-diagram-1{ 
 background-image: url("/images/AdobeStock_86851276.png");
-width: 100%;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover; 
@@ -1635,11 +1580,11 @@ display: inline-block;
 height: 390px;
 position: relative;
 text-align: center; 
+width: 100%;
 }
 
 .main-health-articles-diagram-2 {
 background-image: url("/images/Group\ 1016.png");
-width: 49%;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -1647,6 +1592,7 @@ display: inline-block;
 height: 179px;
 position: relative;
 text-align: center;
+width: 49%;
 }
 
 .main-health-articles-diagram-2 img{
@@ -1656,7 +1602,6 @@ width: 100%;
 
 .main-health-articles-diagram-3 {     
 background-image: url("/images/AdobeStock_239340372.png");
-width: 50%;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -1664,6 +1609,7 @@ display: inline-block;
 height: 179px;
 position: relative;
 text-align: center;
+width: 50%;
 } 
 
 .main-health-articles-diagram-3 img{
@@ -1671,60 +1617,58 @@ width: 100%;
 }
 
 .main-health-articles-HPV{
-color: #fff;
-background-color: #41C0F1;
-border-radius: 24px;
-text-align: center;
-height: 31px;
-width: 19%;
-position: absolute;
-top: 8%;
-left: 13%;
-transform: translate(-50%, -50%); 
-padding-top: 7px; 
+  color: #fff;
+  background-color: #41C0F1;
+  border-radius: 24px; 
+  padding: 8px 20px;
+  position: absolute;
+  left: 13%;
+  text-align: center;
+  top: 8%;
+  transform: translate(-50%, -50%);
+  width: max-content;
 } 
 
 .main-health-articles-HPV-2 {
-color: #fff;
-background-color: #41C0F1;
-border-radius: 24px;
-text-align: center;
-height: 31px;
-width: 28%;
-position: absolute;
-top: 12%;
-left: 21%;
-transform: translate(-50%, -50%);
-padding-top: 7px;
-font-size: 13px;
+  color: #fff;
+  background-color: #41C0F1;
+  border-radius: 24px;
+  font-size: 13px; 
+  padding: 8px 20px;
+  position: absolute;
+  left: 21%;
+  text-align: center;
+  top: 12%;
+  transform: translate(-50%, -50%);
+  width: max-content;
 }
 
 .main-health-link1 , .main-health-link1:hover, .main-health-link1:visited , .main-health-link1:active{
-  text-decoration: none;
   color: #3C3C3C;
+  text-decoration: none;
 }
 
 .main-health-link1{ 
 border: 1px solid #dfdcdc;
-width: 100%;
-height: auto;
-position: relative;
 display: inline-block;
-overflow: hidden;
+height: auto;
 margin-bottom: 3.7px;
+overflow: hidden;
+position: relative;
+width: 100%;
 }
 
 .main-health-articles-p{
-  font-size: 12px; 
+font-size: 12px; 
 }
 
 .main-health-link1 > .main-health-articles-img-1{
 display: block;
 position: absolute;
-top: 50%;
 left: 50%;
 min-height: 100%;
 min-width: 100%;
+top: 50%;
 transform: translate(-50%, -50%);
 }
 
@@ -1737,29 +1681,29 @@ text-align: left;
 .main-health-articles-desc{ 
 color: #fff;
 position: absolute;
-top: 83%;
 left: 29%;
+top: 83%;
 transform: translate(-50%, -50%); 
 }   
 
 .main-health-articles-desc-2 {
+color: #fff;
+font-size: 13px;
 position: absolute;
-top: 65%;
 left: 100%;
 transform: translate(-50%, -50%);
+top: 65%;
 width: 194%;
-font-size: 13px;
-color: #fff;
 }
 
 .main-health-articles-desc-3{
+color: #fff;
+font-size: 13px;
 position: absolute;
-top: 72%;
 left: 100%;
 transform: translate(-50%, -50%);
+top: 72%;
 width: 194%;
-font-size: 13px;
-color: #fff;
 }
 
 .main-health-articles-desc-3 img{
@@ -1769,27 +1713,18 @@ width: 6%;
 .main-health-articles-desc-2 img{ 
 margin-bottom: 27px;
 width: 6%; 
-}
-   
-.main-read-articles-part{
-margin-top: 20px;
-}
-
-.main-read-articles-part h2{ 
-  margin-top: 7%;
-  margin-left: 1%;
-}
+} 
 
 @media (min-width: 1200px){
-  .main-health-articles-desc-3{
-    position: absolute;
-    top: 77%;
-    left: 100%;
-    transform: translate(-50%, -50%);
-    width: 194%;
-    font-size: 13px;
-    color: #fff;
-    }
+.main-health-articles-desc-3{
+  color: #fff;
+  font-size: 13px;
+  position: absolute;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  top: 77%;
+  width: 194%;
+  }
 }
 
 @media(max-width: 1200px){
@@ -1797,10 +1732,10 @@ margin-top: 20px;
 .main-health-articles-desc{ 
   color: #fff;
   position: absolute;
-  top: 85%;
   left: 36%;
   transform: translate(-50%, -50%); 
-  }  
+  top: 85%;
+}  
 } 
 
 @media(max-width: 991px){
@@ -1808,20 +1743,20 @@ margin-top: 20px;
   .main-health-articles-desc{ 
     color: #fff;
     position: absolute;
-    top: 83%;
     left: 27%;
     transform: translate(-50%, -50%); 
+    top: 83%;
     }  
   }
 
 @media(max-width: 991px){
 .main-health-link1 {
   border: 1px solid #dfdcdc;
-  width: 100%;
-  height: auto;
-  position: relative;
   display: inline-block;
+  height: auto;
   overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 .main-health-articles-img-1 {
 border: none;
@@ -1922,8 +1857,8 @@ width: 99%;
 }
 
 .main-connect-text-2{
-  padding-bottom: 40px;
   margin: 2px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 768px){
@@ -1954,14 +1889,14 @@ width: 75%;
 }
 
 .main-subscribe-email-input {
-  border: none;
-  border-radius: 4px 0 0 4px;
-  color: #000;
-  padding-left: 20px;
-  height: 48px;
-  white-space: nowrap;
-  width: 96%;
-  margin-left: -39px;
+border: none;
+border-radius: 4px 0 0 4px;
+color: #000;
+height: 48px;
+margin-left: -39px;
+padding-left: 20px;
+white-space: nowrap;
+width: 96%;
 }
 
 .main-subscribe-email-input::placeholder{
@@ -1999,7 +1934,7 @@ font-size: 14px;
 /*14.0 Featured On*/
 
 .main-featured-on h2{ 
-  margin-left: 13%;
+  margin-left: 8%;
   padding-top: 3%;
   }
 
@@ -2036,7 +1971,7 @@ font-size: 14px;
 }
 
 .footer a:hover{
-    color: #41c0f1;
+  color: #41c0f1;
 }
 
 .first-footer p {
@@ -2254,8 +2189,7 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
 
     .search-result {
       background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 0 2px #ddd;
+      border-radius: 5px; 
       cursor: pointer;
       overflow: hidden;
       position: relative;
@@ -2270,69 +2204,73 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
 
     @media (max-width: 768px) {
       .search-result {
-        font-size: 14px;
-        width: 100%;
-      }
+        background-color: #fff;
+        border-radius: 5px; 
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        width: 88%;
+        z-index: 999;
+        left: 6%;
     }
-
-
+    } 
 
     .result-detail:first-child {
       border-top:1px solid #eee;
     }
 
-    .result-detail {
-      border-bottom:1px solid #eee;
-      color: #333;
-      display: flex;
-      padding: 5px 0;
-      text-decoration: none;
-      width: 100%;
-    }
+  .result-detail {
+    color: #333;
+    border-bottom:1px solid #eee;
+    display: flex;
+    padding: 5px 0;
+    text-decoration: none;
+    width: 100%;
+  }
 
+  .result-image {
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    width: 20%;
+  }
+
+  @media (max-width: 768px) {
     .result-image {
-      align-items: center;
-      display:flex;
-      justify-content: center;
       width: 20%;
     }
-
-    @media (max-width: 768px) {
-      .result-image {
-        width: 20%;
-      }
-      .result-detail {
-        height: 72px;
-        overflow: hidden;
-      }
+    .result-detail {
+      height: 72px;
+      overflow: hidden;
     }
+  }
 
-    .result-image div {
-      height: 50px;
-      width: 80px;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
+  .result-image div {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 80px;
+  }
 
+  .result-title-price {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  @media (max-width: 768px) {
     .result-title-price {
-      width: 80%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      display: block;
+      margin-top: 5px;
+      padding-left: 5px;
+      width: 70%;
     }
-
-    @media (max-width: 768px) {
-      .result-title-price {
-        display: block;
-        margin-top: 5px;
-        padding-left: 5px;
-        width: 70%;
-      }
-      .result-title{
-        font-weight: bold;
-      }
+    .result-title{
+      font-weight: bold;
     }
+  }
 
     .result-title {
       display: inline;
@@ -2385,13 +2323,13 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
       display:none;
     }
     .searchSuggestShow{
-      display:block; 
-      white-space: initial;
+    display:block; 
     text-align: left;
+    white-space: initial;
     }
     @media(max-width:576px){
       .searchSuggestShowMobile{
-          display:block;
+    display:block;
       }
     }
 
@@ -2412,36 +2350,36 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
 
     /*4.3.2. Apply styles for mobile phone search*/
 
-    @media (max-width: 576px) {
-      .searchShow{
-        display:inline-block;
-      }
-      .searchbar-mobile {
-        background-color: #fff;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        max-width: 100%;
-        z-index: 1000;
-      }
-      .searchbar-form-mobile{
-        position: absolute;
-        top:5px;
-      }
-      .search-back-btn svg{
-        width: 50px;
-        padding: 10px;
-      }
-      .searchbar-input-mobile, .searchbar-input-mobile:active{
-        display: inline-block;
-        margin-top: 5px;
-        width: calc(100% - 120px);
-      }
-      .searchbar-btn-mobile,.searchbar-btn-mobile:hover,.searchbar-btn-mobile:active{
-        background-color:transparent
-      }
-      .searchbar-btn-mobile svg{
-        fill:#000;
-      }
+  @media (max-width: 576px) {
+    .searchShow{
+      display:inline-block;
     }
+    .searchbar-mobile {
+      background-color: #fff;
+      height: 100vh;
+      left: 0;
+      position: fixed;
+      max-width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .searchbar-form-mobile{
+      position: absolute;
+      top:5px;
+    }
+    .search-back-btn svg{
+      padding: 10px;
+      width: 50px;
+    }
+    .searchbar-input-mobile, .searchbar-input-mobile:active{
+      display: inline-block;
+      margin-top: 5px;
+      width: calc(100% - 120px);
+    }
+    .searchbar-btn-mobile,.searchbar-btn-mobile:hover,.searchbar-btn-mobile:active{
+      background-color:transparent
+    }
+    .searchbar-btn-mobile svg{
+      fill:#000;
+    }
+  }
