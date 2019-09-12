@@ -668,7 +668,6 @@ _    _ ______          _____  ______ _____
   width: 20%;
 } 
 
-
 .main-partner-logo img{
   height: 45px;
 }  
@@ -919,14 +918,15 @@ text-align: center;
 }
  
 /*----------------------------------------------------
-8.0 How DoctorOnCall Works */ 
+8.0 How DoctorOnCall Works */  
 
 .main-docworks-label{
   color: #fff;
   background-color: #41C0F1;
-  border-radius: 50%;
-  padding: 3px;
-  width: 13%;
+  border-radius: 50%; 
+  height: 20px;
+  width: 20px;
+  position: absolute;
 } 
 
 .main-docworks-signup{
@@ -1087,10 +1087,18 @@ width: 100%;
 }
 
 .main-docworks-product{
-display: inline-block;
-margin: 45px 45px 0 45px;
+display: inline-block; 
+min-width: 250px;
+vertical-align: top;
+text-align: center;
+margin-right: 45px;
+margin-left: 45px; 
 }
 
+.main-docworks-product img{
+  height: 130px;
+  width: 180px;
+} 
 
 .main-health-questions{
 height: auto;
@@ -1750,7 +1758,6 @@ margin-right: 16px;
 }
 
 @media(min-width: 991px){
-
 .main-health-articles-img-1 {
   border: none;
   border-width: thin;
@@ -1759,7 +1766,6 @@ margin-right: 16px;
   margin-right: 16px;
   width: 30.5%;
 }
-
 }
 
 @media(min-width: 1199px){
@@ -2166,8 +2172,6 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
       padding:0;
     }
   }
-
-
     /* 4.3.1 Search result */
 
     .search-result {
@@ -2180,7 +2184,6 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
       z-index: 999;
       left: 8%;
   }
-
     .search-back-btn{
       display:none;
     }
@@ -2315,7 +2318,6 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
     display:block;
       }
     }
-
 
     .search-suggest .search-history-title{
       background:none;
