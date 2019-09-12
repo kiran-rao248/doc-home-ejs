@@ -57,7 +57,7 @@ padding: 0px;
 
 .mobile-only{
 display: none;
-}
+}  
 
 .desktop-only{
 display: block;
@@ -78,12 +78,11 @@ width: 31%;
 @media (max-width: 768px){
 .mobile-only{
   display: block;
-}
-
+}  
 .desktop-only{
   display: none;
 }
-}
+} 
 
 /*2.0 Header*/
 
@@ -920,8 +919,7 @@ text-align: center;
 }
  
 /*----------------------------------------------------
-8.0 How DoctorOnCall Works */
-
+8.0 How DoctorOnCall Works */ 
 
 .main-docworks-label{
   color: #fff;
@@ -929,14 +927,6 @@ text-align: center;
   border-radius: 50%;
   padding: 3px;
   width: 13%;
-}
-
-.main-howdocworks-title{
-  margin-left: 5%;
-}
-
-.main-howdocworks-title h2{ 
-  margin-top: 7%;
 } 
 
 .main-docworks-signup{
@@ -1038,9 +1028,9 @@ width: 62%;
 color: #3C3C3C;
 display: inline-block;
 font-size: 12px; 
+height: 74px;
 margin-left: 10px;
-margin-right: 2%;
-margin-top: 32px;
+margin-right: 2%; 
 text-align: left; 
 text-decoration: none;
 width: 94%;
@@ -1100,6 +1090,7 @@ width: 100%;
 display: inline-block;
 margin: 45px 45px 0 45px;
 }
+
 
 .main-health-questions{
 height: auto;
@@ -1215,17 +1206,7 @@ margin-top: 18px;
 
 .main-howdocworks-part{  
   text-align: center;   
-}
-
-.main-docworks-product-1{
-height: 130px; 
-}    
-.main-docworks-product-3{
-height: 130px; 
-}  
-.main-docworks-product-4{
-height: 130px; 
-}  
+} 
 
 .main-howdocworks-part-2{  
 text-align: center;  
@@ -1650,6 +1631,8 @@ width: 100%;
 
 .main-health-link1{ 
 border: 1px solid #dfdcdc;
+border-top-left-radius: 8px;
+border-bottom-left-radius: 8px;
 display: inline-block;
 height: auto;
 margin-bottom: 3.7px;
@@ -1753,7 +1736,7 @@ width: 6%;
 .main-health-link1 {
   border: 1px solid #dfdcdc;
   display: inline-block;
-  height: auto;
+  height: 87px;
   overflow: hidden;
   position: relative;
   width: 100%;

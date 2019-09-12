@@ -1,79 +1,83 @@
 <!--Read Health articles Desktop version starts from here-->
   <section class="container desktop-only">  
-                  <h2>Read Health Articles</h2>
-                  <p>Expand your health knowledge immediately with answers from registered doctors.</p> 
+    <h2>Read Health Articles</h2>
+    <p>Expand your health knowledge immediately with answers from registered doctors.</p> 
 
-              <div class="main-health-questions">
-                  <div class="main-health-question-1">
+    <div class="main-health-questions">
+        <div class="main-health-question-1">
 
-                      <a href="https://www.doctoroncall.com.my/soalan/gusi-bengkak" class="main-health-div-2">
-                      <div class="main-health-diagram-2">
-                          <img src="images/AdobeStock_143966522.png" alt="">
-                      </div>
-                      <p class="main-health-text-p">3 days ago<br></p> <p class="main-health-text">Apakah Penyebab Gusi Bengkak Dan Cara Merawat ?<br><br>  </p>
-                      <div class="main-dr-img">
-                          <img src="/images/DrRamzdhan.png" alt="" class="main-health-dr-img">
-                          <p class="main-health-p">Dr M Ramzdhan  <br> <generalpractiti>General Practitioner, 8 years</generalpractiti></p> 
-                      </div>
-                  </a>
+        <% var articles = [{
+            link: "https://www.doctoroncall.com.my/soalan/gusi-bengkak" , 
+            src: "images/AdobeStock_143966522.png",
+            title: "Apakah Penyebab Gusi Bengkak Dan Cara Merawat ?<br>",
+            dr_img: "/images/DrRamzdhan.png" ,
+            dr_name: "Dr M Ramzdhan" ,
+            dr_title: "General Practitioner, 8 years"
+        },
+        {
+            link: "https://www.doctoroncall.com.my/soalan/kerap-kencing" , 
+            src: "images/AdobeStock_63845531.png",
+            title: "Tanda hamil (Pregnancy Signs) bagi mengenalpasti anda mengandung.",
+            dr_img: "/images/DrSashini.png" ,
+            dr_name: "Dr Sashini Seeni" ,
+            dr_title: "General Practitioner, 8 years"
+        },
+        {
+            link: "https://www.doctoroncall.com.my/soalan/gusi-bengkak" , 
+            src: "images/AdobeStock_234927937.png",
+            title: "Apakah Punca Dan Rawatan Bagi Kerap Kencing? <br>",
+            dr_img: "/images/DrRamzdhan.png" ,
+            dr_name: "Dr M Ramzdhan" ,
+            dr_title: "General Practitioner, 8 years"
+        },
+        {
+            link: "https://www.doctoroncall.com.my/soalan/gusi-bengkak" , 
+            src: "images/AdobeStock_118246577.png",
+            title: "Bolehkah doktor terangkan apakah Penyebab Kencing Berdarah?",
+            dr_img: "/images/DrRamzdhan.png" ,
+            dr_name: "Dr M Ramzdhan" ,
+            dr_title: "General Practitioner, 8 years"
+        },
+        {
+            link: "https://www.doctoroncall.com.my/soalan/gusi-bengkak" , 
+            src: "images/AdobeStock_203387316.png",
+            title: "Adakah lelaki dan wanita mempunyai kecenderungan yang sama untuk mendapat kegatalan di bahagian kemaluan ?",
+            dr_img: "/images/DrSashini.png" ,
+            dr_name: "Dr Sashini Seeni" ,
+            dr_title: "General Practitioner, 8 years"
+        },
+        {
+            link: "https://www.doctoroncall.com.my/soalan/gusi-bengkak" , 
+            src: "images/AdobeStock_278022401.png",
+            title: "Bolehkah doktor terangkan apa bacaan gula normal (Normal Glucose Reading) dan bagaimana memeriksa parasnya?",
+            dr_img: "/images/DrSri.png" ,
+            dr_name: "Dr Sri Vik" ,
+            dr_title: "General Practitioner, 7 years"
+        }]
+        %> 
+        
+        <% var randomArticles = [] 
+        for(var i = 0; i < 6 ; i++){
+            var target = Math.floor(Math.random()*articles.length)
+            randomArticles.push(articles[target]) 
+            articles.splice(target, 1) 
+        }
+        articles = randomArticles 
+            %>
 
-                  <a href="https://www.doctoroncall.com.my/soalan/signs-of-pregnancy-tanda-hamil" class="main-health-div-2">
-                          <div class="main-health-diagram-2">
-                              <img src="images/AdobeStock_63845531.png">
-                          </div>
-                          <p class="main-health-text-p">5 days ago<br></p> <p class="main-health-text">Tanda hamil (Pregnancy Signs) bagi mengenalpasti<br> anda mengandung.</p>
-                          <div class="main-dr-img">
-                              <img src="/images/DrSashini.png" alt="" class="main-health-dr-img">
-                              <p class="main-health-p">Dr Sashini Seeni  <br> <generalpractiti>General Practitioner, 8 years</generalpractiti></p> 
-                          </div>
-                      </a>
-
-                      <a href="https://www.doctoroncall.com.my/soalan/kerap-kencing" class="main-health-div-2">
-                              <div class="main-health-diagram-2">
-                                  <img src="images/AdobeStock_234927937.png">
-                              </div>
-                              <p class="main-health-text-p">3 days ago<br></p> <p class="main-health-text">Apakah Punca Dan Rawatan Bagi Kerap Kencing?<br><br></p>
-                              <div class="main-dr-img">
-                                  <img src="/images/DrRamzdhan.png" alt="" class="main-health-dr-img">
-                                  <p class="main-health-p">Dr M Ramzdhan  <br> <generalpractiti>General Practitioner, 8 years</generalpractiti></p> 
-                              </div>
-                          </a>
-                  </div>
-                  <div class="main-health-questions-2">
-
-
-                          <a href="https://www.doctoroncall.com.my/soalan/kencing-berdarah" class="main-health-div-2">
-                                  <div class="main-health-diagram-2">
-                                      <img src="images/AdobeStock_118246577.png" alt="">
-                                  </div>
-                                  <p class="main-health-text-p">1 days ago<br></p> <p class="main-health-text">Bolehkah doktor terangkan apakah Penyebab Kencing Berdarah?<br><br></p>
-                                  <div class="main-dr-img">
-                                      <img src="/images/DrRamzdhan.png" alt="" class="main-health-dr-img">
-                                      <p class="main-health-p">Dr M Ramzdhan  <br> <generalpractiti>General Practitioner, 8 years</generalpractiti></p> 
-                                  </div>
-                              </a>
-
-                              <a href="https://www.doctoroncall.com.my/soalan/gatal-kemaluan" class="main-health-div-2">
-                                      <div class="main-health-diagram-2">
-                                          <img src="images/AdobeStock_203387316.png" alt="">
-                                      </div>
-                                      <p class="main-health-text-p">6 days ago<br></p> <p class="main-health-text">Adakah lelaki dan wanita mempunyai kecenderungan yang sama untuk mendapat kegatalan di bahagian kemaluan ?</p>
-                                      <div class="main-dr-img">
-                                          <img src="/images/DrSashini.png" class="main-health-dr-img" alt="">
-                                          <p class="main-health-p">Dr Sashini Seeni  <br> <generalpractiti>General Practitioner, 8 years</generalpractiti></p> 
-                                      </div>
-                                  </a>
-
-                                  <a href="https://www.doctoroncall.com.my/soalan/normal-glucose-reading-bacaan-gula-normal" class="main-health-div-2">
-                                          <div class="main-health-diagram-2">
-                                              <img src="images/AdobeStock_278022401.png" alt="">
-                                          </div>
-                                          <p class="main-health-text-p">4 days ago<br></p> <p class="main-health-text">Bolehkah doktor terangkan apa bacaan gula normal (Normal Glucose Reading) dan bagaimana memeriksa parasnya?</p>
-                                          <div class="main-dr-img">
-                                              <img src="/images/DrSri.png" alt="" class="main-health-dr-img">
-                                              <p class="main-health-p">Dr Sri Vik  <br> <generalpractiti>General Practitione, 7 years</generalpractiti></p> 
-                                          </div>
-                                      </a> 
-                    </div> 
-              </div>
+        <% for(var i = 0 ; i < articles.length ; i++){%>
+            <a href="<%= articles[i].link%>" class="main-health-div-2">
+            <div class="main-health-diagram-2">
+                <img src="<%= articles[i].src%>" alt="">
+            </div>
+            <p class="main-health-text-p">3 days ago<br></p> <p class="main-health-text"><%- articles[i].title%><br><br>  </p>
+            <div class="main-dr-img">
+                <img src="<%= articles[i].dr_img%>" alt="" class="main-health-dr-img">
+                <p class="main-health-p"><%= articles[i].dr_name%>  <br> <generalpractiti><%= articles[i].dr_title%></generalpractiti></p> 
+            </div>
+        </a> 
+        <%}%> 
+        
+        </div> 
+        </div>
   </section> 

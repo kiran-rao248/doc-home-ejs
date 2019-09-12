@@ -66,6 +66,15 @@ function id(e){
   gtag('config', 'UA-80312661-1');
 </script> 
 
+<script>
+    var cards = querySelector(".main-health-content1");
+for(var i = 0; i < cards.length; i++){
+    var target = Math.floor(Math.random() * cards.length -1) + 1;
+    var target2 = Math.floor(Math.random() * cards.length -1) +1;
+    cards.eq(target).before(cards.eq(target2));
+}
+</script>
+
     <script>
         var OneSignal = window.OneSignal || [];
         OneSignal.push(function() {
