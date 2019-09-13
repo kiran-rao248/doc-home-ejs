@@ -14,7 +14,8 @@
             title: "Apakah Penyebab Gusi Bengkak Dan Cara Merawat ?<br>",
             dr_img: "/images/DrRamzdhan.png" ,
             dr_name: "Dr M Ramzdhan" ,
-            dr_title: "General Practitioner, 8 years"
+            dr_title: "General Practitioner, 8 years",
+            duration: "2 days ago"
         },
         {
             link: "https://www.doctoroncall.com.my/soalan/kerap-kencing" , 
@@ -22,7 +23,8 @@
             title: "Tanda hamil (Pregnancy Signs) bagi mengenalpasti anda mengandung.",
             dr_img: "/images/DrSashini.png" ,
             dr_name: "Dr Sashini Seeni" ,
-            dr_title: "General Practitioner, 8 years"
+            dr_title: "General Practitioner, 8 years",
+            duration: "4 days ago"
         },
         {
             link: "https://www.doctoroncall.com.my/soalan/gusi-bengkak" , 
@@ -30,7 +32,8 @@
             title: "Apakah Punca Dan Rawatan Bagi Kerap Kencing? <br>",
             dr_img: "/images/DrRamzdhan.png" ,
             dr_name: "Dr M Ramzdhan" ,
-            dr_title: "General Practitioner, 8 years"
+            dr_title: "General Practitioner, 8 years",
+            duration: "1 day ago"
         },
         {
             link: "https://www.doctoroncall.com.my/soalan/gusi-bengkak" , 
@@ -38,7 +41,8 @@
             title: "Bolehkah doktor terangkan apakah Penyebab Kencing Berdarah?",
             dr_img: "/images/DrRamzdhan.png" ,
             dr_name: "Dr M Ramzdhan" ,
-            dr_title: "General Practitioner, 8 years"
+            dr_title: "General Practitioner, 8 years",
+            duration: "3 days ago"
         },
         {
             link: "https://www.doctoroncall.com.my/soalan/gusi-bengkak" , 
@@ -46,7 +50,8 @@
             title: "Adakah lelaki dan wanita mempunyai kecenderungan yang sama untuk mendapat kegatalan di bahagian kemaluan ?",
             dr_img: "/images/DrSashini.png" ,
             dr_name: "Dr Sashini Seeni" ,
-            dr_title: "General Practitioner, 8 years"
+            dr_title: "General Practitioner, 8 years",
+            duration: "2 days ago"
         },
         {
             link: "https://www.doctoroncall.com.my/soalan/gusi-bengkak" , 
@@ -54,7 +59,8 @@
             title: "Bolehkah doktor terangkan apa bacaan gula normal dan bagaimana memeriksa parasnya?",
             dr_img: "/images/DrSri.png" ,
             dr_name: "Dr Sri Vik" ,
-            dr_title: "General Practitioner, 7 years"
+            dr_title: "General Practitioner, 7 years",
+            duration: "3 days ago"
         }]
         %> 
         
@@ -72,7 +78,7 @@
             <div class="main-health-diagram-2">
                 <img src="<%= articles[i].src%>" alt="">
             </div>
-            <p class="main-health-text-p">3 days ago<br></p> <p class="main-health-text"><%- articles[i].title%><br><br>  </p>
+            <p class="main-health-text-p"><%= articles[i].duration%><br></p> <p class="main-health-text"><%- articles[i].title%><br><br>  </p>
             <div class="main-dr-img">
                 <img src="<%= articles[i].dr_img%>" alt="" class="main-health-dr-img">
                 <p class="main-health-p"><%= articles[i].dr_name%>  <br> <generalpractiti><%= articles[i].dr_title%></generalpractiti></p> 

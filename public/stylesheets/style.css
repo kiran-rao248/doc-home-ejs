@@ -25,26 +25,6 @@ html{
   overflow: auto;
 }
 
-html::-webkit-scrollbar-track
-{
-	background-color: #F5F5F500;
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
-}
-
-html::-webkit-scrollbar
-{
-	background-color: #F5F5F5F5;
-	width: 12px;
-}
-
-html::-webkit-scrollbar-thumb
-{
-	background-color: #CCC;
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -86,6 +66,61 @@ width: 31%;
 
 /*2.0 Header*/
 
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #888;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/*Horizontal scrollers*/
+.scroller::-webkit-scrollbar-track
+{
+	border-radius: 4px;
+	background-color: transparent;
+}
+
+.scroller::-webkit-scrollbar
+{
+	width: 4px;
+  height: 0px;
+	background-color: transparent;
+}
+
+.scroller::-webkit-scrollbar-thumb
+{
+	border-radius: 4px;
+	background-color: rgba(0,0,0,0.2);
+}
+.scroller{
+  overflow: auto;
+  white-space: nowrap;
+}
+@media(max-width:768px)
+{
+  .scroller{
+    width:105%;
+  }
+}
+
 /*1.2. Stars*/
   .star{
     position:relative;
@@ -96,8 +131,7 @@ width: 31%;
     fill:gold;
   }
   .star-rating{
-    color: #aaa;
-    font-size: 12px;
+    color: #aaa; 
     position: relative;
     text-align: left;
     top: -1px;
@@ -462,8 +496,7 @@ _    _ ______          _____  ______ _____
 }
 
 .main-title{
-  color: #fdfffe;
-  font-size: 36px;
+  color: #fdfffe; 
   font-weight: bold;
   height: 49px;
   margin-top: 85px;
@@ -570,7 +603,7 @@ _    _ ______          _____  ______ _____
   border-radius: 4px;
   color: #fff;
   display: inline-flex;
-  font-size: 12px;
+  font-size: 14px;
   height: 50px;
   padding: 12px;
   margin: 4px;
@@ -728,6 +761,7 @@ text-align: center;
 
 .main-doc-pharmacy-h2{
 font-size: 26px;
+margin-left: 5%;
 margin-top: 7%;
 } 
 
@@ -787,15 +821,7 @@ margin-top: 7%;
   margin-right: 19px;
   margin-left: 15px;
   vertical-align: top; 
-}
-
-.main-epharma-price-2{
-  color: #9D9D9D;
-  display: inline-block;
-  font-size: 12px;
-  margin-left: 7px;
-  text-decoration: line-through;
-}
+} 
 
 .main-medicine-image{
   height: 100px; 
@@ -895,8 +921,7 @@ margin-top: 7%;
 }
 
 .main-tabs-epharma label span {
-  display: inline-block;
-  font-size: 16px;
+  display: inline-block; 
 } 
 
 .main-epharma-tab-1{
@@ -935,7 +960,7 @@ margin-top: 7%;
 
 .main-howdocworks-heading p{
   margin-left: 5%;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .main-docworks-label{
@@ -1021,7 +1046,7 @@ width: 117%;
 }
 
 .main-health-articles-tagline{
-  font-size: 18px;
+  font-size: 14px;
   margin-left: 1%;
 }
 .main-health-div-1 {
@@ -1045,7 +1070,7 @@ width: 117%;
 .main-health-text-p{
 color: #bebebe;
 display: inline-block;
-font-size: 12px;
+font-size: 14px;
 margin-left: 10px;
 margin-right: 46%;
 text-align: left;
@@ -1188,32 +1213,30 @@ width: 8%;
 .main-health-text-dr{
 color: #bebebe;
 margin-top: -13px;
-text-align: left;
-font-size: 11px; 
+text-align: left; 
 }
 
-.main-health-drsash{ 
-  font-size: 13px;   
+.main-health-drsash{   
   font-weight: bold;
   text-align: left; 
 } 
 
 .main-health-p{ 
   color: #6E6868;
-  display: inline-block;  
-  font-size: 11px; 
+  display: block;   
   text-align: left;
   text-decoration: none;
+  width: 100%;
 }   
 
 @media (min-width: 992px){
   .main-health-p{ 
     color: #6E6868;
-    display: inline-block;  
-    font-size: 11px;
+    display: block;   
     margin-right: 28%;
     text-align: left;
     text-decoration: none;
+    width: 100%;
   }   
 }
 
@@ -1232,7 +1255,7 @@ font-size: 11px;
 
 .main-health-p-HPV-2{
   text-align: left; 
-  width: 42%;
+  width: 52%;
 }
 
 .main-health-articles-desc{
@@ -1271,15 +1294,8 @@ margin-bottom: 40px;
   position: relative;
   text-align: center;
   width: 310px;
-} 
-/* 
-.main-connect-text{ 
-margin-bottom: 17%;
-} */
-
-.main-connect-text h2{ 
-font-size: 24px; 
-}
+}  
+ 
 
 .main-connect-text p{
 font-size: 14px;
@@ -1289,6 +1305,18 @@ font-size: 14px;
   background-color: #F6F6F6; 
   margin-top: -7px;
 } 
+
+@media (min-width: 769px){
+  .main-health-div-2{
+    width: 35%;
+  }
+}
+
+@media(min-width: 991px){
+  .main-health-div-2{
+    width: 30%;
+  }
+}
 
  /*----------------------------------------------------
 10.0 Read About Diseases*/ 
@@ -1488,12 +1516,13 @@ font-size: 14px;
 }
 
 .main-doc-headings p{
-  font-size: 18px;
+  font-size: 14px;
   margin-left: 5%;
 }
 
 .main-doc-headings-2{
-  font-size: 18px; 
+  font-size: 14px; 
+  margin-left: 5%;
 }
 
 .main-find-doctor h2{ 
@@ -1631,7 +1660,7 @@ width: 120%;
 }
 
 .main-read-health-articles p{
-  font-size: 18px;
+  font-size: 14px;
   margin-left: 5%;
 }
 
@@ -1706,7 +1735,7 @@ width: 100%;
   border-radius: 24px; 
   padding: 8px 20px;
   position: absolute;
-  left: 13%;
+  left: 15%;
   text-align: center;
   top: 8%;
   transform: translate(-50%, -50%);
@@ -1716,8 +1745,7 @@ width: 100%;
 .main-health-articles-HPV-2 {
   color: #fff;
   background-color: #41C0F1;
-  border-radius: 24px;
-  font-size: 13px; 
+  border-radius: 24px; 
   padding: 8px 20px;
   position: absolute;
   left: 21%;
@@ -1748,6 +1776,10 @@ width: 100%;
 font-size: 14px; 
 }
 
+.main-health-articles-p-2{
+  margin-top: -14px;
+}
+
 .main-health-link1 > .main-health-articles-img-1{
 display: block;
 position: absolute;
@@ -1773,8 +1805,7 @@ transform: translate(-50%, -50%);
 }   
 
 .main-health-articles-desc-2 {
-color: #fff;
-font-size: 13px;
+color: #fff; 
 position: absolute;
 left: 100%;
 transform: translate(-50%, -50%);
@@ -1783,8 +1814,7 @@ width: 194%;
 }
 
 .main-health-articles-desc-3{
-color: #fff;
-font-size: 13px;
+color: #fff; 
 position: absolute;
 left: 100%;
 transform: translate(-50%, -50%);
@@ -1793,7 +1823,7 @@ width: 194%;
 }
 
 .main-health-articles-desc-3 img{
-width: 6%;
+width: 7%;
 }
 
 .main-health-articles-desc-2 img{ 
@@ -1803,8 +1833,7 @@ width: 6%;
 
 @media (min-width: 1200px){
 .main-health-articles-desc-3{
-  color: #fff;
-  font-size: 13px;
+  color: #fff; 
   position: absolute;
   left: 100%;
   transform: translate(-50%, -50%);
@@ -1933,7 +1962,7 @@ width: 99%;
 }
 
 .main-connect-text-desktop h2{
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .main-connect-text-desktop p{
@@ -2047,7 +2076,7 @@ font-size: 14px;
 
 /*16.0 Footer*/
 
-
+.cls-1{fill:#263575;}.cls-1,.cls-2,.cls-3{fill-rule:evenodd;}.cls-2,.cls-4{fill:#4099d4;}.cls-3{fill:#fff;}
 
 .footer {
   background-color: #f6f6f6;
@@ -2078,8 +2107,7 @@ font-size: 14px;
 }
 
 .first-footer h3 {
-  color: #3c3c3c;
-  font-size: 16px;
+  color: #3c3c3c; 
   font-weight: bold;
   margin: 27px 0 27px;
 }
@@ -2135,16 +2163,14 @@ font-size: 14px;
 
 .footer-sitemap-title h2 {  
   color: #3c3c3c;
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: bold; 
   text-align: center;
 }
 
 @media (max-width: 767px) {
   .footer-sitemap-title h2 {
     color: #3c3c3c;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: bold; 
     text-align: left;
   }
 }
@@ -2226,8 +2252,7 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
   }
   .searchbar-input,.searchbar-input:active {
   	border: none;
-    border-radius: 6px 0 0 6px;
-    font-size: 16px;
+    border-radius: 6px 0 0 6px; 
     height: 48px;
     vertical-align: top;
   	padding-left: 14px;
@@ -2381,13 +2406,12 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
 
     .result-title span{
       color:#777;
-      display: flex;
-      font-size: 13px;
+      display: flex; 
       font-weight: 400;
     }
 
-    .result-price {
-      float: right;
+    .result-price { 
+      display: flex;
       margin-right: 10px;
       width:80px;
     }
