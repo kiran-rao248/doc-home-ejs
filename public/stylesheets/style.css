@@ -662,6 +662,13 @@ _    _ ______          _____  ______ _____
   width: 25%;
 } 
 
+.main-partner-image-group-mobile img{
+  margin-top: 15px;
+    margin-bottom: 15px;
+  text-align: center; 
+  width: 70vw;
+}
+
 .main-partner-image-group-2 img{ 
   margin: 0 auto;
   text-align: center; 
@@ -1045,7 +1052,7 @@ width: 62%;
 color: #3C3C3C;
 display: inline-block;
 font-size: 12px; 
-height: 74px;
+height: 76px;
 margin-left: 10px;
 margin-right: 2%; 
 text-align: left; 
@@ -1200,7 +1207,6 @@ font-size: 11px;
     text-align: left;
     text-decoration: none;
   }   
-
 }
 
 .main-dr-img generalpractiti{
@@ -2294,13 +2300,18 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
   }
 
     .result-title {
-      display: inline;
+      display: table;
       margin-left: 0;
       max-width: 60%;
+    } 
+
+    .search-result a {
+      text-decoration: none;
     }
 
     .result-title span{
       color:#777;
+      display: flex;
       font-size: 13px;
       font-weight: 400;
     }
