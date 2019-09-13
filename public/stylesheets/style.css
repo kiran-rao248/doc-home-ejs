@@ -663,10 +663,10 @@ _    _ ______          _____  ______ _____
 } 
 
 .main-partner-image-group-mobile img{
-  margin-top: 15px;
-    margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center; 
-  width: 70vw;
+  width: 80vw;
 }
 
 .main-partner-image-group-2 img{ 
@@ -933,7 +933,7 @@ margin-left: 5%;
 
 .main-howdocworks-heading p{
   margin-left: 5%;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .main-docworks-label{
@@ -1017,12 +1017,13 @@ width: 117%;
 }
 
 .main-health-articles-tagline{
-  font-size: 16px;
+  font-size: 18px;
   margin-left: 1%;
 }
 .main-health-div-1 {
   border: 1px solid #EBEBEB; 
   cursor: pointer;
+  height: 320px;
   margin-left: 11px; 
   min-width: 240px;
 }
@@ -1051,8 +1052,8 @@ width: 62%;
 .main-health-text{
 color: #3C3C3C;
 display: inline-block;
-font-size: 12px; 
-height: 76px;
+font-size: 14px; 
+height: 86px;
 margin-left: 10px;
 margin-right: 2%; 
 text-align: left; 
@@ -1062,14 +1063,16 @@ width: 94%;
 
 .main-health-text-2{
   color: #3C3C3C;
-  font-size: 10px; 
+  font-size: 14px; 
+  height: 82px;
   margin-left: 10px; 
   margin-top: 18px; 
   }
 
 .main-health-text-3{
   color: #3C3C3C;
-  font-size: 10px; 
+  font-size: 14px; 
+  height: 101px;
   margin-left: 10px;
   margin-top: 16px;
   margin-bottom: -1px;
@@ -1079,7 +1082,8 @@ width: 94%;
 
 .main-health-text-4{
   color: #3C3C3C;
-  font-size: 10px; 
+  font-size: 14px; 
+  height: 87px;
   margin-left: 10px;
   margin-bottom: 14px;
   margin-top: 15px;
@@ -1285,11 +1289,12 @@ font-size: 14px;
  /*----------------------------------------------------
 10.0 Read About Diseases*/ 
  
+
 .main-read-1{
   border-style: solid ;
   border-color: #f0ebeb; 
   display: inline-block; 
-  height: 89px;
+  height: 100px;
   margin: 1%;
   text-align: center; 
   vertical-align: top;
@@ -1307,7 +1312,7 @@ font-size: 14px;
 } 
 
 .main-read-1 p{
-  font-size: 83%;
+  font-size: 14px;
 }
 
 .main-read-disease {
@@ -1412,25 +1417,62 @@ font-size: 14px;
 
 @media (min-width: 993px){
   .main-tab-header-1{ 
-    font-size: 17px;
+    font-size: 14px;
     font-weight: bold;
   }
   .main-tab-header-2{
-    font-size: 17px;
+    font-size: 14px;
     font-weight: bold;
   }
   .main-tab-header-3{
-    font-size: 17px;
+    font-size: 14px;
     font-weight: bold;
   }
   .main-tab-header-4{
-    font-size: 17px;
+    font-size: 14px;
     font-weight: bold;
   }
 }
 
+.main-tab-header-1{ 
+  font-size: 14px; 
+}
+.main-tab-header-2{
+  font-size: 14px; 
+}
+.main-tab-header-3{
+  font-size: 14px; 
+}
+.main-tab-header-4{
+  font-size: 14px; 
+}
+
 .main-upside-down-img{
   -webkit-transform: rotate(225deg);
+}
+
+@media (min-width: 355px){
+  .main-tab-header-2{
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: 378px){
+  .main-tab-header-4{
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: 407px){
+  .main-tab-header-1{
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: 438px){
+  .main-tab-header-3{
+    margin-bottom: 34px;
+  }
 }
 
 /*11.0 Find Doctors*/
@@ -1440,8 +1482,12 @@ font-size: 14px;
 }
 
 .main-doc-headings p{
-  font-size: 16px;
+  font-size: 18px;
   margin-left: 5%;
+}
+
+.main-doc-headings-2{
+  font-size: 18px; 
 }
 
 .main-find-doctor h2{ 
@@ -1578,7 +1624,7 @@ width: 120%;
 }
 
 .main-read-health-articles p{
-  font-size: 16px;
+  font-size: 18px;
   margin-left: 5%;
 }
 
@@ -1637,6 +1683,7 @@ background-repeat: no-repeat;
 background-size: cover;
 display: inline-block;
 height: 179px;
+margin-left: 2px; 
 position: relative;
 text-align: center;
 width: 50%;
@@ -1691,7 +1738,7 @@ width: 100%;
 }
 
 .main-health-articles-p{
-font-size: 12px; 
+font-size: 14px; 
 }
 
 .main-health-link1 > .main-health-articles-img-1{
@@ -1785,7 +1832,7 @@ width: 6%;
 .main-health-link1 {
   border: 1px solid #dfdcdc;
   display: inline-block;
-  height: 87px;
+  height: 94px;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -1793,7 +1840,7 @@ width: 6%;
 .main-health-articles-img-1 {
 border: none;
 float: left;
-height: auto;
+height: 92px;
 margin-right: 16px; 
 }
 }
@@ -1975,12 +2022,13 @@ font-size: 14px;
 .main-featured-diagram{
   display: inline-block;
   margin: 0 1% 3% 0; 
-} 
+}  
 
-.main-featured-diagram-1{
-  display: inline-block;
-  margin: -20px 1% 3% 0; 
-} 
+.main-featured-diagram img{
+  width: 100%;
+  height: 110px;
+  
+}
 
 @media (max-width: 1085px){
   .main-epharm-slider-3{
@@ -2287,6 +2335,8 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
     width: 80%;
   }
 
+  
+
   @media (max-width: 768px) {
     .result-title-price {
       display: block;
@@ -2299,11 +2349,23 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
     }
   }
 
+  
+
     .result-title {
       display: table;
       margin-left: 0;
       max-width: 60%;
     } 
+    @media(max-width:576px){
+      .result-title {
+        display:block; 
+        max-width:90%;       
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+        width: 100%; 
+      }
+    }
 
     .search-result a {
       text-decoration: none;
