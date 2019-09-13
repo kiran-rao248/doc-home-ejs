@@ -724,11 +724,11 @@ text-align: center;
 }
 
 /*----------------------------------------------------
-7.0 E-Pharmacy */    
+7.0 E-Pharmacy */   
 
-.main-pharmacy-section h2{ 
-  margin-left: 4%;
-  margin-top: 7%; 
+.main-doc-pharmacy-h2{
+font-size: 26px;
+margin-top: 7%;
 } 
 
 .main-pharmacy-subtitle{
@@ -928,7 +928,9 @@ text-align: center;
 8.0 How DoctorOnCall Works */  
 
 .main-howdocworks-heading h2{
-margin-left: 5%;
+  font-size: 26px;
+  margin-left: 5%;
+  margin-top: 7%;
 }
 
 .main-howdocworks-heading p{
@@ -1013,7 +1015,9 @@ width: 117%;
 9.0 Health Related Questions*/
 
 .main-read-articles-part h2{
-  margin-left: 1%;
+  font-size: 26px;
+  margin-left: 1%;  
+  margin-top: 7%;
 }
 
 .main-health-articles-tagline{
@@ -1478,7 +1482,9 @@ font-size: 14px;
 /*11.0 Find Doctors*/
 
 .main-doc-headings h2{
+  font-size: 26px;
   margin-left: 5%;
+  margin-top: 7%;
 }
 
 .main-doc-headings p{
@@ -1620,6 +1626,7 @@ width: 120%;
 /*12.0 Read Health Articles*/
 
 .main-read-health-articles h2{
+  font-size: 26px;
   margin-left: 5%;
 }
 
@@ -1683,7 +1690,7 @@ background-repeat: no-repeat;
 background-size: cover;
 display: inline-block;
 height: 179px;
-margin-left: 2px; 
+margin-left: 1px; 
 position: relative;
 text-align: center;
 width: 50%;
@@ -2001,7 +2008,7 @@ text-align: left;
 }
 
 .main-subscribe-email-text h2{
-font-size: 24px;
+font-size: 26px;
 }
 
 .main-subscribe-email-text p{
@@ -2011,6 +2018,7 @@ font-size: 14px;
 /*14.0 Featured On*/
 
 .main-featured-on h2{ 
+  font-size: 26px;
   margin-left: 8%;
   padding-top: 3%;
   }
