@@ -2366,7 +2366,7 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
     } 
     @media(max-width:576px){
       .result-title {
-        display:block; 
+        display:table-caption; 
         max-width:90%;       
         overflow: hidden; 
         text-overflow: ellipsis;
