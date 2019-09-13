@@ -603,7 +603,7 @@ _    _ ______          _____  ______ _____
   border-radius: 4px;
   color: #fff;
   display: inline-flex;
-  font-size: 14px;
+  font-size: 12px;
   height: 50px;
   padding: 12px;
   margin: 4px;
@@ -759,6 +759,18 @@ text-align: center;
 /*----------------------------------------------------
 7.0 E-Pharmacy */   
 
+.main-epharmacy-supply{
+  color: #41C0F1;
+  margin-bottom: -40px;
+  margin-top: 3px;
+}
+
+.main-epharmacy-supply-2{
+  color: #41C0F1;
+  margin-bottom: -53px;
+  margin-top: 9px;
+}
+
 .main-doc-pharmacy-h2{
 font-size: 26px;
 margin-left: 5%;
@@ -826,6 +838,12 @@ margin-top: 7%;
 .main-medicine-image{
   height: 100px; 
 } 
+
+.main-medicine-img-2{
+  width: 57%;
+  text-align: left; 
+  display: block;
+}
 
 .main-tabs-epharma:after {
   content: '';
@@ -1173,6 +1191,10 @@ white-space: nowrap;
 display: block;
 }
 
+.main-health-question-1 a {
+  text-decoration: none;
+}
+
 .main-health-questions-2{
 display: block;
 margin-top: 1%;
@@ -1227,7 +1249,7 @@ text-align: left;
   text-align: left;
   text-decoration: none;
   width: 100%;
-}   
+}    
 
 @media (min-width: 992px){
   .main-health-p{ 
@@ -2279,11 +2301,7 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
     outline:none;
     vertical-align: top;
     width: 56px;
-  }
-
-  .search-button:hover {
-  	background: #0b7dda;
-  }
+  } 
   .search-button svg{
     fill:#fff;
     width:24px;
