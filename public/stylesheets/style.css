@@ -494,7 +494,7 @@ _    _ ______          _____  ______ _____
 }
 
 .main-search-section h1{  
-  padding-top: 7%;
+  padding-top: 5%;
 }
 
 .main-title{
@@ -590,7 +590,7 @@ _    _ ______          _____  ______ _____
 
 .main-search-button-container{
   margin-top: 50px;
-  padding-bottom: 35px;
+  padding-bottom: 6%;
 }
 
 .main-docworks-text{
@@ -769,6 +769,16 @@ text-align: center;
 
 /*----------------------------------------------------
 7.0 E-Pharmacy */   
+
+.main-epharma-a a{
+  color: #000;
+  text-decoration: none;
+}
+
+.main-epharma-b a{
+  color: #fff;
+  text-decoration: none;
+}
 
 .main-epharmacy-supply{
   color: #41C0F1;
@@ -1079,7 +1089,7 @@ width: 117%;
 .main-health-div-1 {
   border: 1px solid #EBEBEB; 
   cursor: pointer;
-  height: 345px;
+  height: auto;
   margin-left: 11px; 
   min-width: 240px;
 }
@@ -1510,8 +1520,10 @@ font-size: 14px;
   font-size: 14px; 
 }
 
-.main-upside-down-img{
-  -webkit-transform: rotate(225deg);
+.main-upside-down-img{  
+  height: 31px;
+  margin-top: 7px;
+
 }
 
 @media (min-width: 355px){
@@ -2127,6 +2139,16 @@ font-size: 14px;
 
 .cls-1{fill:#263575;}.cls-1,.cls-2,.cls-3{fill-rule:evenodd;}.cls-2,.cls-4{fill:#4099d4;}.cls-3{fill:#fff;}
 
+/*
+______ ____   ____ _______ ______ _____
+|  ____/ __ \ / __ \__   __|  ____|  __ \
+| |__ | |  | | |  | | | |  | |__  | |__) |
+|  __|| |  | | |  | | | |  |  __| |  _  /
+| |   | |__| | |__| | | |  | |____| | \ \
+|_|    \____/ \____/  |_|  |______|_|  \_\
+*/
+/* 3. footer */
+
 .footer {
   background-color: #f6f6f6;
   bottom: 0;
@@ -2135,7 +2157,7 @@ font-size: 14px;
 }
 
 .footer a:hover{
-  color: #41c0f1;
+    color: #41c0f1;
 }
 
 .first-footer p {
@@ -2156,7 +2178,8 @@ font-size: 14px;
 }
 
 .first-footer h3 {
-  color: #3c3c3c; 
+  color: #3c3c3c;
+  font-size: 16px;
   font-weight: bold;
   margin: 27px 0 27px;
 }
@@ -2210,16 +2233,18 @@ font-size: 14px;
   margin-top: 80px;
 }
 
-.footer-sitemap-title h2 {  
+.footer-sitemap-title h2 {
   color: #3c3c3c;
-  font-weight: bold; 
+  font-weight: bold;
+  font-size: 16px;
   text-align: center;
 }
 
 @media (max-width: 767px) {
   .footer-sitemap-title h2 {
     color: #3c3c3c;
-    font-weight: bold; 
+    font-weight: bold;
+    font-size: 16px;
     text-align: left;
   }
 }
@@ -2280,7 +2305,8 @@ font-size: 14px;
 
 .footer-tab a:nth-child(1)~a::before {
   content: "  |  ";
-} 
+}
+
 
 /*
 _____ ______          _____   _____ _    _ ____          _____
