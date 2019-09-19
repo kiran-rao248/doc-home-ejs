@@ -1969,6 +1969,10 @@ margin-bottom: 5%;
 
 /*13.0 Connect With Doctors*/
 
+.main-epharma-b h2{
+  font-size: 26px;
+}
+
 .main-connect-1{
 display: inline-block;
 width: 50%;
@@ -2099,8 +2103,7 @@ font-size: 14px;
 /*14.0 Featured On*/
 
 .main-featured-on h2{ 
-  font-size: 26px;
-  margin-left: 13%;
+  font-size: 26px; 
   padding-top: 3%;
   }
 

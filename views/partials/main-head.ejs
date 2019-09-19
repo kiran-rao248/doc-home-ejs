@@ -20,6 +20,16 @@
     <link rel="stylesheet" href="/stylesheets/bootstrap.grid.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css"> 
 
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+            var OneSignal = window.OneSignal || [];
+            OneSignal.push(function() {
+              OneSignal.init({
+                appId: "60b66b6e-9a2d-4cf8-9714-0882af79bad3",
+              });
+            });
+    </script>
+
     <script>
     
 function id(e){
@@ -73,17 +83,8 @@ for(var i = 0; i < cards.length; i++){
     var target2 = Math.floor(Math.random() * cards.length -1) +1;
     cards.eq(target).before(cards.eq(target2));
 }
-</script>
+</script> 
 
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  var OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "60b66b6e-9a2d-4cf8-9714-0882af79bad3",
-    });
-  });
-</script>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
