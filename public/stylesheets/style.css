@@ -1119,7 +1119,7 @@ width: 62%;
 color: #3C3C3C;
 display: inline-block;
 font-size: 14px; 
-height: 86px;
+height: auto;
 margin-left: 10px;
 margin-right: 2%; 
 text-align: left; 
@@ -1130,7 +1130,7 @@ width: 94%;
 .main-health-text-2{
   color: #3C3C3C;
   font-size: 14px; 
-  height: 82px;
+  height: auto;
   margin-left: 10px; 
   margin-top: 18px; 
   }
@@ -1138,7 +1138,7 @@ width: 94%;
 .main-health-text-3{
   color: #3C3C3C;
   font-size: 14px; 
-  height: 101px;
+  height: auto;
   margin-left: 10px;
   margin-top: 16px;
   margin-bottom: -1px;
@@ -1149,7 +1149,7 @@ width: 94%;
 .main-health-text-4{
   color: #3C3C3C;
   font-size: 14px; 
-  height: 87px;
+  height: auto;
   margin-left: 10px;
   margin-bottom: 14px;
   margin-top: 15px;
@@ -1163,6 +1163,7 @@ display: inline-block;
 } 
 
 .main-health-diagram1 img{  
+  height: 20vh;
 width: 100%;
 }
 
@@ -1230,6 +1231,7 @@ margin-top: -1px;
 }  
 
 .main-health-dr-img{
+  border-radius: 25px;
 float: left;
 height: 40px;
 margin-top: 13px;
