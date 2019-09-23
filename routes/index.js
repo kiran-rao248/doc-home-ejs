@@ -11,4 +11,13 @@ router.get('/', function(req, res, next) {
    });
 });
 
+//get homepage in malay
+router.get('/bm', function(req, res, next) {  
+  res.render('index', { 
+    title: 'Express',
+    lang: lib.bm,
+    url: lib.url
+   });
+});
+
 module.exports = router;
