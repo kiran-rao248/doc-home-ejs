@@ -486,6 +486,15 @@ _    _ ______          _____  ______ _____
   text-decoration: none;
 }
 
+.main-search-button-container a{
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  padding: 14px;
+  width: max-content;
+}
+
 .main-search-section { 
   background-color: #2e5aa9;
   color: #fff;
@@ -1002,6 +1011,10 @@ margin-top: 7%;
   font-size: 14px;
 }
 
+.main-howdocworks-heading a{
+  margin-left: 5%; 
+}
+
 .main-docworks-label{
   color: #fff;
   background-color: #41C0F1;
@@ -1013,6 +1026,10 @@ margin-top: 7%;
 .main-docworks-signup{
 color:#41C0F1;
 margin-bottom: -10px;
+}
+
+.main-docworks-signup img{
+  height: 17.6vh;
 }
 
 .main-docworks-steps-desc-p-1{  
@@ -1079,7 +1096,7 @@ width: 117%;
   font-size: 26px;
   margin-left: 1%;  
   margin-top: 7%;
-}
+} 
 
 .main-health-articles-tagline{
   font-size: 14px;
@@ -1575,6 +1592,10 @@ font-size: 14px;
   margin-left: 5%;
 }
 
+.main-doc-headings a{ 
+  margin-left: 5%;
+}
+
 .main-doc-headings-2{
   font-size: 14px; 
   margin-left: 5%;
@@ -1719,27 +1740,23 @@ width: 120%;
   margin-left: 5%;
 }
 
+.main-read-health-articles a{ 
+  margin-left: 5%;
+}
+
+
 .main-health-articles-div{
 color: #41C0F1;
-margin-top: 18px;
-margin-bottom: 7px; 
+margin-top: 18px;  
 }
 
 .main-read-health-articles h2{ 
 margin-left: 5%;
 margin-top: 7%;
 }
-
-.main-health-articles-img-1{ 
-border: none;
-float: left;
-height: auto; 
-margin-right: 16px; 
-width: 86px;
-}
  
 .main-health-articles-diagram-1{ 
-background-image: url("/images/AdobeStock_86851276.png");
+background-image: url("/images/Period not regular like usual.jpeg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover; 
@@ -1751,7 +1768,7 @@ width: 100%;
 }
 
 .main-health-articles-diagram-2 {
-background-image: url("/images/Group\ 1016.png");
+background-image: url("/images/Gabapin-300.jpeg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -1768,7 +1785,7 @@ width: 100%;
 }
 
 .main-health-articles-diagram-3 {     
-background-image: url("/images/AdobeStock_239340372.png");
+background-image: url("/images/Viral Infection.jpeg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -1825,23 +1842,9 @@ position: relative;
 width: 100%;
 }
 
-.main-health-articles-p{
-font-size: 14px; 
-}
-
 .main-health-articles-p-2{
   margin-top: -14px;
-}
-
-.main-health-link1 > .main-health-articles-img-1{
-display: block;
-position: absolute;
-left: 50%;
-min-height: 100%;
-min-width: 100%;
-top: 50%;
-transform: translate(-50%, -50%);
-}
+} 
 
 .main-health-articles-dr{
 color: #fff;
@@ -1852,8 +1855,8 @@ text-align: left;
 .main-health-articles-desc{ 
 color: #fff;
 position: absolute;
-left: 29%;
-top: 83%;
+left: 19%;
+top: 87%;
 transform: translate(-50%, -50%); 
 }   
 
@@ -1876,6 +1879,7 @@ width: 194%;
 }
 
 .main-health-articles-desc-3 img{
+  border-radius: 60%;
 width: 7%;
 }
 
@@ -1883,6 +1887,26 @@ width: 7%;
 margin-bottom: 27px;
 width: 7%; 
 } 
+
+.ask-doctor-col-2-image-1{
+  background-image: url("/images/Breastfeeding.jpeg"); 
+}
+
+.ask-doctor-col-2-image-2{
+  background-image: url("/images/Cough.jpeg"); 
+}
+
+.ask-doctor-col-2-image-3{
+  background-image: url("/images/Red Bump.jpeg"); 
+}
+
+.ask-doctor-col-2-image-4{
+  background-image: url("/images/Sweating.jpeg"); 
+}
+
+.ask-doctor-col-2-image-5{
+  background-image: url("/images/AdobeStock_228985859.png"); 
+}
 
 @media(max-width:991px){
   .main-health-articles-desc-3 {
@@ -1902,7 +1926,7 @@ width: 7%;
   left: 100%;
   transform: translate(-50%, -50%);
   top: 77%;
-  width: 194%;
+  width: 189%;
   }
 }
 
@@ -1911,9 +1935,9 @@ width: 7%;
 .main-health-articles-desc{ 
   color: #fff;
   position: absolute;
-  left: 36%;
+  left: 22%;
   transform: translate(-50%, -50%); 
-  top: 85%;
+  top: 87%;
 }  
 } 
 
@@ -1922,49 +1946,25 @@ width: 7%;
   .main-health-articles-desc{ 
     color: #fff;
     position: absolute;
-    left: 27%;
+    left: 17%;
     transform: translate(-50%, -50%); 
-    top: 83%;
+    top: 87%;
     }  
-  }
-
-@media(max-width: 991px){
-.main-health-link1 {
-  border: 1px solid #dfdcdc;
-  display: inline-block;
-  height: 94px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-.main-health-articles-img-1 {
-border: none;
-float: left;
-height: 92px;
-margin-right: 16px; 
-}
-}
-
-@media(min-width: 991px){
+  } 
+ 
 .main-health-articles-img-1 {
   border: none;
   border-width: thin;
   float: left;
-  height: auto;
+  height: 105.5px;
   margin-right: 16px;
+  background-size: cover;
   width: 30.5%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-}
-
-@media(min-width: 1199px){
-.main-health-articles-img-1 {
-  border: none;
-  float: left;
-  height: auto;
-  margin-right: 16px;
-  width: 24.9%;
-}
-}
+ 
+ 
 
 @media (max-width:576px){
   .main-read-articles-slider{
@@ -2024,8 +2024,7 @@ border: none;
 border-radius: 4px;
 color: #fff;
 height: 50px;
-margin-top: 24px;
-margin-bottom: -17px;
+margin-top: 24px; 
 width: 99%;
 }
 
