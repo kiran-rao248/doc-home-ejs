@@ -5,8 +5,10 @@
             <a href="https://www.doctoroncall.com.my/soalan"><h2>Health Articles</h2></a>
             </div> 
     
-        <p>Expand your health knowledge immediately with answers from registered doctors.</p> 
-        <a href="https://www.doctoroncall.com.my/soalan">Read Health Articles Now</a>
+        <p>Expand your health knowledge immediately with answers from registered doctors.<br>
+            <a href="https://www.doctoroncall.com.my/soalan">Read Health Articles Now</a>
+        </p> 
+        
         </div>
 
     <div class="main-health-questions">
@@ -18,8 +20,10 @@
             title: "HPV vaccination program for cervical cancer prevention<br>",
             dr_img: "/images/DrSyuhada.jpg" ,
             dr_name: "Dr Nur Syuhada" ,
-            dr_title: "General Practitioner, 8 years",
-            duration: "2 days ago"
+            dr_title: "General Practitioner, 8 yrs exp",
+            duration: "2 days ago",
+            alt: "Tanya | DoctoronCall",
+            altdoc: "Dr Nur Syuhada | DoctoronCall" 
         },
         {
             link: "https://www.doctoroncall.com.my/tanya/ask/muscle-inflammation-pain/34696" , 
@@ -27,8 +31,10 @@
             title: "Myositis refers to any condition causing inflammation in muscles.",
             dr_img: "/images/DrRamzdhan.png" ,
             dr_name: "Dr Ramzdhan" ,
-            dr_title: "General Practitioner, 8 years",
-            duration: "4 days ago"
+            dr_title: "General Practitioner, 8 yrs exp",
+            duration: "4 days ago",
+            alt:"Tanya | DoctorOnCall",
+            altdoc: "Dr Ramzdhan | DoctoronCall" 
         },
         {
             link: "https://www.doctoroncall.com.my/tanya/ask/tired-during-day-time/34523" , 
@@ -36,8 +42,10 @@
             title: "Why I’m still feel sleepy even though I slept well during the night?",
             dr_img: "/images/DrSyuhada.jpg" ,
             dr_name: "Dr Ramzdhan" ,
-            dr_title: "General Practitioner, 8 years",
-            duration: "1 day ago"
+            dr_title: "General Practitioner, 8 yrs exp",
+            duration: "1 day ago",
+            alt:"Tanya | DoctorOnCall",
+            altdoc: "Dr Nur Syuhada | DoctoronCall" 
         },
         {
             link: "https://www.doctoroncall.com.my/tanya/ask/anxiety-disorder-depression-ptsd-and-bipolar/33954" , 
@@ -45,8 +53,10 @@
             title: "What is Anxiety Disorder, Depression, PTSD and Bipolar?",
             dr_img: "/images/DrRamzdhan.png" ,
             dr_name: "Dr M Ramzdhan" ,
-            dr_title: "General Practitioner, 8 years",
-            duration: "3 days ago"
+            dr_title: "General Practitioner, 8 yrs exp",
+            duration: "3 days ago",
+            alt:"Tanya | DoctorOnCall",
+            altdoc: "Dr Ramzdhan | DoctoronCall" 
         },
         {
             link: "https://www.doctoroncall.com.my/tanya/ask/burning-eyes-and-headache/34253" , 
@@ -54,8 +64,10 @@
             title: "How to avoid burning eyes sensation and headache ? <br>",
             dr_img: "/images/DrRamzdhan.png" ,
             dr_name: "Dr Ramzdhan" ,
-            dr_title: "General Practitioner, 8 years",
-            duration: "2 days ago"
+            dr_title: "General Practitioner, 8 yrs exp",
+            duration: "2 days ago",
+            alt:"Tanya | DoctorOnCall",
+            altdoc: "Dr Ramzdhan | DoctoronCall" 
         },
         {
             link: "https://www.doctoroncall.com.my/tanya/ask/skin-problem-black-scars-wounds/32964" , 
@@ -63,8 +75,10 @@
             title: "How to get rid of black scars/wounds/skin infection?",
             dr_img: "/images/DrRamzdhan.png" ,
             dr_name: "Dr Ramzdhan" ,
-            dr_title: "General Practitioner, 7 years",
-            duration: "3 days ago"
+            dr_title: "General Practitioner, 7 yrs exp",
+            duration: "3 days ago",
+            alt:"Tanya | DoctorOnCall",
+            altdoc: "Dr Ramzdhan | DoctoronCall" 
         }]
         %> 
         
@@ -80,11 +94,11 @@
         <% for(var i = 0 ; i < articles.length ; i++){%>
             <a href="<%= articles[i].link%>" class="main-health-div-2">
             <div class="main-health-diagram-2">
-                <img src="<%= articles[i].src%>" alt="">
+                <img src="<%= articles[i].src%>" alt="<%= articles[i].alt%>">
             </div>
             <p class="main-health-text-p"><%= articles[i].duration%><br></p> <p class="main-health-text"><%- articles[i].title%>  </p>
             <div class="main-dr-img">
-                <img src="<%= articles[i].dr_img%>" alt="" class="main-health-dr-img">
+                <img src="<%= articles[i].dr_img%>" alt="<%= articles[i].altdoc%>" class="main-health-dr-img">
                 <p class="main-health-p"><%= articles[i].dr_name%>  <br> <generalpractiti><%= articles[i].dr_title%></generalpractiti></p> 
             </div>
         </a> 

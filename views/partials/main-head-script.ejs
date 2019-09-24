@@ -10,8 +10,7 @@
                   // declare empty string
                   let html = "";
                   // loop through array to build html
-                  for (var i = 0; i < arr.length; i++) {
-                    console.log(arr);
+                  for (var i = 0; i < arr.length; i++) { 
                     var category="";
                     var p=arr[i].product_type;
                     if(arr[i].sku){
@@ -33,8 +32,7 @@
                   }
                   //get container id and update result
                   let result = document.getElementById("search-result");
-                  result.innerHTML = html;
-                  console.log(html)
+                  result.innerHTML = html; 
                 }
 
         //2.2. Redirect sign up
@@ -89,8 +87,7 @@
             // query database
             if (searchTerm.length > 2) {
               index.search(query, function (err, content) {
-                //update search result
-                // console.log(content.hits)
+                //update search result 
 
                   updateSearchResult(content.hits);
                 if(content.hits.length==0){
