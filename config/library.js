@@ -336,7 +336,7 @@ var library = {
     mainpage_connect_doctor_instant: "Connect With A Doctor Instantly",
     mainpage_connect_doctor_desc: "Call, chat or have a video call privately with a MMC registered doctor",
     mainpage_connect_doctor: "Connect With A Doctor",
-    mainpage_featured_on: "As Featured On",
+    mainpage_featured_on: "Featured On",
     mainpage_subscribe_health_insight: "Subscribe to our Free Health Insights",
     mainpage_subscribe_desc: "Get notified about new health articles, and any new offers and new promotions. You can unsubscribe at any time. ",
     mainpage_subscribe: "Subscribe",
@@ -538,7 +538,7 @@ var library = {
     mainpage_pharma_price_RM43_70: "RM 43.70",
     mainpage_pharma_pantene_shampoo: "Pantene Hair Fall Shampoo",
     mainpage_pharma_price_RM15_90: "RM 15.90",
-    mainpage_consult_doctor_online: "Hubungi Doktor Online", //Bercakap dengan Doktor Secara Online
+    mainpage_consult_doctor_online: "Konsultasi Doktor Secara Online", //Bercakap dengan Doktor Secara Online
     mainpage_consult_doctor_desc: "Berhubung dengan doktor yang berdaftar dengan Majlis Perubatan Malaysia dan dapatkan perkhidmatan yang anda inginkan melalui 3 langkah mudah",
     mainpage_consultdoc_step1: "1",
     mainpage_consultdoc_signup: "Daftar </a> atau Log Masuk<br> ke DoctorOnCall",
@@ -555,7 +555,7 @@ var library = {
     mainpage_bookdoc_ear_nose_throat_specialist: "Pakar Telinga Hidung & Tekak",
     mainpage_bookdoc_dermatologist: "Pakar Kulit",
     mainpage_health_article: "Artikel Kesihatan",
-    mainpage_health_article_desc: "Tambah pengetahuan anda tentang kesihatan dengan maklumat daripada doktor bertauliah dan berdaftar",
+    mainpage_health_article_desc: "Tambah info kesihatan anda secara pantas dengan jawapan daripada doktor berdaftar",
     mainpage_category_general_health: "Kesihatan Am",
     mainpage_category_mens_health: "Kesihatan Lelaki",
     mainpage_category_womens_health: "Kesihatan Wanita",
@@ -564,7 +564,7 @@ var library = {
     mainpage_category_sore_throat: "Sakit Tekak",
     mainpage_category_migraine: "Migrain",
     mainpage_category_minor_injury: "Kecederaan kecil",
-    mainpage_category_fatty_liver: "Masalah organ hati",
+    mainpage_category_fatty_liver: "Penyakit Hati",
     mainpage_category_cough_cold: "Batuk Selsema",
     mainpage_category_dengue: "Denggi",
     mainpage_category_constipation: "Sembelit",
@@ -583,7 +583,7 @@ var library = {
     mainpage_category_herpes: "Herpes",
     mainpage_category_gonorrhea: "Gonorea",
     mainpage_ask_doctor: "Tanya Doktor",
-    mainpage_ask_doctor_desc: "Tanya soalan tentang kesihatan secara sulit dan dapatkan jawapan daripada doktor bertauliah dengan segera",
+    mainpage_ask_doctor_desc: "Tanya soalan tentang kesihatan secara sulit dan dapatkan jawapan daripada doktor berdaftar dengan segera",
     mainpage_askdoc_kencing_manis: "Kencing Manis",
     mainpage_askdoc_kencing_manis_question: "Sometimes I feel my tummy keeps on contracting once in a while but I can still feel the baby’s movement. Should I visit my doctor?",
     mainpage_askdoc_dr_sashini: "Dr Sashini",
@@ -604,10 +604,10 @@ var library = {
     mainpage_askdoc_penyakit_kelamin_question: "Penyebab, Gejala, Diagnosis Dan Ubat Sesuai Untuk Penyakit Kelamin",
     mainpage_next_page: "Halaman Seterusnya",
     mainpage_connect_doctor_instant: "Hubungi doktor dengan segera", //Berhubung dengan doktor dalam masa yang singkat
-    mainpage_connect_doctor_desc: "Berhubung dengan doktor berdaftar MPM melalui audio, chat atau video",
-    mainpage_connect_doctor: "Berhubung dengan doktor", //Berhubung dengan seorang doktor
-    mainpage_featured_on: "Seperti yang tertera",
-    mainpage_subscribe_health_insight: "Langgani maklumat kesihatan secara percuma",
+    mainpage_connect_doctor_desc: "Buat panggilan telefon, video atau chat dengan doktor yang berdaftar di bawah MPM", //Berhubung dengan doktor berdaftar MPM melalui audio, chat atau video
+    mainpage_connect_doctor: "Hubungi doktor", //Berhubung dengan seorang doktor
+    mainpage_featured_on: "Seperti yang terpapar di",
+    mainpage_subscribe_health_insight: "Langgan info kesihatan secara percuma",
     mainpage_subscribe_desc: "Dapatkan pemberitahun tentang artikel, tawaran dan promosi terbaru kami. Anda boleh berhenti melanggan pada bila-bila masa. ",
     mainpage_subscribe: "Langgan",
   }

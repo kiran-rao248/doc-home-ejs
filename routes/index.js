@@ -20,4 +20,16 @@ router.get('/bm', function(req, res, next) {
    });
 });
 
+// USE THIS AFTER HAVE BUTTON BM/EN
+// router.get('/', function(req, res, next) {
+//   var lang = "en"  
+//   if (req.query.lang == "bm") {
+//     lang = "bm"}
+//      res.render('index', { 
+//     title: 'Express',
+//     lang: lib[lang],
+//     url: lib.url
+//    });
+// });
+
 module.exports = router;
