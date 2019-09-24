@@ -501,7 +501,9 @@ _    _ ______          _____  ______ _____
 }
 
 .main-search-section { 
-  background-color: #2e5aa9;
+  background-image: url("/images/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
   margin-top: -18px;
   text-align: center;
@@ -2582,3 +2584,10 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
       fill:#000;
     }
   }
+
+ @media(max-width: 576px){
+   .test{
+     display: flex;
+     overflow: auto;
+   }
+ }
