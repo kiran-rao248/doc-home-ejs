@@ -1275,6 +1275,12 @@ margin-top: 4%;
 margin-right: 10px;
 }
 
+.main-health-dr-img-2-bm{
+  float: left;
+  height: 40px;  
+  margin-right: 10px;
+  }
+
 .main-health-dr-img-3{
 float: left;
 height: 40px; 
@@ -1333,6 +1339,9 @@ text-align: left;
 .main-health-articles-desc{
 margin-top: 18px;
 }
+.main-health-articles-desc-bm{
+  margin-top: 18px;
+  }
 
 .main-health-articles-desc-2{
 margin-top: 18px;
@@ -1758,6 +1767,18 @@ text-align: center;
 width: 100%;
 }
 
+.main-health-articles-diagram-1-bm{ 
+  background-image: url("/images/AdobeStock_86851276.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  display: inline-block;
+  height: 390px;
+  position: relative;
+  text-align: center; 
+  width: 100%;
+  }
+
 .main-health-articles-diagram-2 {
 background-image: url("/images/Gabapin-300.jpeg");
 background-position: center;
@@ -1769,6 +1790,18 @@ position: relative;
 text-align: center;
 width: 49%;
 }
+
+.main-health-articles-diagram-2-bm {
+  background-image: url("/images/Group 1016.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  height: 179px;
+  position: relative;
+  text-align: center;
+  width: 49%;
+  }
 
 .main-health-articles-diagram-2 img{
 margin-top: 0px; 
@@ -1851,6 +1884,14 @@ top: 87%;
 transform: translate(-50%, -50%); 
 }   
 
+.main-health-articles-desc-bm{ 
+  color: #fff;
+  position: absolute;
+  left: 31%;
+  top: 87%;
+  transform: translate(-50%, -50%); 
+  }   
+
 .main-health-articles-desc-2 {
 color: #fff; 
 position: absolute;
@@ -1899,6 +1940,27 @@ width: 7%;
   background-image: url("/images/AdobeStock_228985859.png"); 
 }
 
+.ask-doctor-col-2-image-1-bm{
+  background-image: url("/images/AdobeStock_201847138.png"); 
+}
+
+.ask-doctor-col-2-image-2-bm{
+  background-image: url("/images/Cough.jpeg"); 
+}
+
+.ask-doctor-col-2-image-3-bm{
+  background-image: url("/images/AdobeStock_273298980.png"); 
+}
+
+.ask-doctor-col-2-image-4-bm{
+  background-image: url("/images/AdobeStock_237217548.png"); 
+}
+
+.ask-doctor-col-2-image-5-bm{
+  background-image: url("/images/AdobeStock_228985859.png"); 
+}
+
+
 @media(max-width:991px){
   .main-health-articles-desc-3 {
     color: #fff;
@@ -1931,6 +1993,16 @@ width: 7%;
   top: 87%;
 }  
 } 
+@media(max-width: 1200px){
+  
+.main-health-articles-desc-bm{ 
+  color: #fff;
+  position: absolute;
+  left: 36%;
+  transform: translate(-50%, -50%); 
+  top: 87%;
+}  
+} 
 
 @media(max-width: 991px){
   
@@ -1942,6 +2014,17 @@ width: 7%;
     top: 87%;
     }  
   } 
+
+  @media(max-width: 991px){
+  
+    .main-health-articles-desc-bm{ 
+      color: #fff;
+      position: absolute;
+      left: 28%;
+      transform: translate(-50%, -50%); 
+      top: 87%;
+      }  
+    } 
  
 .main-health-articles-img-1 {
   border: none;
@@ -2587,7 +2670,7 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
 
  @media(max-width: 576px){
    .test{
-     display: flex;
+     display: flex; 
      overflow: auto;
    }
- }
+ } 
