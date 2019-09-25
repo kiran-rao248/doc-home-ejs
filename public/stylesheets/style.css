@@ -1528,25 +1528,6 @@ font-size: 14px;
   display: block;
 }  
 
-@media (min-width: 993px){
-  .main-tab-header-1{ 
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .main-tab-header-2{
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .main-tab-header-3{
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .main-tab-header-4{
-    font-size: 14px;
-    font-weight: bold;
-  }
-}
-
 .main-tab-header-1{ 
   font-size: 14px; 
 }
@@ -1566,29 +1547,9 @@ font-size: 14px;
 
 }
 
-@media (min-width: 355px){
-  .main-tab-header-2{
-    margin-bottom: 34px;
-  }
-}
-
-@media (min-width: 378px){
-  .main-tab-header-4{
-    margin-bottom: 34px;
-  }
-}
-
-@media (min-width: 407px){
-  .main-tab-header-1{
-    margin-bottom: 34px;
-  }
-}
-
-@media (min-width: 438px){
-  .main-tab-header-3{
-    margin-bottom: 34px;
-  }
-}
+.main-tab-header-1 , .main-tab-header-2 , .main-tab-header-3 , .main-tab-header-4{ 
+  white-space: nowrap;
+} 
 
 /*11.0 Find Doctors*/
 
@@ -2668,9 +2629,18 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
     }
   }
 
- @media(max-width: 576px){
-   .test{
-     display: flex; 
-     overflow: auto;
-   }
- } 
+  @media (max-width: 576px){
+    .main-health-related-tabs label {
+      border-bottom: 2px solid #EBEBEB;
+      cursor: pointer;
+      color: #3C3C3C;
+      display: block;
+      float: left;
+      font-size: 70%;
+      font-weight: normal;
+      transition: all 0.5s;
+      text-decoration: none;
+      text-align: center;
+      -webkit-transition: all 0.5s;
+      width: 43%;
+  }
