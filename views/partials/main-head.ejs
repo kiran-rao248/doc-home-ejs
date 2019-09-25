@@ -7,9 +7,9 @@
     <meta name="author" content="">
     <meta property="og:url" content="https://www.doctoroncall.com.my/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="DoctorOnCall.com.my | Malaysia's Online Medical Clinic & Pharmacy">
-    <meta property="og:image" content="img/doctorOnCall-icon.png">
-    <meta property="og:description" content="Talk to a Doctor on DoctorOnCall.com.my through Chat, Voice & Video Call at anytime from anywhere. Have prescribed medication delivered to your doorstep">
+    <meta property="og:title" content="<%- lang.seo_main_title%>">
+    <meta property="og:image" content="images/og image doc.png">
+    <meta property="og:description" content="<%- lang.seo_meta_desc %>">
     <meta property="og:locale" content="en_US">
     <meta name="url" content="https://www.doctoroncall.com.my/">
 
@@ -85,35 +85,45 @@ function id(e){
         google_ad_client: "ca-pub-6583636900389775",
         enable_page_level_ads: true
         });
-    </script>
+    </script> 
 
-    <script>
-    var lifetime = 6;
+<script>
+  // show popup function
+  function showPopup() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById("popup").style.transition = "opacity 1s";
+    document.getElementById("popup").style.opacity = "1";
+  }
+  // close popup function
+  function closePopup() {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("popup").style.display = "none";
+  }
+  //delay popup in 15 seconds
+  // window.addEventListener("DOMContentLoaded", event => {
+  //   setTimeout(function () {
+  //     showPopup();
+  //   }, 15000);
+  // });
+  // display popup every 1 hour
   var now = new Date().getTime();
   var setupTime = localStorage.getItem('setupTime');
-
-  if(localStorage.getItem('seenPopUp') == null){
+  if (localStorage.getItem('seenPopUp') == null) {
     localStorage.setItem('seenPopUp', '0');
   }
-
-  if(localStorage.getItem('seenPopUp') == '0'){
+  if (localStorage.getItem('seenPopUp') == '0') {
     localStorage.setItem('seenPopUp', '1');
-    setTimeout(function(){
-      $('#bannerModal').modal();
+    setTimeout(function () {
+      showPopup();
     }, 15000);
   }
-
   if (setupTime == null) {
     localStorage.setItem('setupTime', now)
   } else {
-    if(now-setupTime > lifetime*60*60*1000) {
+    if (now - setupTime > 60 * 60 * 1000) {
       localStorage.clear()
       localStorage.setItem('setupTime', now);
     }
   }
-
-
-  $('#displayRemover').click(function(){
-    $('#bannerModal').modal('toggle');
-  })
-    </script>
+</script>
