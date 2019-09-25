@@ -212,8 +212,9 @@ var library = {
     product_consult_doctor: "Consult Doctor",
     product_related_health_article: "Related Health Articles",
     seo_product_title:"- Uses, Dosage, Side Effects,Price, Benefits - DoctorOnCall",
-    seo_main_title:"DoctorOnCall | Malaysia's Doctors & Pharmacy In One Place Online",
-    seo_meta_desc:"DoctorOnCall is the easiest way to buy prescribed medication online. Talk to a doctor through your phone & have your medicine delivered to your doorstep.",
+    seo_main_title:"Malaysia's Online Pharmacy | Order Medicine, Consult Doctor Online",
+    seo_meta_desc:"Buy prescription & OTC medicines online on DoctorOnCall's pharmacy. Book appointment with doctors & hospitals, ask free health questions,consult specialist online. Get 20% off & free delivery on purchase of medicines",
+    seo_meta_keyword: "Farmasi online, beli ubat preskripsi dan OTC, tanya doktor online, temujanji pakar & doktor, tanya doktor soalan percuma",
     site_doctoroncall: "DoctorOnCall",
     mainpage_search_doc: "Search DoctorOnCall",
     mainpage_search_medicine: "Search Medicine",
@@ -482,8 +483,9 @@ var library = {
     product_consult_doctor: "Bercakap dengan Doktor",
     product_related_health_article: "Artikel Kesihatan Berkaitan",
     seo_product_title:"- Kegunaan, Dosage, Side Effects,Price, Benefits - DoctorOnCall", //TODO
-    seo_main_title:"DoctorOnCall | Malaysia's Doctors & Pharmacy In One Place Online", //TODO
-    seo_meta_desc:"DoctorOnCall is the easiest way to buy prescribed medication online. Talk to a doctor through your phone & have your medicine delivered to your doorstep.", //TODO
+    seo_main_title:"Farmasi Online Malaysia | Beli Ubat, Tanya Doktor Online", 
+    seo_meta_desc:"Beli ubat preskripsi & OTC dari farmasi online DoctorOnCall. Buat temujanji dengan doktor & hospital, tanya doktor soalan secara percuma,Dapat 20% diskaunt & penghantaran ubat percuma ",
+    seo_meta_keyword: "Farmasi online, beli ubat preskripsi dan OTC, tanya doktor online, temujanji pakar & doktor, tanya doktor soalan percuma",
     site_doctoroncall: "DoctorOnCall",
     mainpage_search_doc: "Carian DoctorOnCall",
     mainpage_search_medicine: "Carian Ubat",
