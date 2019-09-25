@@ -1,9 +1,9 @@
-    <title>DoctorOnCall.com.my | Malaysia's Online Medical Clinic & Pharmacy</title>
+    <title><%- lang.seo_main_title%></title>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Telemedicine, Video Calls, Phone Calls, Online Pharmacy, Doctors, Online Medication">
-    <meta name="description" content="Talk to a Doctor on DoctorOnCall.com.my through Chat, Voice & Video Call at anytime from anywhere. Have prescribed medication delivered to your doorstep.">
+    <meta name="keywords" content="<%- lang.seo_meta_keyword%>">
+    <meta name="description" content="<%- lang.seo_meta_desc %>">
     <meta name="author" content="">
     <meta property="og:url" content="https://www.doctoroncall.com.my/">
     <meta property="og:type" content="website">
@@ -85,4 +85,35 @@ function id(e){
         google_ad_client: "ca-pub-6583636900389775",
         enable_page_level_ads: true
         });
+    </script>
+
+    <script>
+    var lifetime = 6;
+  var now = new Date().getTime();
+  var setupTime = localStorage.getItem('setupTime');
+
+  if(localStorage.getItem('seenPopUp') == null){
+    localStorage.setItem('seenPopUp', '0');
+  }
+
+  if(localStorage.getItem('seenPopUp') == '0'){
+    localStorage.setItem('seenPopUp', '1');
+    setTimeout(function(){
+      $('#bannerModal').modal();
+    }, 15000);
+  }
+
+  if (setupTime == null) {
+    localStorage.setItem('setupTime', now)
+  } else {
+    if(now-setupTime > lifetime*60*60*1000) {
+      localStorage.clear()
+      localStorage.setItem('setupTime', now);
+    }
+  }
+
+
+  $('#displayRemover').click(function(){
+    $('#bannerModal').modal('toggle');
+  })
     </script>

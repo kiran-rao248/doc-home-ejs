@@ -59,7 +59,16 @@
     </div>
 
     <!--Desktop only design-->
-    <!-- <div class="header-menu-div"><a class="header-link" href="#"><%= lang.header_bm_eng %></a></div> -->
+    <div class="header-menu-div">
+
+      <%if(language == "en"){%>
+        <a class="header-link" href="/?lang=bm"><%= lang.header_bm %></a>
+      <%}else if(language == "bm"){%>
+        <a class="header-link" href="/"><%= lang.header_en %></a>
+      <%}%>
+      
+      
+  </div>
     <div class="header-menu-div-signup">
       <a class="button-login-signup desktop-only" onclick="redirectSignUp()" href="#"><%= lang.header_button_signuplogin %></a>
     </div>

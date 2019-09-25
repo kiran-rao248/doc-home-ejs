@@ -11,6 +11,8 @@
         
         </div>
 
+        <%if(language == "en"){%>
+
     <div class="main-health-questions">
         <div class="main-health-question-1">
 
@@ -101,14 +103,14 @@
                 <img src="<%= articles[i].dr_img%>" alt="<%= articles[i].altdoc%>" class="main-health-dr-img">
                 <p class="main-health-p"><%= articles[i].dr_name%>  <br> <generalpractiti><%= articles[i].dr_title%></generalpractiti></p> 
             </div>
-        </a> 
-        <%}%> 
+        </a>  
+        <%}%>
         
         </div> 
-        </div>
-
+        </div> 
+        <%}else if(language == "bm"){%> 
 <!--BM section-->
-<%if(language == "bm"){%>
+
 <div class="main-health-questions">
     <div class="main-health-question-1">
 
@@ -200,10 +202,10 @@
             <p class="main-health-p"><%= articles[i].dr_name%>  <br> <generalpractiti><%= articles[i].dr_title%></generalpractiti></p> 
         </div>
     </a> 
-    <%}%> 
+    <%}%>
     
     </div> 
     </div>
 
-    <%}%>
+    <%}%> 
   </section> 
