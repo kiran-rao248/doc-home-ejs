@@ -1114,6 +1114,14 @@ width: 115%;
   min-width: 247px;
 }
 
+.main-health-div-1:first-child{ 
+  border: 1px solid #EBEBEB; 
+  cursor: pointer;
+  height: auto;
+  margin-left: 16px; 
+  min-width: 247px;
+}
+
 .main-health-div-2{
   border: 1px solid #EBEBEB;
   border-style: solid; 
