@@ -17,7 +17,7 @@
                     var sku=arr[i].sku;
                     if(p!="corporate"&&sku.toLowerCase()!="nexus"){
 
-                    html += '<a class="result-detail noselect" onclick="saveSearch()" href="'+'/'+arr[i].handle+'">';
+                    html += '<a class="result-detail noselect" onclick="saveSearch()" href="/medicine'+'/'+arr[i].handle+'">';
                     let img="/images/default-meds.svg"; if(arr[i].image){img=arr[i].image}
                     html += '<div class="result-image"><div style="background-image:url('+img+')"></div></div>';
                     html += '<div class="result-title-price">';
