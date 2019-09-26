@@ -35,10 +35,7 @@
                   result.innerHTML = html; 
                 }
 
-        //2.2. Redirect sign up
-        function redirectSignUp(){
-          window.location.href= window.location.origin+"/patient#/signin?callback="+window.location.origin+subdir+'/account';
-        }
+ 
 
         //initialize search engine
         var client,index;
@@ -275,17 +272,6 @@
                 //Click the thing
                 document.getElementById(id).click()
               },500)
-            }
-          }
-
-          //5. Functions for managing login
-
-          function checkLogin(){
-            var user=JSON.parse(window.localStorage.getItem("userDetails"))
-            if(user){
-              var userBtn=id("button-login-signup")
-              userBtn.style.display="none";
-              id("header-user-link").style.display="inline-block"
             }
           }
 

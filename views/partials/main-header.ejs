@@ -14,6 +14,7 @@
     <!--Mobile only login design-->
     <div class="icon-userlogin mobile-only">
       <!--<img src="/images/default-user.svg"> Container for user image-->
+      <a id="header-login-account-mobile" href="<%= url.subdir %>/account">
       <svg viewBox="0 0 172 172">
         <path d="M0,172v-172h172v172z" fill="none"></path>
         <path
@@ -29,8 +30,8 @@
           d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56v0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z"
           fill="none"></path>
       </svg>
-
-      <a href="<%= url.signup_login %>"> Sign Up / Login <%= lang.signuplogin %></a>
+<%= lang.header_button_account %></a>
+      <a id="header-login-signup-mobile"  onclick="redirectSignUp()" href="<%= url.signup_login %>"> Sign Up / Login <%= lang.signuplogin %></a>
     </div>
 
     <div class="header-menu-div"> <a class="header-link" href="<%= url.medicine%>"><%= lang.header_order_medicine %></a>
@@ -57,26 +58,32 @@
         <a href="<%= url.email %>"><%= lang.header_contact_us %></a>
       </div>
     </div>
-
-    <!--Desktop only design-->
-    <div class="header-menu-div">
-
+ 
+    <!--Language button-->
+    <div class="header-menu-div"> 
       <%if(language == "en"){%>
         <a class="header-link" href="/?lang=bm"><%= lang.header_bm %></a>
       <%}else if(language == "bm"){%>
         <a class="header-link" href="/"><%= lang.header_en %></a>
-      <%}%>
-      
-      
+      <%}%>  
   </div>
+
+  <a class="header-user-link" href="<%= url.subdir %>/account">
+      <svg id="header-login-account" viewBox="0 0 20 20">
+      	<path d="M10.1,0.1c-5.5,0-10,4.5-10,10c0,5.5,4.5,10,10,10c5.5,0,10-4.5,10-10C20.1,4.6,15.6,0.1,10.1,0.1z    M10.1,2.2c2.2,0,3.9,1.8,3.9,3.9c0,2.2-1.8,3.9-3.9,3.9S6.2,8.3,6.2,6.1C6.2,3.9,7.9,2.2,10.1,2.2z M10.1,19.6   c-2.8,0-5.3-1.2-7-3.1c0-2.9,2.4-5.1,7-5.1s7,2.1,7,5.1C15.4,18.3,12.9,19.6,10.1,19.6z"/>
+      </svg>
+    </a>
+
     <div class="header-menu-div-signup">
-      <a class="button-login-signup desktop-only" onclick="redirectSignUp()" href="#"><%= lang.header_button_signuplogin %></a>
+      <a id="header-login-signup" class="button-login-signup desktop-only" onclick="redirectSignUp()" href="#"><%= lang.header_button_signuplogin %></a>
     </div>
+
+  </div>
+ 
+
 
   </div>
   <!-- end of ul for content in header -->
 </header>
 <!-- end of header container -->
 <!-- end of header -->
-
-

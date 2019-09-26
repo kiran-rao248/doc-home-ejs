@@ -43,9 +43,7 @@ function id(e){
                 t+='<a class="result-detail noselect" onclick="saveSearch()" href="'+subdir+trans_link_mod+"/"+e[s].handle+'">';let a=subdir+"/images/default-meds.svg";
                     e[s].image&&(a=e[s].image),t+='<div class="result-image"><div style="background-image:url('+a+')"></div></div>'
                     ,t+='<div class="result-title-price">',t+='<div class="result-title">'+e[s].title+"<br><span>"+e[s].variant_title+"</span></div>",t+='<div class="result-price"> RM '+e[s].price.toFixed(2)+"</div>",t+="</div>",t+='<div class="result-buy-icon">',t+='<svg viewBox="0 0 172 172"><path d="M120.4,37.84v6.88h27.1975l0.3225,3.01l5.93658,51.94507c-2.3183,-1.00149 -4.7448,-1.79604 -7.2559,-2.36003l-5.23818,-45.71504h-20.9625v7.8475c2.05594,1.19594 3.44,3.37281 3.44,5.9125c0,3.80281 -3.07719,6.88 -6.88,6.88c-3.80281,0 -6.88,-3.07719 -6.88,-6.88c0,-2.53969 1.38406,-4.71656 3.44,-5.9125v-7.8475h-55.04v7.8475c2.05594,1.19594 3.44,3.37281 3.44,5.9125c0,3.80281 -3.07719,6.88 -6.88,6.88c-3.80281,0 -6.88,-3.07719 -6.88,-6.88c0,-2.53969 1.38406,-4.71656 3.44,-5.9125v-7.8475h-20.9625l-13.0075,113.52h89.26764c2.34666,2.61386 5.02006,4.92921 7.95417,6.88h-104.96181l0.43,-3.87l13.76,-120.4l0.3225,-3.01h27.1975v-6.88c0,-19.04094 15.35906,-34.4 34.4,-34.4c19.04094,0 34.4,15.35906 34.4,34.4zM162.11,172h-1.76181c0.55434,-0.36856 1.09938,-0.75014 1.63466,-1.14429zM58.48,37.84v6.88h55.04v-6.88c0,-15.35906 -12.16094,-27.52 -27.52,-27.52c-15.35906,0 -27.52,12.16094 -27.52,27.52z"/><path d="M157.896,137.6c0,2.064 -1.376,3.44 -3.44,3.44h-13.416v13.416c0,2.064 -1.376,3.44 -3.44,3.44c-2.064,0 -3.44,-1.376 -3.44,-3.44v-13.416h-13.416c-2.064,0 -3.44,-1.376 -3.44,-3.44c0,-2.064 1.376,-3.44 3.44,-3.44h13.416v-13.416c0,-2.064 1.376,-3.44 3.44,-3.44c2.064,0 3.44,1.376 3.44,3.44v13.416h13.416c2.064,0 3.44,1.376 3.44,3.44zM172,137.6c0,18.92 -15.48,34.4 -34.4,34.4c-18.92,0 -34.4,-15.48 -34.4,-34.4c0,-18.92 15.48,-34.4 34.4,-34.4c18.92,0 34.4,15.48 34.4,34.4zM165.12,137.6c0,-15.136 -12.384,-27.52 -27.52,-27.52c-15.136,0 -27.52,12.384 -27.52,27.52c0,15.136 12.384,27.52 27.52,27.52c15.136,0 27.52,-12.384 27.52,-27.52z"/></svg></div>',t+="</a>"}}}id("search-result").innerHTML=t}
-                    function redirectSignUp(){
-                        window.location.href=window.location.origin+"/patient#/signin?callback="
-                        +window.location.origin+subdir+"/account"}
+
                     var client,index,_0x48b3=["c2hvcGlmeV9wcm9kcHJvZHVjdHM=","MTBWQ05JR0Q0Wg==","MzA4Y2I1MjZhZjBmYzZlODRkYmI1MTUzNGUzYmUyODA=","aW5pdEluZGV4"];!function(e,t){!function(t){for(;--t;)e.push(e.shift())}(++t)}(_0x48b3,101);var _0x651d=function(e,t){var s,a=_0x48b3[e-=0];void 0===_0x651d.fdtPWR&&((s=function(){var e;try{e=Function('return (function() {}.constructor("return this")( ));')()}catch(t){e=window}return e}()).atob||(s.atob=function(e){for(var t,s,a=String(e).replace(/=+$/,""),c=0,i=0,r="";s=a.charAt(i++);~s&&(t=c%4?64*t+s:s,c++%4)?r+=String.fromCharCode(255&t>>(-2*c&6)):0)s="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".indexOf(s);return r}),_0x651d.xqumcX=function(e){for(var t=atob(e),s=[],a=0,c=t.length;a<c;a++)s+="%"+("00"+t.charCodeAt(a).toString(16)).slice(-2);return decodeURIComponent(s)},_0x651d.pyFhCo={},_0x651d.fdtPWR=!0);var c=_0x651d.pyFhCo[e];return void 0===c?(a=_0x651d.xqumcX(a),_0x651d.pyFhCo[e]=a):a=c,a};
                     function initSearch(){
                         client=algoliasearch(_0x651d("0x0"),_0x651d("0x1")),index=client[_0x651d("0x2")](_0x651d("0x3"))}
@@ -67,7 +65,7 @@ function id(e){
                                                     id("searchbarCol").classList.remove("searchbar-mobile"),id("search-back-btn").classList.remove("searchShow"),id("searchbar-form").classList.remove("searchbar-form-mobile"),id("searchInput").classList.remove("searchbar-input-mobile"),id("searchBtn").classList.remove("searchbar-btn-mobile"),searchClear(),id("search-suggest").classList.remove("searchSuggestShow"),id("search-suggest").classList.remove("searchSuggestShowMobile")}function hideSuggest(){setTimeout(function(){id("search-suggest").classList.remove("searchSuggestShow")},100)}function setCookie(e,t,s){var a=new Date;a.setTime(a.getTime()+24*s*60*60*1e3);var c="expires="+a.toUTCString();document.cookie=e+"="+t+";"+c+";path=/"}
                                                     
                                                     function getCookie(e){
-                                                        for(var t=e+"=",s=document.cookie.split(";"),a=0;a<s.length;a++){for(var c=s[a];" "==c.charAt(0);)c=c.substring(1);if(0==c.indexOf(t))return c.substring(t.length,c.length)}return""}function removeCookie(e){return document.cookie=e+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"}function getURLParam(e){for(var t=null,s=[],a=location.search.substr(1).split("&"),c=0;c<a.length;c++)(s=a[c].split("="))[0]===e&&(t=decodeURIComponent(s[1]));return t}function handleAmpRedirect(){var e=getURLParam("action");window.location.href;e&&setTimeout(function(){var t;"search"==e?t="searchInput":"add"==e?t="product-add":"checkout"==e?t="product-checkout":"signup"==e&&(t="button-login-signup"),history.replaceState({},"redirect",location.protocol+"//"+location.host+location.pathname),document.getElementById(t).click()},500)}function checkLogin(){JSON.parse(window.localStorage.getItem("userDetails"))&&(id("button-login-signup").style.display="none",id("header-user-link").style.display="inline-block")}document.addEventListener("DOMContentLoaded",function(){try{getCartQuantity()}catch(e){}try{handleAmpRedirect()}catch(e){}try{checkLogin()}catch(e){}});
+                                                        for(var t=e+"=",s=document.cookie.split(";"),a=0;a<s.length;a++){for(var c=s[a];" "==c.charAt(0);)c=c.substring(1);if(0==c.indexOf(t))return c.substring(t.length,c.length)}return""}function removeCookie(e){return document.cookie=e+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"}function getURLParam(e){for(var t=null,s=[],a=location.search.substr(1).split("&"),c=0;c<a.length;c++)(s=a[c].split("="))[0]===e&&(t=decodeURIComponent(s[1]));return t}function handleAmpRedirect(){var e=getURLParam("action");window.location.href;e&&setTimeout(function(){var t;"search"==e?t="searchInput":"add"==e?t="product-add":"checkout"==e?t="product-checkout":"signup"==e&&(t="button-login-signup"),history.replaceState({},"redirect",location.protocol+"//"+location.host+location.pathname),document.getElementById(t).click()},500)}document.addEventListener("DOMContentLoaded",function(){try{getCartQuantity()}catch(e){}try{handleAmpRedirect()}catch(e){}});
    
     </script>
 
@@ -89,7 +87,7 @@ function id(e){
 
 <script>
   // show popup function
-  function showPopup() {
+  function showPopup() { 
     document.getElementById("popup").style.display = "block";
     document.getElementById("overlay").style.display = "block";
     document.getElementById("popup").style.transition = "opacity 1s";
@@ -99,14 +97,7 @@ function id(e){
   function closePopup() {
     document.getElementById("overlay").style.display = "none";
     document.getElementById("popup").style.display = "none";
-  }
-  //delay popup in 15 seconds
-  // window.addEventListener("DOMContentLoaded", event => {
-  //   setTimeout(function () {
-  //     showPopup();
-  //   }, 15000);
-  // });
-  // display popup every 1 hour
+  } 
   var now = new Date().getTime();
   var setupTime = localStorage.getItem('setupTime');
   if (localStorage.getItem('seenPopUp') == null) {
@@ -127,3 +118,32 @@ function id(e){
     }
   }
 </script>
+
+<script> 
+
+  //Redirect sign up
+  function redirectSignUp(){
+    window.location.href= window.location.origin+"/patient#/signin?callback="+window.location.href;
+  }
+
+function checkLogin(){  
+    var user=JSON.parse(window.localStorage.getItem("userDetails"))
+    
+    if(user){   
+      document.getElementById("header-login-signup").style.display="none";
+      document.getElementById("header-login-account").style.display="inline-block";
+      document.getElementById("header-login-signup-mobile").style.display="none";
+      document.getElementById("header-login-account-mobile").style.display="inline-block";
+    }else{ 
+      document.getElementById("header-login-signup").style.display="inline-block";
+      document.getElementById("header-login-account").style.display="none";
+      document.getElementById("header-login-signup-mobile").style.display="inline-block";
+      document.getElementById("header-login-account-mobile").style.display="none";
+    }
+  }
+
+// Add event listener
+document.addEventListener('DOMContentLoaded', function () { 
+            try{checkLogin()}catch(e){console.log(e.message)}
+          });
+  </script>
