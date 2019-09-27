@@ -22,10 +22,7 @@
 
     <link rel="preconnect" href="https://stats.g.doubleclick.net">
     <link rel="preconnect" href="https://www.google.com">
-    <link rel="preconnect" href="https://www.google-analytics.com">
-
-    <script src="main-head-script.js"></script>
- 
+    <link rel="preconnect" href="https://www.google-analytics.com"> 
 
     <script async defer src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js" onload="initSearch()"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80312661-1"></script>
@@ -55,7 +52,7 @@
     </script>  -->  
   
     <script>
-    
+        
 function id(e){
   return document.getElementById(e)}function updateSearchResult(e){
       let t="";for(var s=0;s<e.length;s++){var a=e[s].product_type;if(e[s].sku){
@@ -116,7 +113,6 @@ function id(e){
       localStorage.setItem('setupTime', now);
     }
   } 
-
   //Redirect sign up
   function redirectSignUp(){
     window.location.href= window.location.origin+"/patient#/signin?callback="+window.location.href;
@@ -140,7 +136,6 @@ function checkLogin(){
 document.addEventListener('DOMContentLoaded', function () { 
             try{checkLogin()}catch(e){console.log(e.message)}
           }); 
-
   //Define shorthand id
   function id(input){
     return document.getElementById(input)
@@ -174,7 +169,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 let result = document.getElementById("search-result");
                 result.innerHTML = html; 
               }
-
       //initialize search engine
       var client,index;
       //Setup algolia
@@ -376,5 +370,6 @@ document.addEventListener('DOMContentLoaded', function () {
           try{handleAmpRedirect()}catch(e){}
           try{checkLogin()}catch(e){}
         });
+    
     
     </script>
