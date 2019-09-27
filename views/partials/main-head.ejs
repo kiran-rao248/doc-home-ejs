@@ -123,7 +123,8 @@ function checkLogin(){
     if(user){   
       document.getElementById("header-login-signup").style.display="none";
       document.getElementById("header-login-account").style.display="inline-block";
-      document.getElementById("header-login-signup-mobile").style.display="none";
+      document.getElementById("header-login-account").style.visibility="visible";
+      document.getElementById("header-login-signup-mobile").style.display="none"; 
       document.getElementById("header-login-account-mobile").style.display="inline-block";
     }else{ 
       document.getElementById("header-login-signup").style.display="inline-block";

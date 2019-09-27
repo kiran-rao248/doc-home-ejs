@@ -73,10 +73,12 @@ width: 31%;
  
 .header-user-link svg {
   cursor: pointer;
+  display: none;
   fill: #aaa;
   margin: 0 15px;
   position: relative;
   top: 13px;
+  visibility: hidden;
   width: 45px;
 }
 
