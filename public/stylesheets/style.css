@@ -1761,7 +1761,8 @@ width: 120%;
 }
 .main-health-articles-div{
 color: #41C0F1;
-margin-top: 18px;  
+margin-top: 8px;
+margin-bottom: 5px; 
 }
 
 .main-read-health-articles h2{ 
@@ -1959,7 +1960,7 @@ width: 7%;
 }
 
 .ask-doctor-col-2-image-2-bm{
-  background-image: url("/images/Cough.jpeg"); 
+  background-image: url("/images/Cough.png"); 
 }
 
 .ask-doctor-col-2-image-3-bm{

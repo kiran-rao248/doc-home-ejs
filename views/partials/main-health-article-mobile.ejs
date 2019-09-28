@@ -11,10 +11,11 @@
       </p>
     </div>
 
+    <%if(language == "en"){%>
           <a href="https://www.doctoroncall.com.my/tanya/ask/having-scoliolis-from-breastfeeding/33560" class="main-health-link1">
               <div class="main-health-section-2-1 main-health-section-2-element"></div>
               <div class="main-health-articles-div">Back Pain</div> 
-                  I'm having pain from breastfeeding, can it be due to bad posture? 
+                  I'm having pain from breastfeeding, can be due to bad posture? 
 
             </a>
 
@@ -43,16 +44,8 @@
           </a> 
       </div>
 <!--BM section-->
-      <%if(language == "bm"){%>
-        <div class="col-md-5 main-health-articles">
-            <div class="main-read-articles-part">
-                <div class="main-epharma-a">
-                    <a href="https://www.doctoroncall.com.my/tanya/"><h2><%= lang.mainpage_ask_question%></h2></a>
-                    </div>  
-        <p class="main-health-articles-tagline"><%=lang.mainpage_ask_doctor_desc%>
-              <br><a href="https://www.doctoroncall.com.my/tanya/"><%= lang.mainpage_ask_doctor%></a>
-        </p>
-      </div>
+      <%}else if(language == "bm"){%>
+        <div class="col-md-5 main-health-articles"> 
   
             <a href="https://www.doctoroncall.com.my/vaginosis-bakteria" class="main-health-link1">
                 <div class="main-health-section-2-1 main-health-section-2-element"></div>
@@ -70,7 +63,7 @@
               <a href="https://www.doctoroncall.com.my/haid-sakit#show" class="main-health-link1">
                 <div class="main-health-section-2-3 main-health-section-2-element"></div>
                   <div class="main-health-articles-div"> Haid Sakit</div> 
-                  Apakah senggugut dan bagaimana mencegah dan merawat?
+                  Apakah senggugut dan bagaimana untuk merawat?
               </a>
   
               <a href="https://www.doctoroncall.com.my/vulvitis#show" class="main-health-link1">
@@ -82,11 +75,9 @@
               <a href="https://www.doctoroncall.com.my/penyakit-kelamin-sti" class="main-health-link1">
                 <div class="main-health-section-2-5 main-health-section-2-element"></div>
                       <div class="main-health-articles-div">Keputihan</div> 
-                      Penyebab, Gejala, Diagnosis Dan Ubat Sesuai Untuk Penyakit Kelamin
+                      Penyebab dan ubat sesuai untuk Penyakit Kelamin
             </a> 
-</div>
-
-
+</div> 
         <%}%>
 </div>  
 </section>

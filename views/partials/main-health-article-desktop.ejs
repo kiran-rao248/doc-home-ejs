@@ -7,6 +7,8 @@
   <p class="main-health-articles-tagline"><%=lang.mainpage_ask_doctor_desc%>
         <br><a href="https://www.doctoroncall.com.my/tanya/"><%= lang.mainpage_ask_doctor_now%></a>
   </p>
+
+  <%if(language == "en"){%>
 <!--First column-->
     <div class="col-md-7 main-health-articles"> 
 
@@ -90,10 +92,8 @@
             <p class="main-health-articles-p-2">I have been consuming yasmin pil almost 5 months...</p>
         </a>
         </div>        
-
-<!--BM section-->
-
-<%if(language == "bm"){%>
+<%}else if(language == "bm"){%>
+<!--BM section--> 
     <div class="col-md-7 main-health-articles"> 
 
             <a href="https://www.doctoroncall.com.my/prediabetes" class="main-health-articles-diagram-1-bm"> 
