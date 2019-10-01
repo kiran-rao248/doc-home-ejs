@@ -44,7 +44,7 @@ var library = {
     footer_vaginosi_bakteria: "/vaginosis-bakteria",
     footer_vulvitis: "/vulvitis",
     footer_herpes_zoster: "/herpes-zoster",
-    footer_HPV: "HPV-human-papillomavirus",
+    footer_HPV: "/HPV-human-papillomavirus",
     footer_kutu: "/kutu",
     footer_haid: "/haid-sakit",
     footer_viagra: "/sildenafil-ubat-viagra",

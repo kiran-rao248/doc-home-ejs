@@ -17,6 +17,7 @@ Table of contents
 15.0 Subsribe-email
 16.0 Footer
 17.0 Popup
+18.0 Floating button 
 */
 
   /*----------------------------------------------------
@@ -514,7 +515,7 @@ _    _ ______          _____  ______ _____
 }
 
 .main-search-section { 
-  background-image: url("/images/Background.png");
+  background-image: url("/images/doctoroncall_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -1074,23 +1075,23 @@ width: 2%;
 } 
 
 .main-health-section-2-1{
-  background-image: url("/images/Breastfeeding.png"); 
+  background-image: url("/images/Breastfeeding.jpg"); 
 }
 
 .main-health-section-2-2{
-  background-image: url("/images/Cough.png"); 
+  background-image: url("/images/Cough.jpg"); 
 }
 
 .main-health-section-2-3{
-  background-image: url("/images/Redbump.png"); 
+  background-image: url("/images/Redbump.jpg"); 
 }
 
 .main-health-section-2-4{
-  background-image: url("/images/Sweating.png"); 
+  background-image: url("/images/Sweating.jpg"); 
 }
 
 .main-health-section-2-5{
-  background-image: url("/images/AdobeStock_228985859.png"); 
+  background-image: url("/images/family-planning-doctoroncall.jpg"); 
 }
 
 .main-health-section-2-element{
@@ -1655,7 +1656,7 @@ background-image: url("/images/specilaist/paediatric.jpg");
 }
 
 .main-find-doc-diagram-2{ 
-background-image: url("/images/specilaist/orthopaedic.png"); 
+background-image: url("/images/specilaist/orthopaedic.jpg"); 
 }
 
 .main-find-doc-diagram-3{ 
@@ -1663,7 +1664,7 @@ background-image: url("/images/specilaist/obgyn.jpg");
 }
 
 .main-find-doc-diagram-4{ 
-background-image: url("/images/specilaist/dermatology.jpg"); 
+background-image: url("/images/specilaist/cardiologist.jpg"); 
 }
 
 .main-find-doc-diagram-5{ 
@@ -1671,7 +1672,7 @@ background-image: url("/images/specilaist/ENT_Specialist.jpg");
 }
 
 .main-find-doc-diagram-6{ 
-background-image: url("/images/specilaist/cardiologist-min (1).png"); 
+background-image: url("/images/specilaist/dermatology.jpg"); 
 }
 
 .main-find-doc-1-text{
@@ -1936,43 +1937,43 @@ width: 7%;
 } 
 
 .ask-doctor-col-2-image-1{
-  background-image: url("/images/Breastfeeding.png"); 
+  background-image: url("/images/Breastfeeding.jpg"); 
 }
 
 .ask-doctor-col-2-image-2{
-  background-image: url("/images/Cough.png"); 
+  background-image: url("/images/Cough.jpg"); 
 }
 
 .ask-doctor-col-2-image-3{
-  background-image: url("/images/RedBump.png"); 
+  background-image: url("/images/RedBump.jpg"); 
 }
 
 .ask-doctor-col-2-image-4{
-  background-image: url("/images/Sweating.png"); 
+  background-image: url("/images/Sweating.jpg"); 
 }
 
 .ask-doctor-col-2-image-5{
-  background-image: url("/images/AdobeStock_228985859.png"); 
+  background-image: url("/images/family-planning-doctoroncall.jpg"); 
 }
 
 .ask-doctor-col-2-image-1-bm{
-  background-image: url("/images/AdobeStock_201847138.png"); 
+  background-image: url("/images/Breastfeeding.jpg"); 
 }
 
 .ask-doctor-col-2-image-2-bm{
-  background-image: url("/images/Cough.png"); 
+  background-image: url("/images/Cough.jpg"); 
 }
 
 .ask-doctor-col-2-image-3-bm{
-  background-image: url("/images/AdobeStock_273298980.png"); 
+  background-image: url("/images/RedBump.jpg"); 
 }
 
 .ask-doctor-col-2-image-4-bm{
-  background-image: url("/images/AdobeStock_237217548.png"); 
+  background-image: url("/images/Sweating.jpg"); 
 }
 
 .ask-doctor-col-2-image-5-bm{
-  background-image: url("/images/AdobeStock_228985859.png"); 
+  background-image: url("/images/family-planning-doctoroncall.jpg"); 
 }
 
 
@@ -2860,3 +2861,28 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
       margin-top: 18px;
     }
   }
+
+  /*18.0 Floating button */
+
+  .desktopFloat{
+    position: fixed;
+    z-index: 9999;
+    width: 200px;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+}
+.desktop-floating{
+    width: 135%;
+    position: absolute;
+    right: 0%;
+    z-index: 100;
+    border: none;
+    outline: none;
+    top: -250px;
+}
+@media (max-width: 1024px) {
+    .desktopFloat{
+        display: none;
+    }
+}
