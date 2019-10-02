@@ -509,6 +509,7 @@ _    _ ______          _____  ______ _____
   border-radius: 4px;
   color: #fff; 
   display: inline-flex;
+  justify-content: center;
   margin: 3px;
   padding: 12px;
   width: 172px;
