@@ -221,7 +221,7 @@ var library = {
     seo_product_title:"- Uses, Dosage, Side Effects,Price, Benefits - DoctorOnCall",
     seo_main_title:"Malaysia's Online Pharmacy | Order Medicine, Consult Doctor Online",
     seo_meta_desc:"Buy prescription & OTC medicines online on DoctorOnCall's pharmacy. Book appointment with doctors & hospitals, ask free health questions,consult specialist online. Get 20% off & free delivery on purchase of medicines",
-    seo_meta_keyword: "Farmasi online, beli ubat preskripsi dan OTC, tanya doktor online, temujanji pakar & doktor, tanya doktor soalan percuma",
+    seo_meta_keyword: "Online Pharmacy, Buy precsription and OTC medicines, consult doctor online, book doctor appointments, ask free health questions",
     site_doctoroncall: "DoctorOnCall",
     mainpage_search_doc: "Search DoctorOnCall",
     mainpage_search_medicine: "Search Medicine",
