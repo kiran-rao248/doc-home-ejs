@@ -1141,6 +1141,10 @@ width: 115%;
 /*----------------------------------------------------
 9.0 Health Related Questions*/
 
+.main-articles-gp{
+  margin-left: 56px;
+}
+
 .main-read-articles-part h2{
   font-size: 26px;
   margin-left: 1%;  
@@ -1157,7 +1161,7 @@ width: 115%;
   cursor: pointer;
   height: auto;
   margin-left: 11px; 
-  min-width: 247px;
+  min-width: 273px;
 }
 
 .main-health-div-1:first-child{ 
@@ -1165,7 +1169,7 @@ width: 115%;
   cursor: pointer;
   height: auto;
   margin-left: 16px; 
-  min-width: 247px;
+  min-width: 273px;
 }
 
 .main-health-div-2{
@@ -1444,7 +1448,7 @@ font-size: 14px;
 
 @media (min-width: 769px){
   .main-health-div-2{
-    width: 35%;
+    width: 38%;
   }
 }
 
@@ -1466,7 +1470,7 @@ font-size: 14px;
   margin: 1%;
   text-align: center; 
   vertical-align: top;
-  width: 108px;
+  width: 167px;
 } 
 
 .main-read-1 , .main-read-1:hover , .main-read-1:visited, .main-read-1:active{
@@ -1481,11 +1485,17 @@ font-size: 14px;
 
 .main-read-1 p{
   font-size: 14px;
+  white-space: nowrap;
+  justify-content: center;
 }
 
 .main-read-disease {
   margin: 7% auto 0;
 } 
+
+.main-read-erectile{
+ padding-top: 16px;
+}
 
 .main-health-related-tabs { 
   float: none;
@@ -1605,6 +1615,28 @@ font-size: 14px;
 .main-tab-header-1 , .main-tab-header-2 , .main-tab-header-3 , .main-tab-header-4{ 
   white-space: nowrap;
 } 
+
+@media (max-width: 576px){
+  .main-read-about-disease-slider{
+    display: flex;
+    overflow: auto;
+    overflow-y: hidden; 
+    width: 115%;
+  }
+}
+
+@media (max-width: 576px){
+  .main-read-1 {
+    border-style: solid;
+    border-color: #f0ebeb;
+    display: inline-block;
+    height: auto;
+    margin: 1%;
+    text-align: center;
+    vertical-align: top;
+    min-width: 160px;
+}
+}
 
 /*11.0 Find Doctors*/
 
