@@ -1005,7 +1005,7 @@ margin-top: 7%;
 }
 
 
-@media(max-width: 440px){
+/* @media(max-width: 440px){
   .main-epharma-tab-1 {
     font-weight: bold;
     margin-bottom: 34px;
@@ -1016,7 +1016,7 @@ margin-top: 7%;
     font-weight: bold;
     margin-bottom: 34px;
 }
-}
+} */
  
 /*----------------------------------------------------
 8.0 How DoctorOnCall Works */  
@@ -1109,10 +1109,20 @@ width: 2%;
 .main-epharm-slider-2{
 display: flex;
 overflow: auto;
+height: 360px;
 margin-left: -24px;
 width: 115%;
 }  
 }
+
+@media (max-width: 836px){
+  .main-docwork-slider-2{
+  display: flex;
+  overflow: auto; 
+  margin-left: -24px;
+  width: 115%;
+  }  
+  }
 
 @media (max-width: 836px){
   .main-finddoc-slider-2{
