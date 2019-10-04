@@ -2471,8 +2471,16 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
     .result-title span{
       color:#777;
       display: flex; 
-      font-weight: 400;
-      position: absolute;
+      font-weight: 400; 
+    }
+
+    @media(min-width:576px){
+      .result-title span{
+        color:#777;
+        display: flex; 
+        font-weight: 400;
+        position: absolute;
+      }
     }
 
     .result-price { 
