@@ -2472,6 +2472,7 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
       color:#777;
       display: flex; 
       font-weight: 400;
+      position: absolute;
     }
 
     .result-price { 

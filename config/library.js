@@ -176,7 +176,7 @@ var library = {
     mainpage_deliver_doorstep: "We deliver to your doorstep",
     mainpage_free_of_charge: "Free of charge",
     mainpage_order_now: "Go to E-Pharmacy Now",
-    mainpage_consult_doctor_now: "Consult Doctor Now",
+    mainpage_consult_doctor_now: "Find Doctor Now",
     mainpage_appointment_now: "Book Appointment Now",
     mainpage_read_health: "Read Health Articles Now",
     mainpage_ask_doctor_now: "Ask Doctor Now",
@@ -350,7 +350,8 @@ var library = {
     mainpage_featured_on: "Featured On",
     mainpage_subscribe_health_insight: "Subscribe to our Free Health Insights",
     mainpage_subscribe_desc: "Get notified about new health articles, and any new offers and new promotions. You can unsubscribe at any time. ",
-    mainpage_subscribe: "Subscribe",
+    mainpage_subscribe: "Subscribe", 
+    tanya: "/tanya/en"
     },
     
     
@@ -630,7 +631,8 @@ var library = {
     mainpage_featured_on: "Seperti yang terpapar di",
     mainpage_subscribe_health_insight: "Langgan info kesihatan secara percuma",
     mainpage_subscribe_desc: "Dapatkan pemberitahun tentang artikel, tawaran dan promosi terbaru kami. Anda boleh berhenti melanggan pada bila-bila masa. ",
-    mainpage_subscribe: "Langgan",
+    mainpage_subscribe: "Langgan", 
+    tanya: "/tanya"
   }
 };
 
