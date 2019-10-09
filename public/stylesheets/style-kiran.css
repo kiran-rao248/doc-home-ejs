@@ -759,8 +759,7 @@ ______ ____   ____ _______ ______ _____
 .contactus-title{
   background-image: url("/images/contact-us-doctoroncall.png"); 
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 30px;
+  background-size: cover; 
   padding: 50px;
 }
 
@@ -859,6 +858,10 @@ text-align: center;
   margin-left: 3%;
   margin-bottom: 0;
   width: 85%;
+}
+
+.about-us-space{
+  margin-bottom: 20px;
 }
 
 .about-us-second-column-p-header{

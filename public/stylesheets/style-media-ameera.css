@@ -555,7 +555,9 @@ content: "  |  ";
   padding: 50px;
 }
 
-
+.media-link-title{
+  line-height: 23px;
+}
 
 .media-title {
   font-weight: 700;
