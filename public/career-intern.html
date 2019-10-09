@@ -1,0 +1,382 @@
+<html>
+    <head>
+        <title> Careers - Tech, Medical, Business Intern | DoctorOnCall</title>
+        <meta charset="utf-8">
+        <meta name="active-menu" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./stylesheets/bootstrap-ameera/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="./stylesheets/style-ameera.css">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Online Pharmacy, Buy precsription and OTC medicines, consult doctor online, book doctor appointments, ask free health questions">
+        <meta name="description" content="Buy prescription & OTC medicines online on DoctorOnCall's pharmacy. Book appointment with doctors & hospitals, ask free health questions,consult specialist online. Get 20% off & free delivery on purchase of medicines">
+        <meta name="author" content="">
+        <meta property="og:url" content="https://www.doctoroncall.com.my/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Malaysia's Online Pharmacy | Order Medicine, Consult Doctor Online">
+        <meta property="og:image" itemprop="image" content="https://www.doctoroncall.com.my/images/og_image_doc.png">
+        <meta property="og:description" content="Buy prescription & OTC medicines online on DoctorOnCall's pharmacy. Book appointment with doctors & hospitals, ask free health questions,consult specialist online. Get 20% off & free delivery on purchase of medicines">
+        <meta property="og:locale" content="en_US">
+        <meta name="url" content="https://www.doctoroncall.com.my/">
+
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="images/doctorOnCall-icon.png">
+        <script>
+          function redirectSignUp(){
+          window.location.href= window.location.origin+"/patient#/signin?callback="+window.location.href;
+          }
+          function checkLogin(){  
+              var user=JSON.parse(window.localStorage.getItem("userDetails"))
+              
+              if(user){   
+              document.getElementById("header-login-signup").style.display="none";
+              document.getElementById("header-login-account").style.display="inline-block";
+              document.getElementById("header-login-account").style.visibility="visible";
+              document.getElementById("header-login-signup-mobile").style.display="none"; 
+              document.getElementById("header-login-account-mobile").style.display="inline-block";
+              }else{ 
+              document.getElementById("header-login-signup").style.display="inline-block";
+              document.getElementById("header-login-account").style.display="none";
+              document.getElementById("header-login-signup-mobile").style.display="inline-block";
+              document.getElementById("header-login-account-mobile").style.display="none";
+              }
+          }
+          // Add event listener
+          document.addEventListener('DOMContentLoaded', function () { 
+              try{checkLogin()}catch(e){console.log(e.message)}
+          }); 
+      </script>
+        
+    </head>
+
+    <body> 
+
+      <!-- start of header -->
+<!-- start container for header -->
+<header class="container-fluid header">
+  <!-- start a tag for logo -->
+  <a href="https://www.doctoroncall.com.my"> <img class="header-logo" src="images/doctorOnCall-icon.png" alt="DoctorOnCall logo" loading="lazy">
+  </a>
+  <!-- end of a tag for logo -->
+  <input class="header-menu-btn" type="checkbox" id="menu-btn" />
+  <label class="header-menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+  <!-- start ul for content in header -->
+  <div class="header-menu">
+
+    <!--Mobile only login design-->
+    <div class="icon-userlogin mobile-only">
+      <!--<img src="/images/default-user.svg"> Container for user image-->
+      <a id="header-login-account-mobile" href="www.doctoroncall.com.my/patient#/dashboard">
+      <svg viewBox="0 0 172 172">
+        <path d="M0,172v-172h172v172z" fill="none"></path>
+        <path
+          d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+          fill="#ebebeb"></path>
+        <path
+          d="M103.01725,106.50563c-0.4085,-4.43975 -0.24725,-7.53575 -0.24725,-11.5885c2.01025,-1.0535 5.6115,-7.77225 6.2135,-13.44825c1.58025,-0.129 4.07425,-1.66625 4.80525,-7.75075c0.387,-3.268 -1.17175,-5.10625 -2.1285,-5.68675c2.56925,-7.72925 7.912,-31.648 -9.8685,-34.1205c-1.83825,-3.21425 -6.52525,-4.8375 -12.60975,-4.8375c-24.37025,0.4515 -27.305,18.404 -21.96225,38.958c-0.95675,0.5805 -2.5155,2.41875 -2.1285,5.68675c0.74175,6.0845 3.225,7.62175 4.80525,7.75075c0.602,5.676 4.343,12.39475 6.364,13.44825c0,4.05275 0.1505,7.14875 -0.258,11.5885c-4.816,12.9645 -37.3455,9.32025 -38.8505,34.32475h104.576c-1.505,-25.0045 -33.89475,-21.36025 -38.71075,-34.32475z">
+        </path>
+        <path
+          d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+          fill="none"></path>
+        <path
+          d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56v0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z"
+          fill="none"></path>
+      </svg>Sign Up / Login</a>
+      <a id="header-login-signup-mobile"  onclick="redirectSignUp()" href="/patient#/signup"> Sign Up / Login </a>
+    </div>
+
+    <div class="header-menu-div"> <a class="header-link" href="www.doctoroncall.com.my/medicine">Order Medicine</a>
+    </div>
+    <div class="header-menu-div"> <a class="header-link"
+        href="www.doctoroncall.com.my/find-doctor">Book Appointment </a></div>
+    <div class="header-menu-div"> <a class="header-link"
+        href="www.doctoroncall.com.my/patient#/signup">Consult a Doctor </a></div>
+    <div class="header-menu-div header-more-content">
+      <a class="header-link desktop-only">More <svg class="header-more-icon" viewBox="0 0 50 50">
+          <path d="M 4.84375 12.90625 L 2.75 15 L 25 37.25 L 47.25 15 L 45.15625 12.90625 L 25 33.0625 Z ">
+          </path>
+        </svg></a>
+      <!-- start div for header content in desktop -->
+      <div class="header-dropdown-content">
+          <a href="about-us.html">About Us</a>
+          <a href="/tanya/en">Ask a Question</a>
+          <a href="www.doctoroncall.com.my/penyakit-a-z">Read Health Articles</a>
+          <a href="faq.html">FAQ</a>
+          <a href="media.html">Media</a>
+          <a href="career.html">Careers</a>
+          <a href="panel-doctor.html">Panel Doctors</a>
+          <a href="corporate-partnership.html">Corporate Partnerships</a>
+          <a href="contact-us.html">Contact Us</a>
+        </div>
+    </div> 
+
+  <a class="header-user-link" href="www.doctoroncall.com.my/patient#/dashboard">
+      <svg id="header-login-account" viewBox="0 0 20 20">
+          <path d="M10.1,0.1c-5.5,0-10,4.5-10,10c0,5.5,4.5,10,10,10c5.5,0,10-4.5,10-10C20.1,4.6,15.6,0.1,10.1,0.1z    M10.1,2.2c2.2,0,3.9,1.8,3.9,3.9c0,2.2-1.8,3.9-3.9,3.9S6.2,8.3,6.2,6.1C6.2,3.9,7.9,2.2,10.1,2.2z M10.1,19.6   c-2.8,0-5.3-1.2-7-3.1c0-2.9,2.4-5.1,7-5.1s7,2.1,7,5.1C15.4,18.3,12.9,19.6,10.1,19.6z"/>
+      </svg>
+    </a>
+
+    <div class="header-menu-div-signup">
+      <a id="header-login-signup" class="button-login-signup desktop-only" onclick="redirectSignUp()" href="#">Sign Up / Login</a>
+    </div>
+
+  </div>
+
+
+
+  </div>
+  <!-- end of ul for content in header -->
+</header>
+<!-- end of header container -->
+<!-- end of header -->
+
+        
+     
+          <!-- career-sub section -->
+            <div class="career-sub-container container-fluid">
+               <div class="row career-sub-row"> 
+              <div class="career-businessanalyst-img-col col-lg-5 col-sm-12"></div>
+              <div class="career-desc-col col-lg-7 col-sm-12">
+                  <div class="position-title">
+                    <h1>Tech, Medical, Business Intern
+                      </h1>
+                    </div>
+                  <div class="position-type"> Contract </div>
+                  <p class="position-info"> Still studying? No photocopying or making tea here. Work on real business challenges from Day 1 </p>
+                  <button class="submit-btn"><a href="mailto:contact@doctoroncall.com.my" target="_top">Submit Application</a></button>
+              </div>
+            </div>
+            </div>
+
+            <div class="container career-detail">
+                <h3> Responsibilities</h3>
+                <div class="position-desc">
+                    <ul class="position-desc-task"> 
+                    <li> 1. Conduct data analysis and assess operational performance  </li>
+                    <li> 2. Conduct financial analysis and assess performance</li>
+                    <li> 3. Conduct research for retail pharmaceutical market, and support pricing analysis for pharmaceuticals  </li>
+                    <li> 4. Develop monthly investor reports </li>
+                </ul>
+                </div>
+                <h3> What We're Looking For</h3>
+                <ul class="position-desc-criteria">
+                    <li> Upcoming graduate from top-tier university in 2nd or 3rd year of study, no specific degree required</li>
+                    <li> Demonstratable analytical/numerical acumen and ability to generate and evaluate analysis </li>
+                    <li> Demonstratable business acumen and eagerness to learn </li>
+                    <li> Good team player and positive attitude</li>
+                    <li> Past internship experience in Consulting or Investment Banking is an advantage </li>
+                    <li> Ability to code is an advantage (e.g., R, Python, Excel) </li>
+                    <li> Excellent communication capability in English </li>
+                </ul>
+            </div>
+            <!-- application form-->
+          <!-- <div class="container-fluid container-form-outer"> 
+            <div class="container container-form-inner">
+              <div class="application-form-title"> Submit Application</div>
+              <form class="application-form-content">
+                <span class="form-detail">Full Name*</span>
+                <input type="text" class="form-input" name="fullname">
+                <span class="form-detail" name=>Email*</span>
+                <input type="text" class="form-input" name="email">
+                <span class="form-detail">Mobile Phone*</span>
+                <input type="text" class="form-input" name="phoneNo">
+                <span class="form-detail">Current Company</span>
+                <input type="text" class="form-input" name="company">
+                <span class="form-detail">Resume / CV</span>
+                <div class="form-detail form-input">
+                  <input type="text" class="file-upload-input" placeholder="Choose File">
+                  <button type="button" class="file-upload-button" tabindex="-1">Attach Resume / CV</button>
+                </div>
+                <span class="form-detail">Additional Information</span>
+                <textarea rows="6" class="form-input" name="info"></textarea>
+                <button class="submit-app-btn"> Submit Application</button>
+              </form>
+            </div>
+          </div> -->
+          
+          <!-- start of footer-->
+<footer class="container-fluid footer">
+    <!-- start div for upper footer -->
+    <div class="container">
+      <!-- start div for row -->
+      <div class="row">
+        <!-- start div for column for DoctorOnCall description -->
+        <div class="col-lg-5 col-xs-12 first-footer">
+          <a href="https://www.doctoroncall.com.my">
+            <img class="header-logo" src="./images/doctorOnCall-icon.png" alt="DoctorOnCall logo">
+          </a>
+          <p> DoctorOnCall is Malaysia's first & largest online Doctor consultation platform that provides better healthcare services via chat, phone & video calls. Order medicine and buy prescription medicine online. </p> <br>
+          <svg class="footer-readmore-arrow" viewBox="0 0 50 50">
+            <path
+              d="M 38.035156 13.988281 C 37.628906 13.980469 37.257813 14.222656 37.09375 14.59375 C 36.933594 14.96875 37.015625 15.402344 37.300781 15.691406 L 45.277344 24 L 2.023438 24 C 1.664063 23.996094 1.328125 24.183594 1.148438 24.496094 C 0.964844 24.808594 0.964844 25.191406 1.148438 25.503906 C 1.328125 25.816406 1.664063 26.003906 2.023438 26 L 45.277344 26 L 37.300781 34.308594 C 36.917969 34.707031 36.933594 35.339844 37.332031 35.722656 C 37.730469 36.105469 38.363281 36.09375 38.746094 35.691406 L 49.011719 25 L 38.746094 14.308594 C 38.5625 14.109375 38.304688 13.996094 38.035156 13.988281 Z ">
+            </path>
+          </svg>
+          <a class="footer-readmore-link" href="<%= url.doc_page %>">Read More</a>
+        </div>
+        <!-- end div for column for DoctorOnCall description -->
+        <!-- start div for column for Our Services -->
+        <div class="col-lg-2 col-xs-6 col-6 first-footer">
+          <h3> Our Services</h3>
+          <div class="footer-content">
+            <a href="/medicine">Order Medicine</a>
+            <a href="/patient#/signup">Consult a Doctor</a>
+            <a href="/tanya/en">Ask A Question</a>
+            <a href="/penyakit-a-z"> Read Health Articles</a>
+            <a href="/find-doctor"> Search Hospitals</a>
+            <a href="/find-doctor">Search Doctors</a>
+            <a href="/find-doctor">Book Appointment</a>
+            <a href="/tanya">Tanya Doktor (Soalan)</a>
+          </div>
+        </div>
+        <!-- end div for column for Our Services -->
+        <!-- start div for column for doctorOnCall -->
+        <div class="col-lg-2 col-xs-6 col-6 first-footer">
+          <h3> DoctorOnCall </h3>
+          <div class="footer-content">
+            <a href="about-us.html">About Us</a>
+            <a href="/privacyPolicy"> Privacy </a>
+            <a href="faq.html"> FAQ </a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="/termsOfService"> Terms of Use</a>
+            <a href="/doctor#/signin"> Doctors Login</a>
+            <a href="/media.html">Media </a>
+          </div>
+        </div>
+        <!-- end div for column for DoctorOnCall -->
+        <!-- start div for column for Reach Us -->
+        <div class="col-lg-3 col-xs-12 first-footer">
+          <h3>Reach Us </h3>
+          <div class="footer-content">
+            <a href="tel:+60384082000">+60384082000</a>
+            <a href="mailto:contact@doctoroncall.com.my" target="_top">contact@doctoroncall.com.my</a>
+            <div class="footer-social-media">
+              <h3>Social Media</h3>
+              <a target="_blank" href="https://www.facebook.com/doctoroncallMY/" alt="DoctorOnCall Facebook Page">
+                <svg viewBox="0 0 172 172">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#333">
+                    <path
+                      d="M141.04,13.76h-110.08c-9.4944,0 -17.2,7.7056 -17.2,17.2v110.08c0,9.4944 7.7056,17.2 17.2,17.2h110.08c9.4944,0 17.2,-7.7056 17.2,-17.2v-110.08c0,-9.4944 -7.7056,-17.2 -17.2,-17.2zM127.28,65.36h-6.88c-7.3616,0 -10.32,1.72 -10.32,6.88v10.32h17.2l-3.44,17.2h-13.76v51.6h-17.2v-51.6h-13.76v-17.2h13.76v-10.32c0,-13.76 6.88,-24.08 20.64,-24.08c9.976,0 13.76,3.44 13.76,3.44z">
+                    </path>
+                </svg></a>
+              <a target="_blank" href="https://www.instagram.com/doctoroncallmy/" alt="DoctorOnCall Instagram Page"><svg
+                  viewBox="0 0 50 50">
+                  <path fill="#333"
+                    d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z">
+                  </path>
+                </svg></a>
+              <a target="_blank" href="https://twitter.com/doctoroncallmy" alt="DoctorOnCall Twitter Page">
+                <svg viewBox="0 0 172 172">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#333">
+                    <path
+                      d="M172.215,35.905c-6.35594,2.82188 -13.16875,4.71656 -20.33094,5.57656c7.31,-4.38063 12.92687,-11.31438 15.56062,-19.565c-6.82625,4.04469 -14.41844,6.9875 -22.4675,8.57312c-6.45,-6.88 -15.64125,-11.16656 -25.81344,-11.16656c-19.53812,0 -35.38094,15.82937 -35.38094,35.3675c0,2.76812 0.3225,5.46906 0.92719,8.0625c-29.40125,-1.47813 -55.45656,-15.56063 -72.91187,-36.96656c-3.05031,5.24062 -4.78375,11.31437 -4.78375,17.79125c0,12.26844 6.235,23.09906 15.73531,29.455c-5.805,-0.18813 -11.26062,-1.78719 -16.03094,-4.43438c0,0.14781 0,0.29563 0,0.44344c0,17.14625 12.20125,31.43031 28.36656,34.69562c-2.95625,0.80625 -6.08719,1.23625 -9.31219,1.23625c-2.28438,0 -4.50156,-0.215 -6.665,-0.645c4.515,14.04219 17.57625,24.295 33.04281,24.57719c-12.09375,9.48688 -27.34531,15.13063 -43.92719,15.13063c-2.86219,0 -5.67062,-0.16125 -8.42531,-0.49719c15.64125,10.05125 34.23875,15.89656 54.22031,15.89656c65.06438,0 100.64688,-53.89781 100.64688,-100.63344c0,-1.53187 -0.04031,-3.07719 -0.09406,-4.58219c6.90687,-4.98531 12.9,-11.22031 17.64344,-18.31531z">
+                    </path>
+                  </g>
+                </svg></a>
+              <a href="https://api.whatsapp.com/send?phone=60102721669&amp;text=DoctorOnCall 2019" target="_blank">
+                <svg viewBox="0 0 50 50">
+                  <path fill="#333"
+                    d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z">
+                  </path>
+                </svg> </a>
+            </div>
+          </div>
+        </div>
+        <!-- end div for column for Reach Us -->
+      </div>
+      <!-- end div for row -->
+    </div>
+    <!-- end div for upper footer -->
+    <!-- start div for lower footer -->
+    <div class="container footer-sitemap ">
+      <!-- start div for sitemap -->
+      <div class="footer-sitemap-title">
+        <h2>Site Map</h2>
+      </div>
+      <!-- end div for sitemap-->
+      <!-- start div for sitemap content -->
+      <div class="container ">
+        <!-- start div for footer tabs -->
+        <div class="footer-tabs">
+          <input type="radio" name="tabs" id="tab-english" checked="checked">
+          <label for="tab-english">English</label>
+          <!-- start div for footer tab english -->
+          <div class="footer-tab">
+            <a href="/womens-health">Women's Health</a>
+            <a href="/general-health">General Health</a>
+            <a href="/mens-health">Men's Health</a>
+            <a href="/sexual-health">Sexual Health</a>
+          </div>
+          <!-- end div for footer tab english -->
+          <input type="radio" name="tabs" id="tab-bahasa">
+          <label for="tab-bahasa">Bahasa</label>
+          <!-- start div for footer tab bahasa -->
+          <div class="footer-tab">
+            <a href="/kesihatan-wanita">Kesihatan Wanita</a>
+            <a href="/kesihatan">Kesihatan Umum</a>
+            <a href="/kesihatan-lelaki">Kesihatan Lelaki</a>
+            <a href="/kesihatan-seksual">Kesihatan Seksual</a>
+          </div>
+          <!-- end div for footer tab bahasa -->
+          <input type="radio" name="tabs" id="tab-healthcentre">
+          <label for="tab-healthcentre">Health Centre</label>
+          <!-- start div for footer tab health centre -->
+          <div class="footer-tab">
+            <a href="/hipertensi">Hypertension</a>
+            <a href="/hipotensi">Hypotension</a>
+            <a href="/hiv-aids">HIV and AIDS </a>
+            <a href="/sinusitis">Sinusitis</a>
+            <a href="/menstruasi">Menstruation</a>
+            <a href="/buasir">Hemorrhoids</a>
+            <a href="/asma">Asthma</a>
+            <a href="/diabetes">Diabetes</a>
+            <a href="/migrain">Migrain</a>
+            <a href="/klamidia">Chlamydia</a>
+            <a href="vaginosis-bakteria">Bacterial vaginosis</a>
+            <a href="/vulvitis">Vulvitis</a>
+            <a href="herpes-zoster">Herpes zoster</a>
+            <a href="/HPV-human-papillomavirus">HPV</a>
+            <a href="/kutu">Lice</a>
+            <a href="/haid-sakit">Period Pain</a>
+            <a href="/sildenafil-ubat-viagra">Viagra</a>
+            <a href="/vaginitis">Vaginitis</a>
+            <a href="/prediabetes">Prediabetes</a>
+            <a href="/hipertensi-pulmonal">Pulmonal hypertension</a>
+            <a href="/disfungsi-seksual">Sexual dysfunction</a>
+            <a href="/herpes-genital-herpes-simplex">Genital Herpes (Herpes Simplex)</a>
+            <a href="/kolesterol-tinggi">High cholestrol</a>
+            <a href="/penyebab-dan-gejala-stroke-angin-ahmar">Stroke</a>
+            <a href="/penyebab-penyakit-hepatitis-b">Hepatitis B</a>
+            <a href="/penyebab-dan-gejala-diabetes-jenis-1">Type 1 Diabetes</a>
+            <a href="/penyebab-dan-gejala-psoriasis">Psoriasis</a>
+            <a href="penyebab-dan-gejala-penyakit-gallstones-batu-karang-hempedu">Gallstones</a>
+            <a href="/ejakulasi-pramatang-premature-ejaculation">Premature ejaculation</a>
+            <a href="/penyebab-dan-gejala-sifilis-syphilis">Sifilis</a>
+            <a href="/gonore-gonorrhea-gejala-penyebab-dan-rawatan">Gonore</a>
+            <a href="/hepatitis-a-penyebab-dan-gejala">HepatitsA</a>
+            <a href="/diabetes-jenis-2-kencing-manis-penyebab-dan-gejala">Type 2 Diabetes</a>
+            <a href="/hepatitis-c-penyebab-dan-gejala">Hepatitis C</a>
+            <a href="/impotensi-impotence-penyebab-dan-gejala">Impotension</a>
+            <a href="/diabetes-insipidus-penyebab-dan-gejala">Diabetes Insipidus</a>
+            <a href="/penyakit-kandidiasis-candidiasis">Candidiasis - Introduction</a>
+            <a href="/penyakit-kelamin-sti">Veneral disease - Introduction</a>
+            <a href="/sakit-tekak-sore-throat">Sore throat - single</a>
+            <a href="/sakit-ketuat-wart">Warts</a>
+            <a href="/penyakit-tiroid-thyroid">Thyroid - Introduction</a>
+            <a href="/sakit-tonsil-tonsilitis">Tonsilis - Introduction</a>
+          </div>
+          <!-- end div for footer tab health centre-->
+        </div>
+        <!-- end div for footer tabs-->
+      </div>
+      <!-- start div for sitemap content -->
+    </div>
+    <!-- end div for upper footer -->
+  </footer>
+  <!-- end of footer-->
+</body>
+</html>
