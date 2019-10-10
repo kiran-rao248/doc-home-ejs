@@ -5,7 +5,7 @@ var library = {
     checkout:"/checkout/#!/shopping_cart",
     signup_login: "/patient#/signup",
     find_doctor: "/find-doctor",
-    medicine: "#",
+    medicine: "/medicine/en",
     about_us: "/aboutUs",
     tanya: "/tanya",
     article: "/penyakit-a-z",
