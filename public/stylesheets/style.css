@@ -743,7 +743,7 @@ _    _ ______          _____  ______ _____
 .main-partner-image-group-2 img{ 
   margin: 0 auto;
   text-align: center; 
-  width: 20%;
+  width: 255px;
 } 
 
 .main-partner-logo img{
@@ -2764,4 +2764,36 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
     .desktopFloat{
         display: none;
     }
+}
+
+
+/*new styles*/
+
+.connect-with-doc-div-1{
+  text-align: center;
+}
+
+.connect-with-doc-div-2 img{
+  height: 430px;
+  margin-bottom: 27px;
+  margin-top: -60px;
+  justify-content: center;
+  padding-left: 20%;
+  padding-right: 50%;
+}
+
+.main-connect-text-desktop{
+  margin-top: 13%;
+}
+
+.main-nextpage-btn-2{
+  margin-bottom: 70px;
+}
+
+@media(max-width: 1051px){
+  .main-partner-image-group img {
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+}
 }
