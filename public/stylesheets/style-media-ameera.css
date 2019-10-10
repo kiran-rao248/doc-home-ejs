@@ -259,8 +259,9 @@ font-family: sans-serif;
 }
 
 .header .header-menu-btn:checked~.header-menu {
-  height:auto;
-  transition: all 10s;
+  transition: all 0.5s;
+  height: 100vh;
+  overflow: scroll;
 }
 
 .header .header-menu-btn:checked~.header-menu-icon .navicon {
@@ -328,9 +329,15 @@ font-family: sans-serif;
   z-index: 1000;
 }
 
+.header{
+  top: 0;
+  position: sticky;
+}
+
 .header-more-content .header-dropdown-content a {
   color: #000;
   display: block;
+  font-size: 14px;
   padding: 20px;
   text-decoration: none;
   text-align: left;
@@ -373,6 +380,7 @@ font-family: sans-serif;
     align-items: center;
     border-bottom:1px solid #ddd;
     display: inline-flex;
+    font-size: 14px;
     padding:20px 30px;
     width:100%;
   }
@@ -643,6 +651,7 @@ color: #777;
 .aboutus-sub{
   color: #fff;
   font-size: 16px;
+  line-height: 25px;
   text-align: center;
 }
 
@@ -687,3 +696,4 @@ a.page:active{
 background-color: #41c0f1;
 color:#fff;
 }
+

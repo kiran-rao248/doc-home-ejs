@@ -5,8 +5,8 @@
         <meta name="active-menu" content="">
         <title>Panel Doctor</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-asraf/bootstrap-grid.min.css">
-        <link rel="stylesheet" type="text/css" href="/stylesheets/style-asraf.css">
+        <link rel="stylesheet" type="text/css" href="/public/stylesheets/bootstrap-asraf/bootstrap-grid.min.css">
+        <link rel="stylesheet" type="text/css" href="/public/stylesheets/style-asraf.css">
 
         <script>
             function redirectSignUp(){
@@ -41,7 +41,9 @@
 <!-- start container for header -->
 <header class="container-fluid header">
         <!-- start a tag for logo -->
-        <a href="https://www.doctoroncall.com.my"> <img class="header-logo" src="./images/doctoroncall-logo.png" alt="DoctorOnCall logo" loading="lazy">
+        <a href="https://www.doctoroncall.com.my">
+          <source srcset="/images/doctoroncall-logo-webp.webp" class="header-logo" type="image/webp">
+            <img src="/images/doctoroncall-logo-png.png" class="header-logo" alt="DoctorOnCall Logo" loading="lazy">
         </a>
         <!-- end of a tag for logo -->
         <input class="header-menu-btn" type="checkbox" id="menu-btn" />
@@ -217,7 +219,8 @@
                 <!-- start div for column for DoctorOnCall description -->
                 <div class="col-lg-5 col-xs-12 first-footer">
                 <a href="https://www.doctoroncall.com.my">
-                    <img loading="lazy" class="header-logo" src="./images/doctoroncall-logo.png" alt="DoctorOnCall logo">
+                  <source srcset="/images/doctoroncall-logo-webp.webp" class="header-logo" type="image/webp">
+                    <img src="/images/doctoroncall-logo-png.png" class="header-logo" alt="DoctorOnCall Logo" loading="lazy">
                 </a>
                 <p>DoctorOnCall is Malaysia's first &amp; largest online Doctor consultation platform that provides better healthcare services via chat, phone &amp; video calls.</p> <br>
                 <svg class="footer-readmore-arrow" viewBox="0 0 50 50">

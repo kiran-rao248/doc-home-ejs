@@ -53,7 +53,11 @@ document.addEventListener('DOMContentLoaded', function () {
 <!-- start container for header -->
 <header class="container-fluid header">
       <!-- start a tag for logo -->
-      <a href="https://www.doctoroncall.com.my"> <img class="header-logo" src="images/doctorOnCall-icon.png" alt="DoctorOnCall logo" loading="lazy">
+      <a href="https://www.doctoroncall.com.my"> 
+        <picture>
+          <source srcset="/images/doctoroncall-logo-webp.webp" class="header-logo" type="image/webp">
+            <img src="/images/doctoroncall-logo-png.png" class="header-logo" alt="DoctorOnCall Logo" loading="lazy">
+        </picture>
       </a>
       <!-- end of a tag for logo -->
       <input class="header-menu-btn" type="checkbox" id="menu-btn" />
@@ -181,8 +185,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       <section class="container-fluid mobile-only">
         <div class="container">
-          <div class="contact-us-mobile-div"> 
-              <p>Don’t be a stranger! Feel free to WhatsApp us or drop us an email at the following address.</p>
+          <div class="contact-us-mobile-div">  
             <p class="contactus-p-header">WhatsApp us for help with your order</p>
             <a href="https://api.whatsapp.com/send?phone=60102721669&amp;amp;text=DoctorOnCall 2019">
               <svg viewBox="0 0 448 512" class="contact-us-img-2">
@@ -227,7 +230,10 @@ document.addEventListener('DOMContentLoaded', function () {
        <!-- start div for column for DoctorOnCall description -->
        <div class="col-lg-5 col-xs-12 first-footer">
          <a href="https://www.doctoroncall.com.my">
-           <img class="header-logo" src="./images/doctorOnCall-icon.png" alt="DoctorOnCall logo">
+          <picture>
+            <source srcset="/images/doctoroncall-logo-webp.webp" class="header-logo" type="image/webp">
+              <img src="/images/doctoroncall-logo-png.png" class="header-logo" alt="DoctorOnCall Logo" loading="lazy">
+          </picture>
          </a>
          <p> DoctorOnCall is Malaysia's first & largest online Doctor consultation platform that provides better healthcare services via chat, phone & video calls. Order medicine and buy prescription medicine online. </p> <br>
          <svg class="footer-readmore-arrow" viewBox="0 0 50 50">

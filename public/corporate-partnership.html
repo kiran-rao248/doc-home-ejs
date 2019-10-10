@@ -41,7 +41,12 @@
 <!-- start container for header -->
 <header class="container-fluid header">
         <!-- start a tag for logo -->
-        <a href="https://www.doctoroncall.com.my"> <img class="header-logo" src="./images/doctoroncall-logo.png" alt="DoctorOnCall logo" loading="lazy">
+        <a href="https://www.doctoroncall.com.my">
+            <!-- <img src="/public/images/doctorOnCall-icon.png" class="header-logo"> -->
+            <picture>
+                <source srcset="/images/doctoroncall-logo-webp.webp" class="header-logo" type="image/webp">
+                  <img src="/images/doctoroncall-logo-png.png" class="header-logo" alt="DoctorOnCall Logo" loading="lazy">
+              </picture>
         </a>
         <!-- end of a tag for logo -->
         <input class="header-menu-btn" type="checkbox" id="menu-btn" />
@@ -230,7 +235,7 @@
                 
             </div> 
 
-            <h2>Government Agencies</h2>
+            <h2 class="isp-h2">Government Agencies</h2>
             <div class="row">
                 <div class="col-md-6 partnership-display-flex">
                     <img class="partnership-image-logo" loading="lazy" src="./images/doctoroncall-ministry-of-finance-mof.png" alt="Ministry of Finance | DoctorOnCall">
@@ -264,7 +269,7 @@
                 </div>
             </div>
             
-            <h2>Ecosystem Partners</h2>
+            <h2 class="isp-h2">Ecosystem Partners</h2>
             <div class="row">
                 <div class="col-md-6 partnership-display-flex">
                     <img class="partnership-image-logo" loading="lazy" src="./images/doctoroncall-prince-court.png" alt="Prince Court Medical Center | DoctorOnCall">
@@ -320,7 +325,7 @@
                 </div>
             </div>
             
-            <h2>Third Party Administrator</h2>
+            <h2 class="isp-h2">Third Party Administrator</h2>
             <div class="row">
                 <div class="col-md-6 partnership-display-flex">
                     <img class="partnership-image-logo" loading="lazy" src="./images/doctoroncall-micare.png"  alt="MiCare | DoctorOnCall">
@@ -393,7 +398,10 @@
                     <!-- start div for column for DoctorOnCall description -->
                     <div class="col-lg-5 col-xs-12 first-footer">
                     <a href="https://www.doctoroncall.com.my">
-                        <img loading="lazy" class="header-logo" src="./images/doctoroncall-logo.png" alt="DoctorOnCall logo">
+                        <picture>
+                            <source srcset="/images/doctoroncall-logo-webp.webp" class="header-logo" type="image/webp">
+                              <img src="/images/doctoroncall-logo-png.png" class="header-logo" alt="DoctorOnCall Logo" loading="lazy">
+                          </picture>
                     </a>
                     <p>DoctorOnCall is Malaysia's first &amp; largest online Doctor consultation platform that provides better healthcare services via chat, phone &amp; video calls.</p> <br>
                     <svg class="footer-readmore-arrow" viewBox="0 0 50 50">

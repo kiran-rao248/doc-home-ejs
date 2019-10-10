@@ -494,9 +494,10 @@ html{
   /*5.0 Search Section*/
 
 .aboutus-sub{
-  color: #fff;
-  font-size: 16px;
+  color: #fff; 
   text-align: center;
+  font-size: 16px;
+  line-height: 25px;
 }
 
   .main-search-btn:hover, .main-search-btn:visited, .main-search-btn:active{
@@ -779,6 +780,7 @@ text-align: center;
 
 .contact-us-1{
   display: inline-block;
+  margin-top: 45px;
   padding-left: 8%;
   width: 42%;
 }

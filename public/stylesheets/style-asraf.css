@@ -114,7 +114,8 @@ margin: 30px 0;
 }
 
 .partnership-main-desc-text{
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 25px;
   padding-left: 30%;
   padding-right: 30%;
 }
@@ -518,6 +519,7 @@ z-index: 1000;
 .header-more-content .header-dropdown-content a {
 color: #000;
 display: block;
+font-size: 14px;
 padding: 20px;
 text-decoration: none;
 text-align: left;
@@ -560,6 +562,7 @@ color:#41c0f1;
   align-items: center;
   border-bottom:1px solid #ddd;
   display: inline-flex;
+  font-size: 14px;
   padding:20px 30px;
   width:100%;
 }
@@ -755,7 +758,8 @@ text-align: center;
 }
 
 .panel-doc-main-subtext{
-line-height: 26px;
+  font-size: 16px;
+line-height: 25px;
 margin-top: 20px;
 padding: 0 16%;
 }

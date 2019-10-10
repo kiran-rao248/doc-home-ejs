@@ -323,6 +323,7 @@ font-family:  sans-serif;
 .header-more-content .header-dropdown-content a {
   color: #000;
   display: block;
+  font-size: 14px;
   padding: 20px;
   text-decoration: none;
   text-align: left;
@@ -365,6 +366,7 @@ font-family:  sans-serif;
     align-items: center;
     border-bottom:1px solid #ddd;
     display: inline-flex;
+    font-size: 14px;
     padding:20px 30px;
     width:100%;
   }
@@ -537,6 +539,12 @@ text-decoration: none;
 content: "  |  ";
 }
 
+@media(max-width: 960px){
+  .header-menu-div-signup{
+    display: none;
+  }
+}
+
 /* career container */
 .career-container {
   background-image: url("/images/career-doctoroncall.png"); 
@@ -650,6 +658,7 @@ padding-bottom: 40px
 .aboutus-sub{
   color: #fff;
   font-size: 16px;
+  line-height: 25px;
   text-align: center;
 }
 
@@ -713,7 +722,7 @@ font-size: 16px;
 .position-desc-task{
 list-style: none;
 padding-left: 0;
-line-height: 26px;
+line-height: 28px;
 font-size: 14px;
 }
 
@@ -723,7 +732,7 @@ font-size: 14px;
 
 .position-desc-criteria, .position-desc-additional{
 padding-left: 20px;
-line-height: 26px;
+line-height: 28px;
 font-size: 14px;
 }
 /* form css */
