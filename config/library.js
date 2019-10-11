@@ -7,7 +7,7 @@ var library = {
     find_doctor: "/find-doctor",
     medicine: "/medicine/en",
     about_us: "/aboutUs",
-    tanya: "/tanya",
+    tanya: "/tanya/en",
     article: "/penyakit-a-z",
     soalan: "/soalan",
     faq: "#",

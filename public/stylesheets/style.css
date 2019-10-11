@@ -29,13 +29,12 @@ Table of contents
 1.0 Global Styles */
 html{
   box-sizing: border-box;
-  overflow: auto;
+  overflow: auto; 
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  overflow-x: hidden;
 }
 
 .search-container{ 
@@ -48,6 +47,10 @@ display: none;
 
 .desktop-only{
 display: block;
+}
+
+.home-points{
+  overflow: hidden;
 }
 
 .main-nextpage-btn-2{
@@ -236,9 +239,11 @@ _    _ ______          _____  ______ _____
 .header {
   background-color: #fff;
   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.1);
-  padding-left:0;
+  padding-left:0;  
+  position: sticky;
+  top: 0; 
   width: 100%;
-  z-index: 3;
+  z-index: 3;  
 }
 
 .header ul {
@@ -251,9 +256,10 @@ _    _ ______          _____  ______ _____
 .header-link , .header-link:hover , .header-link:active , .header-link:visited , .header-link:checked {
   color: #000;
   display: inline-block;
+  font-size: 14px;
   margin: 0 10px;
   padding: 35px 0 28px 0;
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 .header a:hover{
@@ -263,6 +269,7 @@ _    _ ______          _____  ______ _____
 @media (max-width: 960px) {
   .header-link, .header-link:hover, .header-link:active, .header-link:visited, .header-link:checked {
     color: #000;
+    font-size: 14px;;
     padding: 20px 0 20px 20px;
     text-decoration: none;
   }
@@ -285,6 +292,7 @@ _    _ ______          _____  ______ _____
 @media (max-width: 960px) {
   .header-logo {
     height: 60px;
+    margin-right: -45px;
     margin-top: 0;
     padding: 10px;
     width: auto;
@@ -414,13 +422,17 @@ _    _ ______          _____  ______ _____
   border: 4px;
   border-radius: 4px;
   color: #fff;
+  font-size: 14px;
+  height: 50px;
   margin-top: 19px;
   padding: 15px 28px;
   position: relative;
   text-decoration: none;
   text-align: center;
-  top: -2px;
+  top: -4px;
 }
+
+
 
 .icon-userlogin svg {
   margin-right: 24px;
@@ -442,6 +454,7 @@ _    _ ______          _____  ______ _____
   .header-menu-div:hover a,.header-menu-div:hover a svg{
     color: #41c0f1;
     fill: #41c0f1;
+    font-size: 14px;
   }
 }
 
@@ -507,6 +520,18 @@ _    _ ______          _____  ______ _____
     text-decoration: none;
   }
 }
+
+@media(max-width: 960px){
+  .header{
+    height: 60px;
+  }
+}
+
+@media(min-width: 961px){
+  .header{
+    height: 86px;
+  }
+} 
 
 /*5.0 Search Section*/
 
@@ -2551,7 +2576,8 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
       background-color: #eee;
       border-radius: 5px;
       color: #777;
-      display: inline-block;
+      display: table;
+      overflow: scroll;
       margin: 10px;
       padding: 15px 20px;
     }

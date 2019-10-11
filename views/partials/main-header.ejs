@@ -3,7 +3,10 @@
 <header class="container-fluid header">
     <!-- start a tag for logo -->
     <a href="<%= url.doc_page %>"> 
-      <img class="header-logo" src="/images/doctorOnCall-icon.png" alt="DoctorOnCall logo">
+      <picture>
+        <source srcset="/images/doctoroncall-logo-webp.webp" class="header-logo" type="image/webp">
+          <img src="/images/doctoroncall-logo-png.png" class="header-logo" alt="DoctorOnCall Logo" loading="lazy">
+      </picture>
     </a>
     <!-- end of a tag for logo -->
     <input class="header-menu-btn" type="checkbox" id="menu-btn" />
