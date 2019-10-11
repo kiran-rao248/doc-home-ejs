@@ -53,6 +53,12 @@ display: block;
   overflow: hidden;
 }
 
+@media(min-width: 961px){
+  .home-points-search{
+    overflow: hidden;;
+  }
+}
+
 .main-nextpage-btn-2{
 background-color: #41C0F1;
 border: none;
@@ -396,8 +402,9 @@ _    _ ______          _____  ______ _____
 }
 
 .header .header-menu-btn:checked~.header-menu {
-  height:auto;
-  transition: all 10s;
+  height:100vh;
+  overflow: scroll;
+  transition: all 0.5s;
 }
 
 .header .header-menu-btn:checked~.header-menu-icon .navicon {
@@ -492,6 +499,7 @@ _    _ ______          _____  ______ _____
       width:100%;
   }
   .header-dropdown-content a {
+    font-size: 14px;;
       margin-left:10px;
   }
 
@@ -512,6 +520,7 @@ _    _ ______          _____  ______ _____
     align-items: center;
     border-bottom:1px solid #ddd;
     display: inline-flex;
+    font-size: 14px;
     padding:20px 30px;
     width:100%;
   }
@@ -523,7 +532,7 @@ _    _ ______          _____  ______ _____
 
 @media(max-width: 960px){
   .header{
-    height: 60px;
+    height: 65px;
   }
 }
 
@@ -1120,7 +1129,7 @@ width: 2%;
 }
 
 .main-health-section-2-3{
-  background-image: url("/images/Redbump.jpg"); 
+  background-image: url("/images/RedBump.jpg"); 
 }
 
 .main-health-section-2-4{
@@ -2807,14 +2816,14 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
 .connect-with-doc-div-2 img{
   height: 430px;
   margin-bottom: 27px;
-  margin-top: -60px;
+  margin-top: 16px;
   justify-content: center;
   padding-left: 20%;
   padding-right: 50%;
 }
 
 .main-connect-text-desktop{
-  margin-top: 13%;
+  margin-top: 135px;
 }
 
 .main-nextpage-btn-2{
