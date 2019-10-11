@@ -18,6 +18,11 @@ Table of contents
 16.0 Footer
 17.0 Popup
 18.0 Floating button 
+19.0 Career/F-end/B-end/Intern Pages 
+20.0 Media/Media-2 pages
+21.0 Corporate Partnership
+22.0 Panel Doctor
+23.0 About and Contact Us
 */
 
   /*----------------------------------------------------
@@ -2797,3 +2802,889 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
     width: 30%;
 }
 }
+
+/*19.0 Career/F-end/B-end/Intern Pages */
+
+
+
+
+/* career container */
+.career-container {
+  background-image: url("/images/career-doctoroncall.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  margin-bottom: 30px;
+}
+
+.career-jd{
+  font-size: 14px;
+}
+
+
+.career-title { 
+  text-align: center;
+  color: #fff;
+}
+
+.career-desc { 
+  color: #fff;
+  text-align: center; 
+  line-height: 26px; 
+}
+
+@media (max-width: 960px) {
+.career-desc {
+  padding: 0;
+  margin: 15px 20px;
+} 
+}
+
+.career-detail {
+padding: 30px 0;
+}
+
+@media (max-width: 768px) {
+.career-detail {
+  padding: 30px 15px;
+}
+}
+
+.position-list {
+margin: 10px 0 50px 0;
+}
+.position-col.col-md-4 {
+border: 1px solid #E0E0E0;
+border-radius: 3px;
+max-width: 31%;
+margin: 0 1%;   
+padding: 0;
+}
+
+.position-col a {
+text-decoration: none;
+color: #000;
+}
+
+@media (max-width: 576px) {
+.position-col.col-md-4 {
+  max-width: unset;
+  margin: 10px;
+}
+}
+.career-frontend-img-col {
+  background-image: url("/images/career-frontend-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+.career-backend-img-col {
+background-image: url("/images/career-backend-img.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height: 350px;
+}
+
+.career-businessanalyst-img-col {
+background-image: url("/images/career-businessanalyst-img.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height: 350px;
+}
+
+.career-img {
+width: 100%;
+}
+
+.position-text {
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 26px;
+}
+
+/* .position-text p {
+padding-bottom: 40px
+} */
+
+.apply-btn {
+  width: max-content;
+  background-color: #41C0F1;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  margin: 10px 15px;
+  padding: 8px 15px;
+  position: absolute;
+  bottom: 0;
+}
+
+.aboutus-sub{
+  color: #fff;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+
+
+.career-sub-container {
+padding: 0
+}
+
+.row.career-sub-row {
+width: 100%;
+margin-left: 0;
+}
+
+.career-sub-img-col.col-lg-5 {
+padding: 0;
+}
+.career-desc-col {
+background-color: #2E5AA9;
+color: #fff;
+}
+
+
+.position-title {
+margin: 20px 10px; 
+}
+
+.position-type {
+margin: 5px 10px;
+font-size: 16px;
+font-weight: bold;
+
+}
+.position-info {
+margin: 40px 10px;
+font-size: 16px;
+padding-right: 30px;
+line-height: 30px;
+}
+
+.submit-btn {
+border: none;
+border-radius: 3px;
+background-color: #41C0F1;
+height: 48px;
+padding: 8px 20px;
+margin: 15px 10px;
+}
+
+.submit-btn a {
+text-decoration: none;
+color: #fff;
+font-size: 16px;
+}
+
+@media (max-width: 576px) {
+.submit-btn {
+  margin: 25px 10px;
+}
+}
+
+.position-desc-task{
+list-style: none;
+padding-left: 0;
+line-height: 28px;
+font-size: 14px;
+}
+
+.career-techreq{
+  margin-top: 60px;
+}
+
+.position-desc-criteria, .position-desc-additional{
+padding-left: 20px;
+line-height: 28px;
+font-size: 14px;
+}
+/* form css */
+.container-form-outer{
+text-align: center;
+background-color: #F0F0F0;
+width: 100%;
+}
+
+.container.container-form-inner {
+width: 54%;
+}
+
+@media (max-width: 960px){
+.container.container-form-inner {
+  width: 100%;
+}
+}
+
+.form-detail {
+display: flex;
+}
+
+.form-input {
+width: 100%;
+margin: 5px 0;
+border-radius: 3px;
+border: 1px solid #aaa;
+padding: 10px;
+}
+
+.form-detail.form-input {
+padding: 0;
+}
+
+.application-form-content {
+margin: 0;
+}
+
+.application-form-title {
+font-size: 30px;
+font-weight: bold;
+padding-top: 20px;
+}
+
+.submit-app-btn {
+background-color: #41C0F1;
+border: none;
+border-radius: 3px;
+padding: 10px 15px;
+color: #fff;
+margin: 20px 0;
+}
+
+.file-upload-input {
+width: 100%;
+border: 1px solid #aaa;
+padding: 10px;
+-moz-transition: all 0.2s ease-in;
+-o-transition: all 0.2s ease-in;
+-webkit-transition: all 0.2s ease-in;
+transition: all 0.2s ease-in;
+float: left;
+}
+
+.file-upload-button {
+cursor: pointer;
+display: inline-block;
+color: #fff;
+border: none;
+margin-left: -1px;
+background-color: #41C0F1;
+float: left;
+-moz-transition: all 0.2s ease-in;
+-o-transition: all 0.2s ease-in;
+-webkit-transition: all 0.2s ease-in;
+transition: all 0.2s ease-in;
+padding: 10px 15px;
+white-space: nowrap;
+}
+
+.no-career-img {
+text-align: center;
+padding-bottom: 15px;
+}
+
+.no-career-text {
+text-align: center;
+padding-bottom: 30px;
+}
+
+.career-bold{
+  font-weight: bold;
+}
+
+
+/*20.0 Media/Media-2 pages*/
+
+
+
+/* media container */
+.media-container {
+  background-image: url("/images/media-doctoroncall.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+
+.media-link-title{
+  line-height: 23px;
+}
+
+.media-title {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+.media-desc{
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  padding: 0 180px;
+  line-height: 30px;
+}
+
+@media(max-width: 768px) {
+.media-desc {
+  padding: 0;
+}
+}
+
+.media-col.col-lg-3 {
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+  max-width: 23%;
+  margin: 0 1%;   
+  padding: 0;
+}
+
+@media(max-width: 768px) {
+.media-col.col-lg-3 {
+  max-width: unset;
+  margin: 10px;
+}
+}
+
+.media-row-upper {
+padding-top: 30px;
+padding-bottom: 15px;
+}
+
+.media-row-lower {
+padding-bottom: 30px;
+padding-top: 30px;
+}
+
+
+.media-col a, .media-col a:visited, .media-col a:hover, .media-col a:active  {
+text-decoration: none;
+color: inherit;
+
+}
+
+.media-img {
+  width: 100%;
+}
+
+.media-logo {
+  padding-bottom: 10px;
+}
+
+.media-detail {
+padding: 18px 10px;
+}
+
+.media-date {
+padding-bottom: 15px;
+font-size: 14px;
+padding-top: 10px;
+color: #777;
+}
+
+.media-link-title {
+  font-size: 14px;
+}
+
+/* @media (max-width: 960px) {
+.media-link-title {
+  font-size: 13px;
+}
+} */
+
+.aboutus-sub{
+  color: #fff;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+
+
+.media-link-url-btn {
+  background-color: #41C0F1;
+  border: none;
+  color: #fff;
+  border-radius: 2px;
+  margin-top: 20px;
+  padding: 8px 15px;
+  position: absolute;
+  bottom: 15px;
+}
+
+.media-link-url-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.page-btn{
+display: flex;
+justify-content: center;
+align-items: center;
+margin:24px auto;
+padding: 1px;
+overflow: auto;
+}
+.page{
+border: 1px solid #ddd;
+background-color: #fff;
+color: #337ab7;
+float:left;
+line-height: 1.42857143;
+margin-left: -1px;
+padding: 6px 12px;
+position: relative;
+text-decoration: none;
+}
+a.page:active{
+background-color: #41c0f1;
+color:#fff;
+}
+
+
+/*21.0 Corporate Partnership*/
+
+
+
+/* 1. Partnership CSS Style */
+
+
+.cp-h2{
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.partnership-main-section{ 
+  background-image: url('../images/partnership-doctoroncall.png');   
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff; 
+  opacity: 0.88;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.partnership-main-desc-text{
+  font-size: 16px;
+  line-height: 25px;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.partnership-get-touch-button{
+background: #41C0F1;
+border:none;
+border-radius: 5px;
+color: #fff;    
+display: inline-block;
+height: 40px;
+margin-top: 25px;    
+padding: 10px;
+text-decoration: none;
+text-align: center;
+width: 25%;  
+
+}
+
+.partnership-doctor-image{
+  background-image: url('../images/doctoroncall-partnership-doctor.png');   
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 590px;
+  width: 100%;
+}
+
+.partnership-doctor-image-column{
+  width: 40%;
+}
+
+.partnership-making-sure-text{
+line-height: 1.7em;
+}
+
+.partnership-desc-text{
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.partnership-partner-desc-text{ 
+font-size: 14px;
+font-weight: normal;
+line-height: 23px;
+margin-top: 10px;
+}
+
+.partnership-desc-text-column{
+  margin-bottom: 5%;
+  padding-left: 13.5%;
+  padding-right: 5%;
+  width: 60%;
+}
+
+.partnership-display-flex{
+display: flex;
+margin-bottom: 30px;
+}
+
+.partnership-image-logo-position{
+text-align: center;
+width: 50%;
+}
+
+.partnership-image-logo{
+height: 62px;
+}
+
+.who-we-partner-style{  
+list-style-type: none;
+margin-bottom: 40px;
+padding-left: 0;
+}
+
+.partnership-why-us-position{
+margin-bottom: 25px;
+text-align: center;
+}
+
+.partnership-why-us-position img{
+height: 142px;
+}
+
+.partnership-why-us-text{
+color: #3c3c3c;
+font-size: 14px;
+line-height: 23px;
+}
+
+@media (max-width:768px){
+
+.partnership-desc-text-column{
+  padding-left: 5%;
+}
+
+.partnership-main-desc-text{
+    padding-left: 12%;
+    padding-right: 12%;
+}
+}
+
+@media (max-width:576px){
+
+  .partnership-main-section{
+    padding: 25px;
+  }
+
+  .partnership-desc-text-column{
+    padding: 5%;
+    width: 100%;
+  }
+
+  .partnership-main-desc-text{
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+
+  .partnership-doctor-image{
+      /* background-image: url('../images/doctoroncall-partnership-doctor-mobile.png'); */        
+      background-position: top;
+      height: 285px;
+  }
+
+  .partnership-button-position{
+    text-align: center;
+  }
+
+  .partnership-get-touch-button{
+    width: 70%;
+  }
+
+}
+
+.partnership-button-position{
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.isp-h2{
+  margin-bottom: 50px;
+}
+
+
+/*22.0 Panel Doctor*/
+
+
+
+/* 4. Panel Doctor CSS */
+
+.panel-doc-main-section{ 
+  background-image: url('../images/panel-doctor-doctoroncall.png');   
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  color: #fff;  
+  opacity: 0.88;
+  padding: 50px;
+  text-align: center;
+  }
+  
+  .panel-doc-main-subtext{
+    font-size: 16px;
+  line-height: 25px;
+  margin-top: 20px;
+  padding: 0 16%;
+  }
+  
+  .panel-doc-contribute{ 
+  padding-bottom: 20px;
+  padding-top: 30px;
+  text-align: center;
+  }
+  
+  .panel-doc-contribute-img{
+  height: 130px;
+    width: 130px;
+  }
+  
+  .panel-doc-position{
+  margin-bottom: 50px;
+  text-align: center;
+  width: 50%;
+  }  
+  
+  .panel-doc-margin-bottom{
+  margin-bottom: 50px;
+  }
+  
+  .panel-doctor-contribute-desc{
+  color: #3C3C3C;
+  font-size: 14px;
+  line-height: 23px;
+  }
+  
+  .panel-doctor-contribute-name{
+  color: #3C3C3C;
+  font-weight: bold;
+  margin: 5px 0;
+  }
+  
+  @media (max-width:576px){
+  .panel-doc-main-subtext{
+    padding: unset;
+  }
+  }
+
+  /*23.0 About and Contact Us */
+
+  
+
+/*4.0 Title - Contact Us*/
+
+.contactus-title{
+  background-image: url("/images/contact-us-doctoroncall.png"); 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  padding: 50px;
+}
+
+.contactus-title h1{
+  color: #fff; 
+  text-align: center;
+}
+
+.contactus-title p{
+  font-size: 16px;
+margin: 0;
+padding-bottom: 3%;
+padding-right: 3%;
+padding-left: 3%;
+text-align: center;
+}
+
+.contact-us-1{
+  display: inline-block;
+  margin-top: 45px;
+  padding-left: 8%;
+  width: 42%;
+}
+
+.contact-us-2{
+  display: inline-block;
+  float: right;
+  width: 57%;
+  text-align: right;
+  vertical-align: top;
+}
+
+.contact-us-2 img{
+  width: 83%;
+}
+
+.contactus-p-header{
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 22px;
+}
+
+.contactus-p-header-2{
+  font-weight: bold;
+  margin-bottom: 8px; 
+}
+
+.contact-us-img{
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: top;
+  width: 20px;
+}
+
+.contact-us-img-2{
+  height: 20px;
+  margin-right: 13px;
+  vertical-align: top;
+}
+
+.contact-us-mobile-div{
+  width: 102%;
+}
+
+/*5.0 About Us*/
+
+.aboutus-title{
+  background-image: url("/images/about-us-doctoroncall.png"); 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  padding: 50px;
+} 
+
+.aboutus-title h1{
+  color: #fff;
+  text-align: center;
+}
+
+.about-us-video{
+  height: 350px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-us-h2{
+  margin-left: 15px;
+}
+
+.about-us-second-column-p{
+  line-height: 23px;
+  margin-left: 3%;
+  margin-bottom: 0;
+  width: 85%;
+}
+
+.about-us-second-column-p-head{
+  margin-left: 3%;
+  margin-bottom: 0;
+  width: 85%;
+}
+
+.about-us-space{
+  margin-bottom: 20px;
+}
+
+.about-us-second-column-p-header{
+  margin-left: 3%;
+  margin-bottom: 0;
+  width: 85%;
+}
+
+.about-us-second-column-p-mobile{
+  margin-top: 0;
+  margin-left: 3%;
+  margin-bottom: 0;
+  padding-top: 25px;
+  width: 85%;
+}
+
+.about-us-second-column-p-mobile-2{
+  line-height: 23px;
+  margin-top: 0;
+  margin-left: 3%;
+  margin-bottom: 0;
+  width: 85%;
+}
+.aboutus-second-row-2{
+  background-color: #2E5AA9;
+  color: #fff;
+}
+
+.aboutus-second-row-2-desktop{
+  background-color: #2E5AA9;
+  color: #fff;
+  height: 425px;
+}
+
+.row.aboutus-sub-row{
+  margin-bottom: -14px;
+  margin-left: 0;
+  width: 100%;
+}
+
+.aboutus-row1-img{
+  background-image: url("/images/about-us-family-doctoroncall.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 425px;
+}
+
+.aboutus-row3-img{
+  background-image: url("/images/about-us-doctor-doctoroncall.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+.aboutus-second-row-3{
+  padding-top: 45px;
+}
+
+.aboutus-contributedr{
+  font-weight: bold;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.aboutus-contribute-img{
+  height: 130px;
+    width: 130px;
+}
+
+.about-us-position{
+  text-align: center;
+}
+
+.aboutus-lastli{
+  padding-bottom: 15px;
+}
+
+.contactus-tagline{
+  margin-left: 7.5%;
+  width: 45%;
+}
+
+.aboutus-p-text{
+  line-height: 23px;
+}
+
+@media(max-width: 576px){
+  .about-us-video iframe{
+    width: 90%;
+  }
+}
+
+@media(min-width:1077px){
+  .about-us-second-column-p-header {
+    margin-left: 3%;
+    margin-bottom: 0;
+    margin-top: 5%;
+    width: 85%;
+}
+}
+

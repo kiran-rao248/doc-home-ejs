@@ -18,6 +18,7 @@ Table of contents
 16.0 Footer
 17.0 Popup
 18.0 Floating button 
+19.0 Panel Doctor
 */
 
   /*----------------------------------------------------
@@ -2764,4 +2765,67 @@ html{
       .desktopFloat{
           display: none;
       }
+  }
+
+
+  /*Panel Doctor*/
+
+  
+/* 4. Panel Doctor CSS */
+
+.panel-doc-main-section{ 
+  background-image: url('../images/panel-doctor-doctoroncall.png');   
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  color: #fff;  
+  opacity: 0.88;
+  padding: 50px;
+  text-align: center;
+  }
+  
+  .panel-doc-main-subtext{
+    font-size: 16px;
+  line-height: 25px;
+  margin-top: 20px;
+  padding: 0 16%;
+  }
+  
+  .panel-doc-contribute{ 
+  padding-bottom: 20px;
+  padding-top: 30px;
+  text-align: center;
+  }
+  
+  .panel-doc-contribute-img{
+  height: 130px;
+    width: 130px;
+  }
+  
+  .panel-doc-position{
+  margin-bottom: 50px;
+  text-align: center;
+  width: 50%;
+  }  
+  
+  .panel-doc-margin-bottom{
+  margin-bottom: 50px;
+  }
+  
+  .panel-doctor-contribute-desc{
+  color: #3C3C3C;
+  font-size: 14px;
+  line-height: 23px;
+  }
+  
+  .panel-doctor-contribute-name{
+  color: #3C3C3C;
+  font-weight: bold;
+  margin: 5px 0;
+  }
+  
+  @media (max-width:576px){
+  .panel-doc-main-subtext{
+    padding: unset;
+  }
   }
