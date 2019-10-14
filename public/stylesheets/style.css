@@ -23,6 +23,7 @@ Table of contents
 21.0 Corporate Partnership
 22.0 Panel Doctor
 23.0 About and Contact Us
+24.0 FAQ
 */
 
   /*----------------------------------------------------
@@ -3483,8 +3484,7 @@ line-height: 23px;
   
   .panel-doc-position{
   margin-bottom: 50px;
-  text-align: center;
-  width: 50%;
+  text-align: center; 
   }  
   
   .panel-doc-margin-bottom{
@@ -3501,6 +3501,13 @@ line-height: 23px;
   color: #3C3C3C;
   font-weight: bold;
   margin: 5px 0;
+  }
+ 
+  .panel-doc-link{
+    text-decoration: none;
+  }
+  .panel-doc-position:hover { 
+    text-decoration: none; 
   }
   
   @media (max-width:576px){
@@ -3723,3 +3730,97 @@ text-align: center;
 }
 }
 
+/*24.0 FAQ*/ 
+
+.answers{
+  font-size:14px;
+  color:#333
+}
+.questions{
+  font-weight:600;
+  font-size:18px;
+  color:#333
+}
+.questions-container{
+  border-left:1px solid #ddd;
+  font-family:'Open Sans',sans-serif;
+  padding-top:20px
+}
+.faq-container{
+  padding:20px;
+  margin:20px 0 50px
+}
+.questions-container hr{
+  border:1px solid #ddd
+}
+@media (max-width:768px){
+  .navigator{
+      display:none
+  }
+  .questions-container{
+      border:none
+  }
+}
+.navigator{
+  padding:14px;
+  font-family:'Open Sans',sans-serif;
+  font-size:14px;
+  font-weight:600
+}
+.navigator a{
+  display:block;
+  padding-left:50px;
+  margin:10px;
+  cursor:pointer;
+  transition:all .3s ease;
+  text-decoration:none;
+  color:#000;
+  cursor:pointer
+}
+.navigator a:hover{
+  color:#2e5aa9;
+  text-decoration:underline
+}
+.navigator span{
+  font-weight:800;
+  padding:20px 0 0 56px;
+  color:#2e5aa9;
+  display:block;
+  cursor:default
+}
+.page-title{
+  color:#fff;
+  font-family:'Open Sans',sans-serif;
+  height:220px;
+  text-align:center;
+  padding:50px;
+  background-image:url(/images/faq-doctoroncall.png);
+  background-repeat:no-repeat;
+  background-position:50% 100%;
+  background-size:cover
+}
+@media(max-width:576px){
+  .page-title{
+      height:auto;
+      margin-top:-40px
+  } 
+}
+.page-title span{
+  margin:0 auto;
+  display:block
+} 
+
+.panel-doc-main-section{
+  background:#2e5aa9;
+  color:#fff;
+  padding:50px;
+  text-align:center
+}
+.panel-doc-main-title{
+  font-size:24px;
+  font-weight:700
+}
+.panel-doc-main-subtext{
+  line-height:30px;
+  margin-top:20px
+}
