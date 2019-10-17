@@ -559,6 +559,8 @@ _    _ ______          _____  ______ _____
   margin: 3px;
   padding: 12px;
   width: 172px;
+  white-space: nowrap;
+  vertical-align: top;
 }
 
 .main-search-section { 
