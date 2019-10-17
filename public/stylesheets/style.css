@@ -3733,8 +3733,9 @@ text-align: center;
 /*24.0 FAQ*/ 
 
 .answers{
+  color:#333;
   font-size:14px;
-  color:#333
+  line-height: 23px;
 }
 .questions{
   font-weight:600;
@@ -3772,10 +3773,11 @@ text-align: center;
   padding-left:50px;
   margin:10px;
   cursor:pointer;
+  line-height: 23px;
   transition:all .3s ease;
   text-decoration:none;
   color:#000;
-  cursor:pointer
+  cursor:pointer;
 }
 .navigator a:hover{
   color:#2e5aa9;
@@ -3801,8 +3803,7 @@ text-align: center;
 }
 @media(max-width:576px){
   .page-title{
-      height:auto;
-      margin-top:-40px
+      height:auto; 
   } 
 }
 .page-title span{
