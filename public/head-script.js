@@ -158,8 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }else{
                 updateSearchbarAction("clear")
                 id("search-suggest").classList.remove("searchSuggestShow")
-                id("search-suggest").classList.remove("searchSuggestShowMobile")
-                console.log("here i am ");
+                id("search-suggest").classList.remove("searchSuggestShowMobile") 
             }
           }
 
