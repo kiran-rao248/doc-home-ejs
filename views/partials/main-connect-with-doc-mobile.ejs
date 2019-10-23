@@ -5,10 +5,15 @@
                     <a href="https://www.doctoroncall.com.my/patient#/signup"><h2><%= lang.mainpage_connect_doctor_instant%></h2></a>
                     </div> 
         <p><%= lang.mainpage_connect_doctor_desc%></p> 
+        <button type="button"  onclick="location.href='https://www.doctoroncall.com.my/patient#/signup'" class="main-connect-btn">
+            <%= lang.mainpage_consult_doctor%>
+        </button>
     </div>   
     <div class="main-connect-text-2">
-    <button type="button"  onclick="location.href='https://www.doctoroncall.com.my/patient#/signup'" class="main-connect-btn">
-        <%= lang.mainpage_consult_doctor%>
-    </button>
+    <%if(language == "bm"){%>
+        <img src="/images/doctoroncall_doctor_banner.png" alt="Connect With Doctor | DoctorOnCall">
+        <%}else if(language == "en"){%>
+        <img src="/images/chinese-male-doconcall.png" alt="Connect With Doctor | DoctorOnCall">
+            <%}%>
     </div>
 </section>

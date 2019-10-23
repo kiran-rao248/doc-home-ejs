@@ -175,7 +175,7 @@ var library = {
     mainpage_personal_care: "Personal Care",
     mainpage_deliver_doorstep: "We deliver to your doorstep",
     mainpage_free_of_charge: "Free of charge",
-    mainpage_order_now: "Go to E-Pharmacy Now",
+    mainpage_order_now: "Online Pharmacy",
     mainpage_consult_doctor_now: "Find Doctor Now",
     mainpage_appointment_now: "Book Appointment Now",
     mainpage_read_health: "Read Health Articles Now",
