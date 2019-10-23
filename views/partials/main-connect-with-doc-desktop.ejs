@@ -15,9 +15,15 @@
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 connect-with-doc-div-2">
       <%if(language == "bm"){%>
-      <img src="/images/doctoroncall_doctor_banner.png" alt="Connect With Doctor | DoctorOnCall">
-      <%}else if(language == "en"){%>
-      <img src="/images/chinese-male-doconcall.png" alt="Connect With Doctor | DoctorOnCall">
+        <picture>
+            <source srcset="/images/doctoroncall_doctor_banner.webp" type="image/webp">
+              <img src="/images/doctoroncall_doctor_banner.png.png" alt="Connect With Doctor | DoctorOnCall" loading="lazy">
+          </picture> 
+      <%}else if(language == "en"){%> 
+      <picture>
+          <source srcset="/images/chinese-male-doconcall.webp" type="image/webp">
+            <img src="/images/chinese-male-doconcall.png" alt="Connect With Doctor | DoctorOnCall" loading="lazy">
+        </picture> 
         <%}%>
     </div> 
   </div>
