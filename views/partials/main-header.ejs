@@ -55,7 +55,13 @@
         <!-- start div for header content in desktop -->
         <div class="header-dropdown-content">
           <a href="about-us.html"><%= lang.header_about_us %></a>
-          <a href="<%= url.tanya%>"><%= lang.header_ask_question %></a>
+
+          <%if(language == "en"){%>
+            <a href="<%= url.tanya%>"><%= lang.header_ask_question %></a>
+          <%}else if(language == "bm"){%>
+            <a href="<%= url.tanya_bm%>"><%= lang.header_ask_question %></a>
+            <%}%>
+
           <a href="<%= url.article %>"><%= lang.header_read_article %></a>
           <a href="faq.html"><%= lang.header_faq %></a>
           <a href="media.html"><%= lang.header_media %></a>

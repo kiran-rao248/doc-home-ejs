@@ -25,12 +25,25 @@
         <div class="footer-content">
           <a href="<%= url.medicine %>"><%= lang.footer_order_medicine %></a>
           <a href="<%= url.signup_login%>"><%= lang.footer_consult_doctor %></a>
-          <a href="<%= url.tanya %>"><%= lang.footer_ask_question %></a>
+
+          <%if(language == "en"){%>
+            <a href="<%= url.tanya %>"><%= lang.footer_ask_question %></a>
+          <%}else if(language == "bm"){%> 
+            <a href="<%= url.tanya_bm %>"><%= lang.footer_ask_question %></a>
+            <%}%>
+          
+
           <a href="<%= url.article%>"> <%= lang.footer_read_article %></a>
           <a href="<%= url.find_doctor%>"> <%= lang.footer_search_hospitals %></a>
           <a href="<%= url.find_doctor%>"><%= lang.footer_search_doctors %></a>
           <a href="<%= url.find_doctor%>"><%= lang.footer_book_appointment %></a>
-          <a href="<%= url.tanya%>"><%= lang.footer_tanya_doktor %></a>
+
+          <%if(language == "en"){%>
+            <a href="<%= url.tanya%>"><%= lang.footer_tanya_doktor %></a>
+          <%}else if(language == "bm"){%>  
+            <a href="<%= url.tanya_bm%>"><%= lang.footer_tanya_doktor %></a>
+            <%}%> 
+
         </div>
       </div>
       <!-- end div for column for Our Services -->

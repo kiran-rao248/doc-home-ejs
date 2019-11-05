@@ -8,6 +8,7 @@ var library = {
     medicine: "/medicine/en",
     about_us: "/aboutUs",
     tanya: "/tanya/en",
+    tanya_bm: "/tanya/",
     article: "/penyakit-a-z",
     soalan: "/soalan",
     faq: "#",
@@ -632,7 +633,7 @@ var library = {
     mainpage_subscribe_health_insight: "Langgan info kesihatan secara percuma",
     mainpage_subscribe_desc: "Dapatkan pemberitahun tentang artikel, tawaran dan promosi terbaru kami. Anda boleh berhenti melanggan pada bila-bila masa. ",
     mainpage_subscribe: "Langgan", 
-    tanya: "/tanya"
+    tanya: "/tanya/"
   }
 };
 
