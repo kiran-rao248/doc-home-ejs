@@ -1,3 +1,23 @@
+//AJAX func to send post request 
+function sendPostAJAX(url,body,onsuccess,onerror){
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function(){
+    if(xmlhttp.readyState == XMLHttpRequest.DONE){
+      if(xmlhttp.status == 200){
+        onsuccess(JSON.parse(xmlhttp.responseText))
+      }else if(xmlhttp.status == 400){
+        onerror(xmlhttp.response)
+      }else{
+        alert(xmlhttp.responseText);
+      }
+    }
+  }
+};
+xmlhttp.open("POST", url, true);
+xmlhttp.setRequestHeader('Content-Type' , 'application/JSON');
+xmlhttp.send(body);
+
+
 //  show popup function
   function showPopup() { 
     document.getElementById("popup").style.display = "block";
@@ -137,17 +157,33 @@ document.addEventListener('DOMContentLoaded', function () {
               hitsPerPage: 10
             };
             // query database
-            if (searchTerm.length > 2) {
-              index.search(query, function (err, content) {
-                //update search result
-                // console.log(content.hits)
+            // if (searchTerm.length > 2) {
+            //   index.search(query, function (err, content) {
+            //     //update search result
+            //     // console.log(content.hits)
 
-                  updateSearchResult(content.hits);
-                if(content.hits.length==0){
-                  id("search-suggest").classList.add("searchSuggestShow")
-                  id("search-suggest").classList.add("searchSuggestShowMobile")
+            //       updateSearchResult(content.hits);
+            //     if(content.hits.length==0){
+            //       id("search-suggest").classList.add("searchSuggestShow")
+            //       id("search-suggest").classList.add("searchSuggestShowMobile")
+            //     }
+            //   });
+            // }
+
+            if(searchTerm.length > 2){
+              sendPostAJAX('/get/product/search', JSON.stringify({
+                handle: searchTerm
+              }), 
+              function(content){
+                console.log(content)
+                try{
+                  updateSearchResult(content.hits)
+                }catch(e){
+                  updateSearchResult(JSON.parse(content).hits)
                 }
-              });
+              }, function(err){
+                console.log(err);
+              })
             }
 
             //Handle clear button
