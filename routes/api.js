@@ -1,7 +1,7 @@
 
 //1. Configure express application 
 const express = require('express');
-const router = express.router;
+const router = express.Router();
 const appURI = 'http://localhost:3000'; 
 const algoliasearch = require('algoliasearch');
 const config = require('../config/config');
@@ -24,5 +24,8 @@ router.post('/search/pagination', function(req, res, next){
 
     index.search(algoliaPayload, function(err, content){
         res.send(content)
+        console.log(content)
     });
 });
+
+module.exports = router;

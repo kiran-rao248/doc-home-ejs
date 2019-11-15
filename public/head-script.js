@@ -9,13 +9,15 @@ function sendPostAJAX(url,body,onsuccess,onerror){
         onerror(xmlhttp.response)
       }else{
         alert(xmlhttp.responseText);
+        alert("not working")
       }
     }
-  }
-};
-xmlhttp.open("POST", url, true);
-xmlhttp.setRequestHeader('Content-Type' , 'application/JSON');
-xmlhttp.send(body);
+  };
+  xmlhttp.open("POST", url, true);
+  xmlhttp.setRequestHeader('Content-Type' , 'application/json');
+  xmlhttp.send(body);
+}
+
 
 
 //  show popup function
@@ -89,9 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 for (var i = 0; i < arr.length; i++) { 
                   var category="";
                   var p=arr[i].product_type;
-                  if(arr[i].sku){
-                  var sku=arr[i].sku;
-                  if(p!="corporate"&&sku.toLowerCase()!="nexus"){
+                  if(arr[i].sku){ 
                   html += '<a class="result-detail noselect" onclick="saveSearch()" href="/medicine'+'/'+arr[i].handle+'">';
                   let img="/images/default-meds.svg"; if(arr[i].image){img=arr[i].image}
                   html += '<div class="result-image"><div style="background-image:url('+img+')"></div></div>';
@@ -103,8 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   html +='<svg viewBox="0 0 172 172"><path d="M120.4,37.84v6.88h27.1975l0.3225,3.01l5.93658,51.94507c-2.3183,-1.00149 -4.7448,-1.79604 -7.2559,-2.36003l-5.23818,-45.71504h-20.9625v7.8475c2.05594,1.19594 3.44,3.37281 3.44,5.9125c0,3.80281 -3.07719,6.88 -6.88,6.88c-3.80281,0 -6.88,-3.07719 -6.88,-6.88c0,-2.53969 1.38406,-4.71656 3.44,-5.9125v-7.8475h-55.04v7.8475c2.05594,1.19594 3.44,3.37281 3.44,5.9125c0,3.80281 -3.07719,6.88 -6.88,6.88c-3.80281,0 -6.88,-3.07719 -6.88,-6.88c0,-2.53969 1.38406,-4.71656 3.44,-5.9125v-7.8475h-20.9625l-13.0075,113.52h89.26764c2.34666,2.61386 5.02006,4.92921 7.95417,6.88h-104.96181l0.43,-3.87l13.76,-120.4l0.3225,-3.01h27.1975v-6.88c0,-19.04094 15.35906,-34.4 34.4,-34.4c19.04094,0 34.4,15.35906 34.4,34.4zM162.11,172h-1.76181c0.55434,-0.36856 1.09938,-0.75014 1.63466,-1.14429zM58.48,37.84v6.88h55.04v-6.88c0,-15.35906 -12.16094,-27.52 -27.52,-27.52c-15.35906,0 -27.52,12.16094 -27.52,27.52z"/><path d="M157.896,137.6c0,2.064 -1.376,3.44 -3.44,3.44h-13.416v13.416c0,2.064 -1.376,3.44 -3.44,3.44c-2.064,0 -3.44,-1.376 -3.44,-3.44v-13.416h-13.416c-2.064,0 -3.44,-1.376 -3.44,-3.44c0,-2.064 1.376,-3.44 3.44,-3.44h13.416v-13.416c0,-2.064 1.376,-3.44 3.44,-3.44c2.064,0 3.44,1.376 3.44,3.44v13.416h13.416c2.064,0 3.44,1.376 3.44,3.44zM172,137.6c0,18.92 -15.48,34.4 -34.4,34.4c-18.92,0 -34.4,-15.48 -34.4,-34.4c0,-18.92 15.48,-34.4 34.4,-34.4c18.92,0 34.4,15.48 34.4,34.4zM165.12,137.6c0,-15.136 -12.384,-27.52 -27.52,-27.52c-15.136,0 -27.52,12.384 -27.52,27.52c0,15.136 12.384,27.52 27.52,27.52c15.136,0 27.52,-12.384 27.52,-27.52z"/></svg></div>';
                   html += "</a>";
                   console.log(arr[i])
-                 }//corporate check
-                }//sku check
+                 }//corporate check 
                 }
                 //get container id and update result
                 let result = document.getElementById("search-result");
@@ -171,7 +170,8 @@ document.addEventListener('DOMContentLoaded', function () {
             // }
 
             if(searchTerm.length > 2){
-              sendPostAJAX('/get/product/search', JSON.stringify({
+              console.log("search term"  ,searchTerm)
+              sendPostAJAX('/get/products/search', JSON.stringify({
                 handle: searchTerm
               }), 
               function(content){
