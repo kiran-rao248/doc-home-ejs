@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
 //filter algolia search
 router.post('/get/products/search', function(req, res, next) {
   let payload = req.body;
-  console.log("body body" ,req.body)
+  // console.log("body body" ,req.body)
   //define attributes needed
   payload.attributes = ["sku","title", "handle", "product_image", "variant_title", "price", "product_type"]
   let searchOptions = {
@@ -33,20 +33,20 @@ router.post('/get/products/search', function(req, res, next) {
  
   request.post(searchOptions, function(err, httpResponse, body){
     
-        //iterate search result
-        var results = body 
-        
-        for(i=0; i<results.hits.length;i++){
-          var skuStatus = false
-          if(results.hits[i].sku){
-            var p=results.hits[i].product_type;
-            if(p!="corporate"&&(results.hits[i].sku).toLowerCase()!="nexus"){
-              //hide sku id
-              skuStatus = true
-            }
-          results.hits[i].sku = skuStatus         
+    //iterate search result
+    var results = body 
+    // console.log("this is body" , results)
+    for(i=0; i<results.hits.length;i++){
+      var skuStatus = false
+      if(results.hits[i].sku){
+        var p=results.hits[i].product_type;
+        if(p!="corporate" && (results.hits[i].sku).toLowerCase()!="nexus"){
+          //hide sku id
+          skuStatus = true
         }
-      }
+      results.hits[i].sku = skuStatus         
+    }
+  }
 
     res.send(body);
   })

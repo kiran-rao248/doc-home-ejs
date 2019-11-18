@@ -1,4 +1,3 @@
-
 //1. Configure express application 
 const express = require('express');
 const router = express.Router();
@@ -16,15 +15,16 @@ router.post('/search/pagination', function(req, res, next){
         hitsPerPage : 10,
         page: payload.page
     }
-
+    
     if(payload.attributes){
         algoliaPayload.attributesToRetrieve = payload.attributes;
 
     }
 
     index.search(algoliaPayload, function(err, content){
-        res.send(content)
         console.log(content)
+        res.send(content)
+        
     });
 });
 

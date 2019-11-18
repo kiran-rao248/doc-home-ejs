@@ -2548,6 +2548,15 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
       width:80px;
     }
 
+    @media(min-width: 576px){
+      .result-price {
+        display: flex;
+        margin-right: 10px;
+        width: 80px;
+        margin-top: 20px;
+    }
+    }
+
     .result-buy-icon {
       display:none;
     }
