@@ -24,6 +24,7 @@ Table of contents
 22.0 Panel Doctor
 23.0 About and Contact Us
 24.0 FAQ
+25.0 Review/Rating
 */
 
   /*----------------------------------------------------
@@ -3848,4 +3849,78 @@ text-align: center;
 .panel-doc-main-subtext{
   line-height:30px;
   margin-top:20px
+}
+
+
+/*25.0 Review/Rating*/
+
+
+.product-fomo{
+  background-color: #f0fff4;
+  color: #7ab688;
+  font-size: 14px;
+  margin: 15px 0;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+@media(max-width:576px){
+  .product-fomo{
+    margin: 15px 15px 15px -15px;
+    width: calc(100% + 30px);
+  }
+}
+
+.product-rating-title{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 36px;
+}
+
+.product-rating-item{
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 24px 0;
+  padding-bottom: 16px;
+}
+
+.product-rating-date{
+  color: #777;
+  margin-bottom: 16px;
+}
+
+.product-rating-img{
+  border-radius: 50%;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+
+.product-rating-custom-1{
+width: 8%;
+}
+
+.product-rating-custom-2{
+  width: 61%;
+  }
+
+  .category-title{
+    font-size: 26px; 
+    padding-top: 3%;  
+  }
+
+  .category-title-2{
+    font-size: 26px; 
+    padding-top: 3%;
+  }
+
+@media (max-width: 576px){
+  .product-rating-title{
+    font-size: 20px;
+  }
+  .product-rating-img-container{
+    margin:0;
+    padding:0;
+  }
 }
