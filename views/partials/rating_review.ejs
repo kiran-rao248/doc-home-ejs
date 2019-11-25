@@ -176,13 +176,14 @@ if(template==1){
 <div class="container">
 <h2 class="category-title mobile-only">
     <%= lang.product_reviews %>
-    </h2>
+</h2>
     <h2 class="category-title-2 desktop-only">
-        <%= lang.product_reviews %>
-        </h2>
-        </div>
+      <%= lang.product_reviews %>
+    </h2>
+  </div>
 <% if(template_var==0){ //Regular template for products%>
 <% for(var i=0;i<2;i++){%>
+  <section class="container">
     <div class="container product-rating-item">
 
         <div class="col-xs-2 product-rating-img-container mobile-only">
@@ -213,45 +214,80 @@ if(template==1){
              
         </div>
     </div>
+  </section>
 <%}%>
 <%}else if(template_var==1){ //Template for main pages %>
   <div class="row">
     <div class="col-md-6">
       <% for(var i=0;i<2;i++){%>
-          <div class="row product-rating-item">
-              <div class="col-2 product-rating-img-container">
-                    <img loading="lazy" class="product-rating-img" src="<%= reviews[i].profile_review_img%>">
-              </div>
-              <div class="col-10">
-                  <div class="product-rating-name"><%= reviews[i].profile_review_name%></div>
-                  <% var rating=5  %>
-                  <% include stars %>
-                  <%= reviews[i].profile_review_desc%>
-                  <div class="mobile-only">
-                    <a class="mobile-only product-link" href="https://www.google.com.my/search?authuser=3&q=DoctorOnCall&ludocid=15802621416795524703&lsig=AB86z5VVk_CTad0GOOm2X0B9jXQR#lkt=LocalPoiReviews&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall" target="_blank"><%= lang.product_see_all_review %></a>
-                    <a class="desktop-only product-link" href="https://www.google.com.my/search?authuser=3&q=DoctorOnCall&ludocid=15802621416795524703&lsig=AB86z5VVk_CTad0GOOm2X0B9jXQR#lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,1,,," target="_blank"><%= lang.product_see_more %></a>
-                  </div>
-              </div>
-          </div>
+          <section class="container">
+    <div class="container product-rating-item">
+
+        <div class="col-xs-2 product-rating-img-container mobile-only">
+              <img loading="lazy" class="product-rating-img" src="<%= reviews[i].profile_review_img%>">
+        </div>
+        <div class="col-xs-10 mobile-only">
+            <div class="product-rating-name"><%= reviews[i].profile_review_name%></div>
+            <% var rating=5  %>
+            <% include stars %>
+            <%= reviews[i].profile_review_desc%>
+            <div class="mobile-only">
+              <a class="mobile-only product-link" href="https://www.google.com.my/search?authuser=3&q=DoctorOnCall&ludocid=15802621416795524703&lsig=AB86z5VVk_CTad0GOOm2X0B9jXQR#lkt=LocalPoiReviews&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall" target="_blank"><%= lang.product_see_all_review %></a>
+              <a class="desktop-only product-link" href="https://www.google.com.my/search?authuser=3&q=DoctorOnCall&ludocid=15802621416795524703&lsig=AB86z5VVk_CTad0GOOm2X0B9jXQR#lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,1,,," target="_blank"><%= lang.product_see_more %></a>
+            </div>
+        </div>
+
+        <div class="product-rating-custom-1 product-rating-img-container col-xs-2 desktop-only">
+              <img loading="lazy" class="product-rating-img" src="<%= reviews[i].profile_review_img%>">
+        </div>
+        <div class="product-rating-custom-2 col-xs-10 desktop-only">
+            <div class="product-rating-name"><%= reviews[i].profile_review_name%></div>
+            <% var rating=5  %>
+            <% include stars %>
+            <%= reviews[i].profile_review_desc%>
+             
+              <a class="mobile-only product-link" href="https://www.google.com.my/search?authuser=3&q=DoctorOnCall&ludocid=15802621416795524703&lsig=AB86z5VVk_CTad0GOOm2X0B9jXQR#lkt=LocalPoiReviews&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall" target="_blank"><%= lang.product_see_all_review %></a>
+              <a class="desktop-only product-link" href="https://www.google.com.my/search?authuser=3&q=DoctorOnCall&ludocid=15802621416795524703&lsig=AB86z5VVk_CTad0GOOm2X0B9jXQR#lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,1,,," target="_blank"><%= lang.product_see_more %></a>
+             
+        </div>
+    </div>
+  </section>
       <%}%>
     </div>
     <div class="col-md-6">
       <% for(var i=2;i<4;i++){%>
-          <div class="row product-rating-item">
-              <div class="col-2 product-rating-img-container">
-                    <img loading="lazy" class="product-rating-img" src="<%= reviews[i].profile_review_img%>">
-              </div>
-              <div class="col-10">
-                  <div class="product-rating-name"><%= reviews[i].profile_review_name%></div>
-                  <% var rating=5  %>
-                  <% include stars %>
-                  <%= reviews[i].profile_review_desc%>
-                  <div class="mobile-only">
-                    <a class="mobile-only product-link" href="https://www.google.com.my/search?authuser=3&q=DoctorOnCall&ludocid=15802621416795524703&lsig=AB86z5VVk_CTad0GOOm2X0B9jXQR#lkt=LocalPoiReviews&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall" target="_blank"><%= lang.product_see_all_review %></a>
-                    <a class="desktop-only product-link" href="https://www.google.com.my/search?authuser=3&q=DoctorOnCall&ludocid=15802621416795524703&lsig=AB86z5VVk_CTad0GOOm2X0B9jXQR#lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,1,,," target="_blank"><%= lang.product_see_more %></a>
-                  </div>
-              </div>
-          </div>
+          <section class="container">
+    <div class="container product-rating-item">
+
+        <div class="col-xs-2 product-rating-img-container mobile-only">
+              <img loading="lazy" class="product-rating-img" src="<%= reviews[i].profile_review_img%>">
+        </div>
+        <div class="col-xs-10 mobile-only">
+            <div class="product-rating-name"><%= reviews[i].profile_review_name%></div>
+            <% var rating=5  %>
+            <% include stars %>
+            <%= reviews[i].profile_review_desc%>
+            <div class="mobile-only">
+              <a class="mobile-only product-link" href="https://www.google.com.my/search?authuser=3&q=DoctorOnCall&ludocid=15802621416795524703&lsig=AB86z5VVk_CTad0GOOm2X0B9jXQR#lkt=LocalPoiReviews&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall" target="_blank"><%= lang.product_see_all_review %></a>
+              <a class="desktop-only product-link" href="https://www.google.com.my/search?authuser=3&q=DoctorOnCall&ludocid=15802621416795524703&lsig=AB86z5VVk_CTad0GOOm2X0B9jXQR#lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,1,,," target="_blank"><%= lang.product_see_more %></a>
+            </div>
+        </div>
+
+        <div class="product-rating-custom-1 product-rating-img-container col-xs-2 desktop-only">
+              <img loading="lazy" class="product-rating-img" src="<%= reviews[i].profile_review_img%>">
+        </div>
+        <div class="product-rating-custom-2 col-xs-10 desktop-only">
+            <div class="product-rating-name"><%= reviews[i].profile_review_name%></div>
+            <% var rating=5  %>
+            <% include stars %>
+            <%= reviews[i].profile_review_desc%>
+             
+              <a class="mobile-only product-link" href="https://www.google.com.my/search?authuser=3&q=DoctorOnCall&ludocid=15802621416795524703&lsig=AB86z5VVk_CTad0GOOm2X0B9jXQR#lkt=LocalPoiReviews&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall" target="_blank"><%= lang.product_see_all_review %></a>
+              <a class="desktop-only product-link" href="https://www.google.com.my/search?authuser=3&q=DoctorOnCall&ludocid=15802621416795524703&lsig=AB86z5VVk_CTad0GOOm2X0B9jXQR#lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,1,,," target="_blank"><%= lang.product_see_more %></a>
+             
+        </div>
+    </div>
+  </section>
       <%}%>
     </div>
   </div>
