@@ -2879,6 +2879,7 @@ ____) | |____ / ____ \| | \ \| |____| |  | | |_) / ____ \| | \ \
 
 .main-connect-text-desktop{
   margin-top: 135px;
+  margin-left: 93px;
 } 
 
 @media(max-width: 1051px){

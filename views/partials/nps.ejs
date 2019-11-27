@@ -1,0 +1,36 @@
+<script>
+    $(document).ready(function() {
+        $("form#ratingForm").submit(function(e) 
+        {
+            e.preventDefault(); // prevent the default click action from being performed
+            if ($("#ratingForm :radio:checked").length == 0) {
+                $('#status').html("nothing checked");
+                return false;
+            } else {
+                $('#status').html( 'You picked ' + $('input:radio[name=rating]:checked').val() );
+            }
+        });
+    });
+    </script>
+
+<div class="nps-border">
+        <p class="nps-border-title">Let us know how we're doing?</p>
+        <p class="nps-border-sub-title">We are always trying to improve what we do and your feedback is important!</p> 
+<form id="ratingForm">
+    <div class="rating"> 
+        <input type="radio" id="star5" name="rating" value="5 stars" /><label for="star5">5 stars</label>
+        <input type="radio" id="star4" name="rating" value="4 stars" /><label for="star4">4 stars</label>
+        <input type="radio" id="star3" name="rating" value="3 stars" /><label for="star3">3 stars</label>
+        <input type="radio" id="star2" name="rating" value="2 stars" /><label for="star2">2 stars</label>
+        <input type="radio" id="star1" name="rating" value="1 stars" /><label for="star1">1 star</label>
+    </div>
+    <div class="clearfix"></div>
+
+    <div id="status"></div>
+
+    <input type="text" class="nps-border-input" placeholder="Share your experiences and help others make better choices!">
+    <div class="clearfix"></div>
+    <button class="submit-nps clearfix">Submit Review</button>
+</form>
+</div>
+
