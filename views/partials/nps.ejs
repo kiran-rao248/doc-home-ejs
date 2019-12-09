@@ -1,36 +1,249 @@
-<script>
-    $(document).ready(function() {
-        $("form#ratingForm").submit(function(e) 
-        {
-            e.preventDefault(); // prevent the default click action from being performed
-            if ($("#ratingForm :radio:checked").length == 0) {
-                $('#status').html("nothing checked");
-                return false;
-            } else {
-                $('#status').html( 'You picked ' + $('input:radio[name=rating]:checked').val() );
-            }
-        });
-    });
-    </script>
-
-<div class="nps-border">
+ <div class="nps-border" id="npsBorderid">
         <p class="nps-border-title">Let us know how we're doing?</p>
+
         <p class="nps-border-sub-title">We are always trying to improve what we do and your feedback is important!</p> 
-<form id="ratingForm">
-    <div class="rating"> 
-        <input type="radio" id="star5" name="rating" value="5 stars" /><label for="star5">5 stars</label>
-        <input type="radio" id="star4" name="rating" value="4 stars" /><label for="star4">4 stars</label>
-        <input type="radio" id="star3" name="rating" value="3 stars" /><label for="star3">3 stars</label>
-        <input type="radio" id="star2" name="rating" value="2 stars" /><label for="star2">2 stars</label>
-        <input type="radio" id="star1" name="rating" value="1 stars" /><label for="star1">1 star</label>
+ 
+    <div class="user-review-cont"> 
+
+        <svg onclick="setStars(1)" onclick="show4starSubmit" id="star1" viewBox="0 0 576 512" class="ratestar rate1 sheetSubmitbtn">
+        <path class="starClick" onclick="rateHover(1)" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" style="fill: gold;">
+        </path>
+        </svg> 
+
+        <svg onclick="setStars(2)" id="star2" viewBox="0 0 576 512" class="ratestar rate2 sheetSubmitbtn">
+        <path class="starClick" onclick="rateHover(2)" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+        </path>
+        </svg>
+
+        <svg onclick="setStars(3)" id="star3" viewBox="0 0 576 512" class="ratestar rate3 sheetSubmitbtn">
+        <path class="starClick" onclick="rateHover(3)" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+        </path>
+        </svg> 
+
+        <svg onclick="setStars(4)" id="star4" viewBox="0 0 576 512" class="ratestar rate4 sheetSubmitbtn">
+        <path class="starClick" onclick="rateHover(4)" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+        </path>
+        </svg> 
+
+        <svg onclick="setStars(5)" id="star5" viewBox="0 0 576 512" class="ratestar rate5">
+        <path class="starClick" onclick="rateHover(5)" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">                 
+        </path>
+        </svg>
+
+            <input type="hidden" id="rateStar" value="5"> <input type="hidden" id="rateDoc" value="DrRamzdhan">
     </div>
-    <div class="clearfix"></div>
 
-    <div id="status"></div>
+    <div class="clearfix"></div>    
+    <p id="star-5-msg-2" class="star-5-msg">Thank you for rating us <br>Please provide us feedback for improvement</p>
+    <p id="star-5-msg" class="star-5-msg"> Kindly select options, click on <bluetag class="bluetag">Submit Review</bluetag> and paste it to Google Review</p>
+    <div id="status"></div>  
 
-    <input type="text" class="nps-border-input" placeholder="Share your experiences and help others make better choices!">
     <div class="clearfix"></div>
-    <button class="submit-nps clearfix">Submit Review</button>
-</form>
+    <div class="nps-review-box"> 
+        <div id="nps-review-1" onclick="star5Review('nps-review-1','easeOfUse')" class="copy-clipboard nps-review">Good Look and Feel</div>  
+        <div id="nps-review-2" onclick="star5Review('nps-review-2','deliverySpeed')" class="copy-clipboard nps-review">Fast Delivery </div> 
+        <div id="nps-review-3" onclick="star5Review('nps-review-3','easeOPurchaseStep')" class="copy-clipboard nps-review"> Easy Purchase Steps</div> 
+        <div id="nps-review-4" onclick="star5Review('nps-review-4','customerService')" class="copy-clipboard nps-review">Friendly Customer Service</div> 
+        <div id="nps-review-5" onclick="star5Review('nps-review-5','performanceOfWebsite')" class="copy-clipboard nps-review">Fast Website</div> 
+    </div>
+    <div class="nps-review-box"> 
+        <div id="nps-review-less-1" onclick="setReview('nps-review-less-1','easeOfUse')" class="copy-clipboard nps-review-less">Difficult to Use</div> 
+        <div id="nps-review-less-2" onclick="setReview('nps-review-less-2','deliverySpeed')" class="copy-clipboard nps-review-less" value="Slow Delivery" readonly="readonly">Slow Delivery</div>
+        <div id="nps-review-less-3" onclick="setReview('nps-review-less-3','easeOPurchaseStep')" class="copy-clipboard nps-review-less" value="Complicated Purchase Steps" readonly="readonly">Complicated Purchase Steps</div>
+        <div id="nps-review-less-4" onclick="setReview('nps-review-less-4','customerService')" class="copy-clipboard nps-review-less" value="Poor Customer Service" readonly="readonly">Poor Customer Service</div>
+        <div id="nps-review-less-5" onclick="setReview('nps-review-less-5','performanceOfWebsite')" class="copy-clipboard nps-review-less" value="Slow Website" readonly="readonly">Slow Website</div>
+        </div>
+
+    <div class="nps-input">
+            <input type="text" id="nps-input" class="nps-border-input" placeholder="Share your experiences and help others make better choices!">
+        </div>
+
+    <div class="nps-href-box">
+        <a href="https://www.google.com/search?q=doctoroncall&rlz=1C1CHBF_enMY868MY868&oq=doctoroncall&aqs=chrome..69i57j0l5.2171j1j7&sourceid=chrome&ie=UTF-8#lkt=LocalPoiReviews&lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,3,,,&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall" class="nps-href" id="5starsubmit">Submit Review</a>
+        <button class="nps-href" id="less5starsubmit" onclick="closeReview()">Submit Review</button>  
+    </div> 
+ 
+    </div>
+
+    <div class="thankyoumsg" id="thankyoumsg">
+        <div class="checkMark">
+            <img alt="Double Tick icon" src="https://img.icons8.com/bubbles/2x/double-tick.png" lazy="loaded">
+            <p class="thankyoutxt">Thank you for the rating!</p>
+            <p class="thankyoutxt2">We'll try to serve you better in the future!</p>
+        </div>
 </div>
+<script src="./jquery.js"></script>
+<script> 
+//TABLE OF CONTENT 
+//1.0 Fill gold color for stars
+//2.0 addEventListeners
+//3.0 Display buttons for less than 4 stars
+//4.0 Display buttons for 5 stars 
+//5.0 Get number of stars 
+//6.0 Set object for description
+//7.0 Create object & send params to AJAX Call
+//8.0 AJAX Call
+//9.0 Show Thank you message  
 
+
+//1.0 Fill gold color for stars
+    // function rateHover(input){
+    //     $(".ratestar path").css("fill","#aaa")
+    //     for(i=0;i<=input;i++){
+    //       $(".rate"+i+" path").css("fill","gold")
+    //     }
+    //     $("#rateStar").val(input)
+    // }    
+
+    function rateHover(input){
+        document.querySelector("ratestar path").style.fill = "#aaa"
+        for(var i=0; i<= input ; i++){
+            document.querySelector("rate" + i  + " path").style.fill = "#gold"
+            console.log("beep")
+        }
+        document.getElementById("#rateStar").value(input)
+    }
+
+//2.0 addEventListeners
+    document.getElementById("star5").addEventListener("click"  ,get5star) 
+    document.getElementById("star5").addEventListener("click", show5starSubmit) 
+    document.getElementById("less5starsubmit").addEventListener("click",sendReviews)
+    document.getElementById("5starsubmit").addEventListener("click" , copyClipboard)
+    
+//3.0 Display buttons for less than 4 stars
+    var getlessthan4stars = document.getElementsByClassName("sheetSubmitbtn")
+    for(var i =0; i < getlessthan4stars.length; i++){
+        getlessthan4stars[i].addEventListener("click" , hide5starpro, false)
+    }   
+    var getsheetSubmitbtn = document.getElementsByClassName("sheetSubmitbtn")  
+    for(var i =0; i < getsheetSubmitbtn.length;i++){
+        getsheetSubmitbtn[i].addEventListener("click" , show4starSubmit, false)
+    } 
+
+    function show4starSubmit(){ 
+        document.getElementById("less5starsubmit").style.display="inline-block"; 
+        var npsReviewLess = document.getElementsByClassName("nps-review-less")
+        for(var i=0; i < npsReviewLess.length; i++){
+            npsReviewLess[i].style.display="inline-block"
+        }
+        var npsOptions = document.getElementsByClassName("nps-review")
+        for(var i=0; i< npsOptions.length;i++){
+            npsOptions[i].style.display="none";
+        }
+        document.getElementById("nps-input").style.display="inline-block" 
+    } 
+
+    function hide5starpro(){ 
+        document.getElementById("star-5-msg").style.display="none";
+        document.getElementById("5starsubmit").style.display="none";
+        document.getElementById("star-5-msg-2").style.display="block"; 
+    }
+
+//4.0 Display buttons for 5 stars
+    function show5starSubmit(){
+        var star5checked = document.getElementById("star5")
+        
+        if(star5checked){
+            document.getElementById("5starsubmit").style.display="inline-block"; 
+        }
+        document.getElementById("nps-input").style.display="inline-block"
+    }  
+    function get5star(){ 
+        var npsOptions = document.getElementsByClassName("nps-review")
+        for(var i=0; i< npsOptions.length;i++){
+            npsOptions[i].style.display="inline-block";
+        } 
+        document.getElementById("star-5-msg").style.display="block";
+        document.getElementById("less5starsubmit").style.display="none"; 
+        var npsReviewLess = document.getElementsByClassName("nps-review-less")
+        for(var i=0; i < npsReviewLess.length; i++){
+            npsReviewLess[i].style.display="none"
+        }
+    }   
+
+    //Define shorthand id
+    function id(input){
+      return document.getElementById(input)
+    } 
+
+//5.0 Get number of stars
+    var getStar
+    function setStars(input){  
+        getStar = input   
+        return input 
+    }  
+
+//6.0 Set object for description
+    var star4DescModel = {"easeOfUse": "","deliverySpeed": "","easeOPurchaseStep": "","customerService": "","performanceOfWebsite": ""}
+    function setReview(input,field){
+        document.getElementById(input).style.backgroundColor  ="#41c0f1"
+        document.getElementById(input).style.color  ="#847f7f"
+        star4DescModel[field]=document.getElementById(input).innerHTML 
+    } 
+
+    var star5DescModel = {"easeOfUse": "","deliverySpeed": "","easeOPurchaseStep": "","customerService": "","performanceOfWebsite": ""}
+    function star5Review(input,field){
+        document.getElementById(input).style.backgroundColor  ="#41c0f1"
+        document.getElementById(input).style.color  ="#847f7f"
+        star5DescModel[field]=document.getElementById(input).innerHTML
+    }
+
+//7.0 Create object & send params to AJAX Call
+    function sendReviews(){
+        //declare obj to pass values
+        var feedback = document.getElementById("nps-input").value 
+        var review = {}  
+        review.star = getStar 
+        review.easeOfUse = star4DescModel.easeOfUse 
+        review.deliverySpeed = star4DescModel.deliverySpeed
+        review.easeOPurchaseStep =  star4DescModel.easeOPurchaseStep
+        review.customerService =  star4DescModel.customerService
+        review.performanceOfWebsite =  star4DescModel.performanceOfWebsite
+        review.feedback = feedback 
+        sendPOSTAJAX(review) 
+    } 
+    
+    function copyClipboard(){
+        var easeOfUse = star5DescModel.easeOfUse 
+        var delSpeed = star5DescModel.deliverySpeed
+        var easeofPurchase =star5DescModel.easeOPurchaseStep
+        var custService = star5DescModel.customerService
+        var perfWebsite = star5DescModel.performanceOfWebsite
+
+        var fullLink = document.createElement('input');
+        document.body.appendChild(fullLink);
+        fullLink.value =  easeOfUse + " "  + delSpeed + " " + easeofPurchase + " " +custService + " " + perfWebsite;
+        fullLink.select();
+        document.execCommand("copy", false);
+        fullLink.remove(); 
+    }
+
+//8.0 AJAX Call 
+    function sendPOSTAJAX(input){
+        var xmlhttp = new XMLHttpRequest()
+        var url = 'https://script.google.com/macros/s/AKfycbz40LThVUuSChUW9dPBl_0i5mqQWd_f9J1Ckov9y5gOVD26JQj3/exec' 
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState == XMLHttpRequest.DONE){
+                if(xmlhttp.status == 200){
+                    console.log("-> 200")
+                }
+                else if (xmlhttp.status == 400){
+                    console.log("-> 400")
+                }
+                else{
+                    console.log("anything")
+                }
+            }
+        }
+    xmlhttp.open("post", url, true)
+    xmlhttp.setRequestHeader('content-type', 'application/x-www-form-urlencoded; charset=utf-8')
+    xmlhttp.send(JSON.stringify(input))
+    console.log(input)
+}  
+
+//9.0 Show Thank you message
+    function closeReview(){
+        document.getElementById("npsBorderid").style.display = "none"
+        document.getElementById("thankyoumsg").style.display = "block"
+    }   
+</script>
