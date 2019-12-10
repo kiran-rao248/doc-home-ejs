@@ -1,37 +1,24 @@
  <div class="nps-border" id="npsBorderid">
-        <p class="nps-border-title">Let us know how we're doing?</p>
+        <p class="nps-border-title">Let us know how we're doing?</p> 
+        <p class="nps-border-sub-title">We are always trying to improve what we do and your feedback is important!</p>  
 
-        <p class="nps-border-sub-title">We are always trying to improve what we do and your feedback is important!</p> 
- 
-    <div class="user-review-cont"> 
-
-        <svg onclick="setStars(1)" onclick="show4starSubmit" id="star1" viewBox="0 0 576 512" class="ratestar rate1 sheetSubmitbtn">
-        <path class="starClick" onclick="rateHover(1)" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" style="fill: gold;">
-        </path>
-        </svg> 
-
-        <svg onclick="setStars(2)" id="star2" viewBox="0 0 576 512" class="ratestar rate2 sheetSubmitbtn">
-        <path class="starClick" onclick="rateHover(2)" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
-        </path>
-        </svg>
-
-        <svg onclick="setStars(3)" id="star3" viewBox="0 0 576 512" class="ratestar rate3 sheetSubmitbtn">
-        <path class="starClick" onclick="rateHover(3)" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
-        </path>
-        </svg> 
-
-        <svg onclick="setStars(4)" id="star4" viewBox="0 0 576 512" class="ratestar rate4 sheetSubmitbtn">
-        <path class="starClick" onclick="rateHover(4)" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
-        </path>
-        </svg> 
-
-        <svg onclick="setStars(5)" id="star5" viewBox="0 0 576 512" class="ratestar rate5">
-        <path class="starClick" onclick="rateHover(5)" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">                 
-        </path>
-        </svg>
-
-            <input type="hidden" id="rateStar" value="5"> <input type="hidden" id="rateDoc" value="DrRamzdhan">
-    </div>
+        <div class="par-stardiv">
+            <div class="stardiv rate1 sheetSubmitbtn" onclick="setStars(1)" id="star1">
+            <img style="float:left;cursor:pointer;" src="./stylesheets/off.svg" class="ratestar rate3 sheetSubmitbtn" name="star" id="0" onclick="fillstar(this)" />
+            </div>
+            <div class="stardiv rate2 sheetSubmitbtn" onclick="setStars(2)" id="star2">
+            <img style="float:left;cursor:pointer;" src="./stylesheets/off.svg" class="ratestar rate3 sheetSubmitbtn" name="star" id="1" onclick="fillstar(this)" />
+            </div>
+            <div class="stardiv rate3 sheetSubmitbtn" onclick="setStars(3)" id="star3">
+            <img style="float:left;cursor:pointer;" src="./stylesheets/off.svg" class="ratestar rate3 sheetSubmitbtn" name="star" id="2" onclick="fillstar(this)" />
+            </div>
+            <div class="stardiv rate4 sheetSubmitbtn" onclick="setStars(4)" id="star4">
+            <img style="float:left;cursor:pointer;" src="./stylesheets/off.svg" class="ratestar rate3 sheetSubmitbtn" name="star" id="3" onclick="fillstar(this)" />
+            </div>
+            <div class="stardiv rate5" onclick="setStars(5)" id="star5">
+            <img style="cursor:pointer;" src="./stylesheets/off.svg" name="star"  class="ratestar rate5" id="4"  onclick="fillstar(this)" />
+            </div> 
+        </div>
 
     <div class="clearfix"></div>    
     <p id="star-5-msg-2" class="star-5-msg">Thank you for rating us <br>Please provide us feedback for improvement</p>
@@ -55,11 +42,12 @@
         </div>
 
     <div class="nps-input">
-            <input type="text" id="nps-input" class="nps-border-input" placeholder="Share your experiences and help others make better choices!">
-        </div>
+            <input type="text" id="nps-input" class="nps-border-input" placeholder="Share your experiences and we will improve based on your concern">
+            <input type="text" id="nps-input5" class="nps-border-input" placeholder="Share your experiences and help others make better choices!">
+    </div>   
 
-    <div class="nps-href-box">
-        <a href="https://www.google.com/search?q=doctoroncall&rlz=1C1CHBF_enMY868MY868&oq=doctoroncall&aqs=chrome..69i57j0l5.2171j1j7&sourceid=chrome&ie=UTF-8#lkt=LocalPoiReviews&lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,3,,,&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall" class="nps-href" id="5starsubmit">Submit Review</a>
+    <div class="nps-href-box"> 
+        <div class="nps-href" id="5starsubmit"> Submit Review</div>
         <button class="nps-href" id="less5starsubmit" onclick="closeReview()">Submit Review</button>  
     </div> 
  
@@ -71,8 +59,8 @@
             <p class="thankyoutxt">Thank you for the rating!</p>
             <p class="thankyoutxt2">We'll try to serve you better in the future!</p>
         </div>
-</div>
-<script src="./jquery.js"></script>
+</div> 
+ 
 <script> 
 //TABLE OF CONTENT 
 //1.0 Fill gold color for stars
@@ -86,42 +74,33 @@
 //9.0 Show Thank you message  
 
 
-//1.0 Fill gold color for stars
-    // function rateHover(input){
-    //     $(".ratestar path").css("fill","#aaa")
-    //     for(i=0;i<=input;i++){
-    //       $(".rate"+i+" path").css("fill","gold")
-    //     }
-    //     $("#rateStar").val(input)
-    // }    
+//1.0 Fill gold color for stars  
+    function fillstar(Obj){
+        var stars=document.getElementsByName(Obj.name)
 
-    function rateHover(input){
-        document.querySelector("ratestar path").style.fill = "#aaa"
-        for(var i=0; i<= input ; i++){
-            document.querySelector("rate" + i  + " path").style.fill = "#gold"
-            console.log("beep")
+        for(i=0;i<stars.length;i++){
+
+            if (i<=Obj.id){stars[i].src="./stylesheets/on.svg"}
+            else{stars[i].src="./stylesheets/off.svg"}
         }
-        document.getElementById("#rateStar").value(input)
-    }
+    } 
 
 //2.0 addEventListeners
     document.getElementById("star5").addEventListener("click"  ,get5star) 
     document.getElementById("star5").addEventListener("click", show5starSubmit) 
     document.getElementById("less5starsubmit").addEventListener("click",sendReviews)
-    document.getElementById("5starsubmit").addEventListener("click" , copyClipboard)
+    document.getElementById("5starsubmit").addEventListener("click", sendReviews5star) 
     
 //3.0 Display buttons for less than 4 stars
     var getlessthan4stars = document.getElementsByClassName("sheetSubmitbtn")
     for(var i =0; i < getlessthan4stars.length; i++){
         getlessthan4stars[i].addEventListener("click" , hide5starpro, false)
+        getlessthan4stars[i].addEventListener("click" , show4starSubmit, false)
     }   
-    var getsheetSubmitbtn = document.getElementsByClassName("sheetSubmitbtn")  
-    for(var i =0; i < getsheetSubmitbtn.length;i++){
-        getsheetSubmitbtn[i].addEventListener("click" , show4starSubmit, false)
-    } 
 
     function show4starSubmit(){ 
         document.getElementById("less5starsubmit").style.display="inline-block"; 
+        document.getElementById("nps-input5").style.display = "none"
         var npsReviewLess = document.getElementsByClassName("nps-review-less")
         for(var i=0; i < npsReviewLess.length; i++){
             npsReviewLess[i].style.display="inline-block"
@@ -131,8 +110,7 @@
             npsOptions[i].style.display="none";
         }
         document.getElementById("nps-input").style.display="inline-block" 
-    } 
-
+    }  
     function hide5starpro(){ 
         document.getElementById("star-5-msg").style.display="none";
         document.getElementById("5starsubmit").style.display="none";
@@ -145,8 +123,9 @@
         
         if(star5checked){
             document.getElementById("5starsubmit").style.display="inline-block"; 
-        }
-        document.getElementById("nps-input").style.display="inline-block"
+        } 
+        document.getElementById("nps-input").style.display = "none"
+        document.getElementById("nps-input5").style.display = "inline-block"
     }  
     function get5star(){ 
         var npsOptions = document.getElementsByClassName("nps-review")
@@ -168,30 +147,60 @@
 
 //5.0 Get number of stars
     var getStar
-    function setStars(input){  
+    function setStars(input){    
         getStar = input   
-        return input 
+        return input  
     }  
 
 //6.0 Set object for description
     var star4DescModel = {"easeOfUse": "","deliverySpeed": "","easeOPurchaseStep": "","customerService": "","performanceOfWebsite": ""}
     function setReview(input,field){
         document.getElementById(input).style.backgroundColor  ="#41c0f1"
-        document.getElementById(input).style.color  ="#847f7f"
+        document.getElementById(input).style.color  ="#fff"
         star4DescModel[field]=document.getElementById(input).innerHTML 
-    } 
+    }  
+    
+    function star5Review(input,field){ 
+        document.getElementById(input).style.backgroundColor ="#41c0f1"
+        document.getElementById(input).style.color ="#fff"
+//Create object for desc to be copied
+        var desc = [
+            {descText: "Friendly customer service, people from DoctorOnCall are friendly and provided me satisfying customer service."},
+            {descText: "The delivery of products that I purchase was fast and next time I would definitely use DoctorOnCall service again."},
+            {descText: "Easy purchasing steps on DoctorOnCall page, elders can also purchase medicines because the steps aren't complicated."},
+            {descText: "The amount of effort that I personally have to put compared to normal private clinic is little and I managed to save a lot of time."},
+            {descText: "Comfortable when I was using DoctorOnCall website. Not all websites give this feel, will recommend this to my family and friends."},
+            {descText: "Prices of products in DoctorOnCall is lower than private clinic. Helpful customer service and my questions are answered quickly."},
+            {descText: "DoctorOnCall gives a comprehensive medical information. The forum section and the doctors are all easy to approach and provide good answers and suggestions."},
+            {descText: "DoctorOnCall meet my expectations, from good customer service and affordable price, will tell a friend!"},
+            {descText: "I was looking for a specific supplement and managed to find the product in DoctorOnCall page in a few moments. Definitely going to recommend to family & friends."},
+            {descText: "I often come to DoctorOnCall if I have any medical doubts. One of the trustworthy and reliable medical resources in Malaysia."}
+        ]
+        var randomDesc = []
+//randomly select one of desc to be copied
+        for(var i =0; i<1;i++){
+            var target = Math.floor(Math.random()*desc.length)
+            randomDesc.push(desc[target])
+            desc.splice(target ,1)
+        }
 
-    var star5DescModel = {"easeOfUse": "","deliverySpeed": "","easeOPurchaseStep": "","customerService": "","performanceOfWebsite": ""}
-    function star5Review(input,field){
-        document.getElementById(input).style.backgroundColor  ="#41c0f1"
-        document.getElementById(input).style.color  ="#847f7f"
-        star5DescModel[field]=document.getElementById(input).innerHTML
-    }
+        desc = randomDesc
+//copy randomly taken desc
+        for(var i=0; i< desc.length ; i++){  
+        var copyText = desc[i].descText; 
+        var fullLink = document.createElement('input');
+        document.body.appendChild(fullLink);
+        fullLink.value =  copyText;
+        fullLink.select();
+        document.execCommand("copy", false);
+        fullLink.remove(); 
+        }
+    }  
 
 //7.0 Create object & send params to AJAX Call
     function sendReviews(){
-        //declare obj to pass values
-        var feedback = document.getElementById("nps-input").value 
+//declare obj to pass values less than 4 stars
+        var feedback = document.getElementById("nps-input").value
         var review = {}  
         review.star = getStar 
         review.easeOfUse = star4DescModel.easeOfUse 
@@ -200,22 +209,23 @@
         review.customerService =  star4DescModel.customerService
         review.performanceOfWebsite =  star4DescModel.performanceOfWebsite
         review.feedback = feedback 
+        review.feedbackfor5star = "" 
         sendPOSTAJAX(review) 
-    } 
-    
-    function copyClipboard(){
-        var easeOfUse = star5DescModel.easeOfUse 
-        var delSpeed = star5DescModel.deliverySpeed
-        var easeofPurchase =star5DescModel.easeOPurchaseStep
-        var custService = star5DescModel.customerService
-        var perfWebsite = star5DescModel.performanceOfWebsite
+    }  
 
-        var fullLink = document.createElement('input');
-        document.body.appendChild(fullLink);
-        fullLink.value =  easeOfUse + " "  + delSpeed + " " + easeofPurchase + " " +custService + " " + perfWebsite;
-        fullLink.select();
-        document.execCommand("copy", false);
-        fullLink.remove(); 
+    function sendReviews5star(){
+        var feedback5 = document.getElementById("nps-input5").value 
+        var review = {} 
+        review.star = "5 star" 
+        review.easeOfUse = ""
+        review.deliverySpeed = ""
+        review.easeOPurchaseStep =  ""
+        review.customerService =  ""
+        review.performanceOfWebsite =  ""
+        review.feedback = ""
+        review.feedbackfor5star = feedback5 
+        sendPOSTAJAX(review)  
+        window.location.href="https://www.google.com/search?q=doctoroncall&rlz=1C1CHBF_enMY868MY868&oq=doctoroncall&aqs=chrome..69i57j0l5.2171j1j7&sourceid=chrome&ie=UTF-8#lkt=LocalPoiReviews&lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,3,,,&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall";
     }
 
 //8.0 AJAX Call 

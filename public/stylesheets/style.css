@@ -3992,6 +3992,7 @@ width: 8%;
   outline: none;
   margin-top: 35px;
   width: 90%;
+  padding-left: 14px;
 }
 
 .rating {
@@ -4076,11 +4077,7 @@ width: 8%;
     margin: 0 auto;
     margin-top: 20px;
     display: block;
-}
-
-.nps-border-input::placeholder{
-  padding-left: 14px;
-}
+} 
 
 .nps-review{
   display: inline-block;
@@ -4203,4 +4200,24 @@ width: 8%;
 
 .thankyoutxt2{
   color: #7f7d7d;
+} 
+
+.par-stardiv{
+  text-align: center;
 }
+
+.stardiv{ 
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+ 
