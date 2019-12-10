@@ -4118,15 +4118,16 @@ width: 8%;
 
 .nps-href{
   display: none;
+  cursor: pointer;
   background-color: #5DC7F6;
-    color: #fff;
-    padding: 9px 34px;
-    outline: none;
-    border: 1px solid #5DC7F6;
-    border-radius: 6px;
-    margin: 0 auto; 
-    margin-bottom: 20px;
-    margin-top: 20px;
+  color: #fff;
+  padding: 9px 34px;
+  outline: none;
+  border: 1px solid #5DC7F6;
+  border-radius: 6px;
+  margin: 0 auto; 
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .nps-href-box a{
