@@ -162,7 +162,7 @@ width: 31%;
   .star{
     position:relative;
     top:3px;
-    width:14px;
+    width:44px;
   }
   .star path{
     fill:gold;
@@ -4190,12 +4190,11 @@ width: 8%;
 
 .alignStars{
   text-align: center;
-} 
+}  
 
-.sheetSubmitbtn{ 
-  cursor:pointer;
+.star{
+  cursor: pointer;
 }
-
 .rate5{ 
   cursor:pointer;
 }
@@ -4204,9 +4203,4 @@ width: 8%;
   font-size: 26px; 
   margin: 0;
   margin-top: 12px; 
-}
-
-
-
-
- 
+} 
