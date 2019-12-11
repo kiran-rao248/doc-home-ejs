@@ -16,11 +16,11 @@
 
         <div class="clearfix"></div> 
         <div class="nps-review-box"> 
-            <div id="nps-review-less-1" onclick="setReview('nps-review-less-1','easeOfUse')" class="copy-clipboard nps-review-less"></div> 
-            <div id="nps-review-less-2" onclick="setReview('nps-review-less-2','deliverySpeed')" class="copy-clipboard nps-review-less"></div>
-            <div id="nps-review-less-3" onclick="setReview('nps-review-less-3','easeOPurchaseStep')" class="copy-clipboard nps-review-less"></div>
-            <div id="nps-review-less-4" onclick="setReview('nps-review-less-4','customerService')" class="copy-clipboard nps-review-less"></div>
-            <div id="nps-review-less-5" onclick="setReview('nps-review-less-5','performanceOfWebsite')" class="copy-clipboard nps-review-less"></div>
+            <div id="nps-review-less-1" onclick="setReview('nps-review-less-1','easeOfUse')" class="nps-review-less"></div> 
+            <div id="nps-review-less-2" onclick="setReview('nps-review-less-2','deliverySpeed')" class="nps-review-less"></div>
+            <div id="nps-review-less-3" onclick="setReview('nps-review-less-3','easeOPurchaseStep')" class="nps-review-less"></div>
+            <div id="nps-review-less-4" onclick="setReview('nps-review-less-4','customerService')" class="nps-review-less"></div>
+            <div id="nps-review-less-5" onclick="setReview('nps-review-less-5','performanceOfWebsite')" class="nps-review-less"></div>
         </div>
 
         <div class="nps-input">
@@ -33,11 +33,11 @@
  
 </div>
 
-<div class="thankyoumsg" id="thankyoumsg">
+<div class="thankyou-msg" id="thankYouMsg">
     <div class="checkMark"> 
         <p class="star-checkmark">&#10003;</p>
-        <p class="thankyoutxt">Thank you for the rating!</p>
-        <p class="thankyoutxt2">We'll try to serve you better in the future!</p>
+        <p class="thankyou-txt">Thank you for the rating!</p>
+        <p class="thankyou-txt2">We'll try to serve you better in the future!</p>
     </div>
 </div> 
  
@@ -142,7 +142,7 @@ function fillstar(obj){
         desc = randomDesc
 //copy randomly taken desc
         for(var i=0; i< desc.length ; i++){  
-        var copyText = desc[i].descText; 
+        var copyText = desc.descText; 
         var fullLink = document.createElement('input');
         document.body.appendChild(fullLink);
         fullLink.value =  copyText;
@@ -170,13 +170,13 @@ function fillstar(obj){
         xmlhttp.onreadystatechange = function(){
             if(xmlhttp.readyState == XMLHttpRequest.DONE){
                 if(xmlhttp.status == 200){
-                    console.log("-> 200")
+                    console.log(JSON.parse(xmlhttp.responseText))
                 }
                 else if (xmlhttp.status == 400){
-                    console.log("-> 400")
+                    console.log("400 Bad Request")
                 }
                 else{
-                    console.log("anything")
+                    console.log("Error in AJAX Call") 
                 }
             }
         }
@@ -189,6 +189,6 @@ function fillstar(obj){
 //7.0 Show Thank you message
     function closeReview(){
         id("npsBorderid").style.display = "none"
-        id("thankyoumsg").style.display = "block"
+        id("thankYouMsg").style.display = "block"
     }   
 </script>

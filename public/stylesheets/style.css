@@ -4158,7 +4158,7 @@ width: 8%;
   text-align: center;
 } 
 
-.thankyoumsg{
+.thankyou-msg{
   display: none;
   background-color: #fff;
   border-radius: 10px;
@@ -4177,14 +4177,14 @@ width: 8%;
   width: 64px;
 }
 
-.thankyoutxt{
+.thankyou-txt{
   color: #2E5AA9;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
 
-.thankyoutxt2{
+.thankyou-txt2{
   color: #7f7d7d;
 } 
 
