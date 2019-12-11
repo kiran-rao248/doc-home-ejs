@@ -4088,14 +4088,13 @@ width: 8%;
   border-radius: 5px;
   margin: 10px;
   color: #2E5AA9;
-  cursor: pointer;
-  display: none;
+  cursor: pointer; 
   outline: none;
  text-align: center; 
 }
 
-.nps-review-less{
-  display: inline-block;
+.nps-review-less{ 
+  display: none;
   background-color: #F6F6F6;
   border: 1px solid #d6d6d6;
   padding: 15px;
@@ -4103,8 +4102,7 @@ width: 8%;
   border-radius: 5px;
   margin: 10px;
   color: #2E5AA9;
-  cursor: pointer;
-  display: none;
+  cursor: pointer; 
   outline: none;
  text-align: center; 
 }
@@ -4143,27 +4141,14 @@ width: 8%;
   text-align: center;
 } 
 
-.star-5-msg{
-  display: none;
+.star-5-msg{ 
   text-align: center;
   padding: 3px;
 } 
 
 .bluetag{
   color: #5DC7F6;
-}
-
-.ratestar, .nostar {
-  color: #aaa;
-  font-size: 1.5em;
-  width: 1.5em;
-  cursor: pointer;
-}
-
-
-.ratestar path {
-  fill: gold;
-}
+} 
 
 .user-review-cont{
   text-align: center;
@@ -4203,20 +4188,23 @@ width: 8%;
   color: #7f7d7d;
 } 
 
-.par-stardiv{
+.alignStars{
   text-align: center;
+} 
+
+.sheetSubmitbtn{ 
+  cursor:pointer;
 }
 
-.stardiv{ 
-    display: inline-block;
-    vertical-align: top;
+.rate5{ 
+  cursor:pointer;
 }
 
-
-
-
-
-
+.star-checkmark{
+  font-size: 26px; 
+  margin: 0;
+  margin-top: 12px; 
+}
 
 
 
