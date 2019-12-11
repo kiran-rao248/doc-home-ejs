@@ -118,12 +118,7 @@ function fillstar(obj){
         id(input).style.backgroundColor  ="#41c0f1"
         id(input).style.color  ="#fff"
         review[field]=id(input).innerHTML 
-    }  
-    
-    function star5Review(input,field){ 
-        id(input).style.backgroundColor ="#41c0f1"
-        id(input).style.color ="#fff"
-//Create object for desc to be copied
+        //Create object for desc to be copied
         var desc = [
             {descText: "Friendly customer service, people from DoctorOnCall are friendly and provided me satisfying customer service."},
             {descText: "The delivery of products that I purchase was fast and next time I would definitely use DoctorOnCall service again."},
@@ -155,7 +150,7 @@ function fillstar(obj){
         document.execCommand("copy", false);
         fullLink.remove(); 
         }
-    }  
+    }   
 
 //5.0 Create object & send params to AJAX Call
     function sendReviews(){
