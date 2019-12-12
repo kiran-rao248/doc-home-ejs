@@ -53,6 +53,32 @@
  
 //Set object for description
 var review = {"easeOfUse": "","deliverySpeed": "","easeOPurchaseStep": "","customerService": "","performanceOfWebsite": "", "feedback" : "" , "star" : 5 }
+//Create object for desc to be copied
+var desc = [
+    {descText: "Friendly customer service, people from DoctorOnCall are friendly and provided me satisfying customer service."},
+    {descText: "The delivery of products that I purchase was fast and next time I would definitely use DoctorOnCall service again."},
+    {descText: "Easy purchasing steps on DoctorOnCall page, elders can also purchase medicines because the steps aren't complicated."},
+    {descText: "The amount of effort that I personally have to put compared to normal private clinic is little and I managed to save a lot of time."},
+    {descText: "Comfortable when I was using DoctorOnCall website. Not all websites give this feel, will recommend this to my family and friends."},
+    {descText: "Prices of products in DoctorOnCall is lower than private clinic. Helpful customer service and my questions are answered quickly."},
+    {descText: "DoctorOnCall gives a comprehensive medical information. The forum section and the doctors are all easy to approach and provide good answers and suggestions."},
+    {descText: "DoctorOnCall meet my expectations, from good customer service and affordable price, will tell a friend!"},
+    {descText: "I was looking for a specific supplement and managed to find the product in DoctorOnCall page in a few moments. Definitely going to recommend to family & friends."},
+    {descText: "I often come to DoctorOnCall if I have any medical doubts. One of the trustworthy and reliable medical resources in Malaysia."}
+]
+//Desc options 
+ var desc1 = "Difficult to Use"
+ var desc2 = "Slow Delivery"
+ var desc3 = "Complicated Purchase Steps"
+ var desc4 = "Poor Customer Service"
+ var desc5 = "Slow Website"
+ var desc6 = "Good Look and Feel"
+ var desc7 = "Fast Delivery"
+ var desc8 = "Easy Purchase Steps"
+ var desc9 = "Friendly Customer Service"
+ var desc10 = "Fast Website"
+ var tqMsg1 = "Thank you for rating us <br>Please provide us feedback for improvement"
+ var tqMsg2 = "Thank you for rating us <br> Kindly select options, click on Submit Review and paste it to Google Review"
 
 //1.0 Define shorthand id
     function id(input){
@@ -68,12 +94,12 @@ var review = {"easeOfUse": "","deliverySpeed": "","easeOPurchaseStep": "","custo
                 for(var i=0; i< starOpt.length; i++){
                     starOpt[i].style.display = "inline-block"
                 } 
-                id("nps-review-less-1").innerHTML = "Difficult to Use";
-                id("nps-review-less-2").innerHTML = "Slow Delivery";
-                id("nps-review-less-3").innerHTML = "Complicated Purchase Steps";
-                id("nps-review-less-4").innerHTML = "Poor Customer Service";
-                id("nps-review-less-5").innerHTML = "Slow Website";
-                id("starMsg").innerHTML = "Thank you for rating us <br>Please provide us feedback for improvement"
+                id("nps-review-less-1").innerHTML = desc1;
+                id("nps-review-less-2").innerHTML = desc2;
+                id("nps-review-less-3").innerHTML = desc3;
+                id("nps-review-less-4").innerHTML = desc4;
+                id("nps-review-less-5").innerHTML = desc5;
+                id("starMsg").innerHTML = tqMsg1
                 
                 //show and hide buttons for 1-4 stars
                 id("less5starsubmit").style.display="inline-block";                     
@@ -85,12 +111,12 @@ var review = {"easeOfUse": "","deliverySpeed": "","easeOPurchaseStep": "","custo
                 for(var i=0; i< starOpt.length; i++){
                     starOpt[i].style.display = "inline-block";
                 }
-                id("nps-review-less-1").innerHTML = "Good Look and Feel";
-                id("nps-review-less-2").innerHTML = "Fast Delivery";
-                id("nps-review-less-3").innerHTML = "Easy Purchase Steps";
-                id("nps-review-less-4").innerHTML = "Friendly Customer Service";
-                id("nps-review-less-5").innerHTML = "Fast Website";
-                id("starMsg").innerHTML = "Thank you for rating us <br> Kindly select options, click on Submit Review and paste it to Google Review"
+                id("nps-review-less-1").innerHTML = desc6;
+                id("nps-review-less-2").innerHTML = desc7;
+                id("nps-review-less-3").innerHTML = desc8;
+                id("nps-review-less-4").innerHTML = desc9;
+                id("nps-review-less-5").innerHTML = desc10;
+                id("starMsg").innerHTML = tqMsg2
 
                 //show and hide buttons for 5 stars   
                 id("nps-input").style.display="inline-block";     
@@ -118,45 +144,34 @@ function fillstar(obj){
         id(input).style.backgroundColor  ="#41c0f1"
         id(input).style.color  ="#fff"
         review[field]=id(input).innerHTML 
-        //Create object for desc to be copied
-        var desc = [
-            {descText: "Friendly customer service, people from DoctorOnCall are friendly and provided me satisfying customer service."},
-            {descText: "The delivery of products that I purchase was fast and next time I would definitely use DoctorOnCall service again."},
-            {descText: "Easy purchasing steps on DoctorOnCall page, elders can also purchase medicines because the steps aren't complicated."},
-            {descText: "The amount of effort that I personally have to put compared to normal private clinic is little and I managed to save a lot of time."},
-            {descText: "Comfortable when I was using DoctorOnCall website. Not all websites give this feel, will recommend this to my family and friends."},
-            {descText: "Prices of products in DoctorOnCall is lower than private clinic. Helpful customer service and my questions are answered quickly."},
-            {descText: "DoctorOnCall gives a comprehensive medical information. The forum section and the doctors are all easy to approach and provide good answers and suggestions."},
-            {descText: "DoctorOnCall meet my expectations, from good customer service and affordable price, will tell a friend!"},
-            {descText: "I was looking for a specific supplement and managed to find the product in DoctorOnCall page in a few moments. Definitely going to recommend to family & friends."},
-            {descText: "I often come to DoctorOnCall if I have any medical doubts. One of the trustworthy and reliable medical resources in Malaysia."}
-        ]
-        var randomDesc = []
-//randomly select one of desc to be copied
-        for(var i =0; i < 1; i++){
-            var target = Math.floor(Math.random()*desc.length)
-            randomDesc.push(desc[target])
-            desc.splice(target ,1)
-        }
 
-        desc = randomDesc
-//copy randomly taken desc
-        for(var i=0; i< desc.length ; i++){  
-        var copyText = desc.descText; 
+        var randomDesc = desc[Math.round( Math.random()*desc.length)].descText; 
+        // console.log(randomDesc)
         var fullLink = document.createElement('input');
         document.body.appendChild(fullLink);
-        fullLink.value =  copyText;
+        fullLink.value =  randomDesc;
         fullLink.select();
         document.execCommand("copy", false);
-        fullLink.remove(); 
-        }
+        fullLink.remove();         
     }   
 
 //5.0 Create object & send params to AJAX Call
-    function sendReviews(){
-//declare obj to pass values less than 4 stars
-        var feedback = id("nps-input").value
-        review.feedback = feedback 
+    function sendReviews(){ 
+        var feedback = id("nps-input")
+        var feedbackValue = id("nps-input").value
+        review.feedback = feedbackValue 
+        if(feedback.value.length == 0){
+            console.log("No feedback, continue") 
+        }else{    
+        var fullLink = document.createElement('input');
+        document.body.appendChild(fullLink);
+        fullLink.value =  feedbackValue; 
+        fullLink.select();
+        document.execCommand("copy", false);
+        fullLink.remove();
+        alert("Copied to Clipboard: " + feedbackValue)           
+
+        } 
         sendPOSTAJAX(review) 
         if(review.star == 5){
             window.location.href="https://www.google.com/search?q=doctoroncall&rlz=1C1CHBF_enMY868MY868&oq=doctoroncall&aqs=chrome..69i57j0l5.2171j1j7&sourceid=chrome&ie=UTF-8#lkt=LocalPoiReviews&lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,3,,,&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall"
