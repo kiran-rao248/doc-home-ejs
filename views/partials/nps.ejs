@@ -145,8 +145,7 @@ function fillstar(obj){
         id(input).style.color  ="#fff"
         review[field]=id(input).innerHTML 
 
-        var randomDesc = desc[Math.round( Math.random()*desc.length)].descText; 
-        // console.log(randomDesc)
+        var randomDesc = desc[Math.round( Math.random()*desc.length)].descText;
         var fullLink = document.createElement('input');
         document.body.appendChild(fullLink);
         fullLink.value =  randomDesc;
