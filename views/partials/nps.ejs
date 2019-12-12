@@ -159,22 +159,17 @@ function fillstar(obj){
     function sendReviews(){ 
         var feedback = id("nps-input")
         var feedbackValue = id("nps-input").value
-        review.feedback = feedbackValue 
-        if(feedback.value.length == 0){
-            console.log("No feedback, continue") 
-        }else{    
+        review.feedback = feedbackValue  
+        sendPOSTAJAX(review) 
+        if(review.star == 5){
         var fullLink = document.createElement('input');
         document.body.appendChild(fullLink);
         fullLink.value =  feedbackValue; 
         fullLink.select();
         document.execCommand("copy", false);
         fullLink.remove();
-        alert("Copied to Clipboard: " + feedbackValue)           
-
-        } 
-        sendPOSTAJAX(review) 
-        if(review.star == 5){
-            window.location.href="https://www.google.com/search?q=doctoroncall&rlz=1C1CHBF_enMY868MY868&oq=doctoroncall&aqs=chrome..69i57j0l5.2171j1j7&sourceid=chrome&ie=UTF-8#lkt=LocalPoiReviews&lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,3,,,&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall"
+        alert("Copied to Clipboard: " + feedbackValue)   
+        window.location.href="https://www.google.com/search?q=doctoroncall&rlz=1C1CHBF_enMY868MY868&oq=doctoroncall&aqs=chrome..69i57j0l5.2171j1j7&sourceid=chrome&ie=UTF-8#lkt=LocalPoiReviews&lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,3,,,&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall"
         }  
     }   
 
