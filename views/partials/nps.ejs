@@ -1,17 +1,17 @@
- <div class="nps-border" id="npsBorderid">
+ <div class="nps-border" id="nps-borderid">
         <p class="nps-border-title">Let us know how we're doing?</p> 
         <p class="nps-border-sub-title">We are always trying to improve what we do and your feedback is important!</p>  
 
-        <div class="alignStars"> 
-            <img src="./stylesheets/on.svg" class="star" id="star0" onclick="fillstar(this);setStars(1)" />
-            <img src="./stylesheets/on.svg" class="star" id="star1" onclick="fillstar(this);setStars(2)" />
-            <img src="./stylesheets/on.svg" class="star" id="star2" onclick="fillstar(this);setStars(3)" />
-            <img src="./stylesheets/on.svg" class="star" id="star3" onclick="fillstar(this);setStars(4)" />
-            <img src="./stylesheets/on.svg" class="star" id="star4" onclick="fillstar(this);setStars(5)" />
+        <div class="nps-alignStars"> 
+            <img src="./stylesheets/on.svg" class="nps-star" id="star0" onclick="fillstar(this);setStars(1)" />
+            <img src="./stylesheets/on.svg" class="nps-star" id="star1" onclick="fillstar(this);setStars(2)" />
+            <img src="./stylesheets/on.svg" class="nps-star" id="star2" onclick="fillstar(this);setStars(3)" />
+            <img src="./stylesheets/on.svg" class="nps-star" id="star3" onclick="fillstar(this);setStars(4)" />
+            <img src="./stylesheets/on.svg" class="nps-star" id="star4" onclick="fillstar(this);setStars(5)" />
         </div> 
 
-        <div class="clearfix"></div>    
-        <p id="starMsg" class="star-5-msg"></p> 
+ 
+        <p id="star-msg" class="nps-star-5-msg"></p> 
         <div id="status"></div>  
 
         <div class="clearfix"></div> 
@@ -28,24 +28,24 @@
         </div>   
 
         <div class="nps-href-box">  
-            <button class="nps-href" id="less5starsubmit" onclick="closeReview();sendReviews()">Submit Review</button>  
+            <button class="nps-href" id="submit-btn" onclick="closeReview();sendReviews()">Submit Review</button>  
         </div> 
  
 </div>
 
-<div class="thankyou-msg" id="thankYouMsg">
-    <div class="checkMark"> 
-        <p class="star-checkmark">&#10003;</p>
-        <p class="thankyou-txt">Thank you for the rating!</p>
-        <p class="thankyou-txt2">We'll try to serve you better in the future!</p>
+<div class="nps-thankyou-msg" id="thankYouMsg">
+    <div class="nps-checkMark"> 
+        <p class="nps-star-checkmark">&#10003;</p>
+        <p class="nps-thankyou-txt">Thank you for the rating!</p>
+        <p class="nps-thankyou-txt2">We'll try to serve you better in the future!</p>
     </div>
 </div> 
  
 <script> 
 //TABLE OF CONTENT 
 //1.0 Define shorthand id
-//2.0 Get number of stars   
-//3.0 Fill gold color for stars 
+//2.0 Fill gold color for stars
+//3.0 Get number of stars  
 //4.0 Assign selected opt to review model
 //5.0 Create object & send params to AJAX Call 
 //6.0 AJAX Call
@@ -78,14 +78,28 @@ var desc = [
  var desc9 = "Friendly Customer Service"
  var desc10 = "Fast Website"
  var tqMsg1 = "Thank you for rating us <br>Please provide us feedback for improvement"
- var tqMsg2 = "Thank you for rating us <br> Kindly select options, click on Submit Review and paste it to Google Review"
+ var tqMsg2 = "Thank you for rating us"
 
 //1.0 Define shorthand id
     function id(input){
       return document.getElementById(input)
     } 
 
-//2.0 Get number of stars 
+//2.0 Fill gold color for stars  
+function fillstar(obj){
+        var stars=document.getElementsByClassName("nps-star")  
+        for(i=0; i < stars.length; i++){ 
+            var id = (obj.id).replace("star" , "")
+            if (i <= id ){
+                stars[i].src="./stylesheets/on.svg" 
+            }
+            else{
+                stars[i].src="./stylesheets/off.svg"
+            }
+        }
+    }  
+
+//3.0 Get number of stars 
     function setStars(input){    
         for(var i=0; i < 5; i++){ 
             review.star = input 
@@ -99,10 +113,10 @@ var desc = [
                 id("nps-review-less-3").innerHTML = desc3;
                 id("nps-review-less-4").innerHTML = desc4;
                 id("nps-review-less-5").innerHTML = desc5;
-                id("starMsg").innerHTML = tqMsg1
+                id("star-msg").innerHTML = tqMsg1
                 
                 //show and hide buttons for 1-4 stars
-                id("less5starsubmit").style.display="inline-block";                     
+                id("submit-btn").style.display="inline-block";                     
                 id("nps-input").style.display="inline-block";     
                 return input
             }
@@ -116,60 +130,48 @@ var desc = [
                 id("nps-review-less-3").innerHTML = desc8;
                 id("nps-review-less-4").innerHTML = desc9;
                 id("nps-review-less-5").innerHTML = desc10;
-                id("starMsg").innerHTML = tqMsg2
+                id("star-msg").innerHTML = tqMsg2
 
                 //show and hide buttons for 5 stars   
                 id("nps-input").style.display="inline-block";     
-                id("less5starsubmit").style.display="inline-block"; 
+                id("submit-btn").style.display="inline-block"; 
             }
         } 
     }   
-
-//3.0 Fill gold color for stars  
-function fillstar(obj){
-        var stars=document.getElementsByClassName("star")  
-        for(i=0; i < stars.length; i++){ 
-            var id = (obj.id).replace("star" , "")
-            if (i <= id ){
-                stars[i].src="./stylesheets/on.svg"
-            }
-            else{
-                stars[i].src="./stylesheets/off.svg"
-            }
-        }
-    }  
     
 //4.0 Assign selected opt to review model
     function setReview(input,field){
         id(input).style.backgroundColor  ="#41c0f1"
         id(input).style.color  ="#fff"
-        review[field]=id(input).innerHTML 
-
-        var randomDesc = desc[Math.round( Math.random()*desc.length)].descText;
-        var fullLink = document.createElement('input');
-        document.body.appendChild(fullLink);
-        fullLink.value =  randomDesc;
-        fullLink.select();
-        document.execCommand("copy", false);
-        fullLink.remove();         
+        review[field]=id(input).innerHTML  
     }   
 
 //5.0 Create object & send params to AJAX Call
     function sendReviews(){ 
         var feedback = id("nps-input")
-        var feedbackValue = id("nps-input").value
+        var feedbackValue = id("nps-input").value 
         review.feedback = feedbackValue  
-        sendPOSTAJAX(review) 
-        if(review.star == 5){
+        sendPOSTAJAX(review)  
+
+        if(review.star == 5 && feedback.value.length == 0){
+        var randomDesc = desc[Math.round( Math.random()*desc.length)].descText;    
+        utilityCopyFeedback(randomDesc)  
+        alert("Thank you for your feedback! We have copied the review for you. Please paste this at Google Review to help others to make better decision.")
+        window.location.href="https://www.google.com/search?q=doctoroncall&rlz=1C1CHBF_enMY868MY868&oq=doctoroncall&aqs=chrome..69i57j0l5.2171j1j7&sourceid=chrome&ie=UTF-8#lkt=LocalPoiReviews&lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,3,,,&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall"
+        }else if(review.star == 5 && feedback.value.length != 0){  
+        utilityCopyFeedback(feedbackValue) 
+        alert("Thank you for your feedback! We have copied the review for you. Please paste this at Google Review to help others to make better decision.")
+        window.location.href="https://www.google.com/search?q=doctoroncall&rlz=1C1CHBF_enMY868MY868&oq=doctoroncall&aqs=chrome..69i57j0l5.2171j1j7&sourceid=chrome&ie=UTF-8#lkt=LocalPoiReviews&lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,3,,,&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall"
+        } 
+    }
+
+    function utilityCopyFeedback(inputfeedback){
         var fullLink = document.createElement('input');
         document.body.appendChild(fullLink);
-        fullLink.value =  feedbackValue; 
+        fullLink.value =  inputfeedback; 
         fullLink.select();
         document.execCommand("copy", false);
-        fullLink.remove();
-        alert("Copied to Clipboard: " + feedbackValue)   
-        window.location.href="https://www.google.com/search?q=doctoroncall&rlz=1C1CHBF_enMY868MY868&oq=doctoroncall&aqs=chrome..69i57j0l5.2171j1j7&sourceid=chrome&ie=UTF-8#lkt=LocalPoiReviews&lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,3,,,&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall"
-        }  
+        fullLink.remove(); 
     }   
 
 //6.0 AJAX Call 
@@ -197,7 +199,7 @@ function fillstar(obj){
 
 //7.0 Show Thank you message
     function closeReview(){
-        id("npsBorderid").style.display = "none"
+        id("nps-borderid").style.display = "none"
         id("thankYouMsg").style.display = "block"
     }   
 </script>

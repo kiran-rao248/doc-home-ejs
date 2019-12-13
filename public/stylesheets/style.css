@@ -3993,79 +3993,7 @@ width: 8%;
   margin-top: 35px;
   width: 90%;
   padding-left: 14px;
-}
-
-.rating {
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
 } 
-
-.rating:not(:checked) > input {
-  position:absolute;
-  top:-9999px;
-  clip:rect(0,0,0,0);
-}
-
-.rating:not(:checked) > label {
-  float:right;
-  width:1em;
-  padding:0 .1em;
-  overflow:hidden;
-  white-space:nowrap;
-  cursor:pointer;
-  font-size:200%;
-  line-height:1.2;
-  color:#ddd;
-}
-
-.rating:not(:checked) > label:before {
-  content: '★ ';
-}
-
-.rating > input:checked ~ label {
-  color: #fbff00;
-  text-shadow:1px 1px #fbff00, 2px 2px #fbff00;
-}
-
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
-  color: #fbff00;
-  text-shadow:1px 1px #fbff00, 2px 2px #fbff00;
-}
-
-.rating > input:checked + label:hover,
-.rating > input:checked + label:hover ~ label,
-.rating > input:checked ~ label:hover,
-.rating > input:checked ~ label:hover ~ label,
-.rating > label:hover ~ input:checked ~ label {
-  color: #fbff00;
-  text-shadow:1px 1px #fbff00, 2px 2px #fbff00;
-}
-
-.rating > label:active {
-  position:relative;
-  top:2px;
-  left:2px;
-} 
-
-.clearfix:before,
-.clearfix:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
-}
-
-.clearfix:after {
-  clear: both;
-} 
-
-.clearfix {
-  *zoom: 1;
-} 
-
-#status, button {
-  margin: 10px 0;
-}
 
 .submit-nps{
   background-color: #5DC7F6;
@@ -4077,21 +4005,7 @@ width: 8%;
     margin: 0 auto;
     margin-top: 20px;
     display: block;
-} 
-
-.nps-review{
-  display: inline-block;
-  background-color: #F6F6F6;
-  border: 1px solid #d6d6d6;
-  padding: 15px;
-  width: 215px;
-  border-radius: 5px;
-  margin: 10px;
-  color: #2E5AA9;
-  cursor: pointer; 
-  outline: none;
- text-align: center; 
-}
+}  
 
 .nps-review-less{ 
   display: none;
@@ -4141,24 +4055,16 @@ width: 8%;
   text-align: center;
 } 
 
-.star-5-msg{ 
+.nps-star-5-msg{ 
   text-align: center;
   padding: 3px;
-} 
-
-.bluetag{
-  color: #5DC7F6;
-} 
-
-.user-review-cont{
-  text-align: center;
-}
+}   
 
 .nps-input{
   text-align: center;
 } 
 
-.thankyou-msg{
+.nps-thankyou-msg{
   display: none;
   background-color: #fff;
   border-radius: 10px;
@@ -4168,38 +4074,38 @@ width: 8%;
   width: 70%;
 }
 
-.checkMark{
+.nps-checkMark{
   text-align: center;
 }
 
-.checkMark img{
+.nps-checkMark img{
   height: 64px; 
   width: 64px;
 }
 
-.thankyou-txt{
+.nps-thankyou-txt{
   color: #2E5AA9;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
 
-.thankyou-txt2{
+.nps-thankyou-txt2{
   color: #7f7d7d;
 } 
 
-.alignStars{
+.nps-alignStars{
   text-align: center;
 }  
 
-.star{
-  cursor: pointer;
-}
-.rate5{ 
-  cursor:pointer;
+.nps-star{
+  cursor: pointer; 
+  position:relative;
+  top:3px;
+  width:44px; 
 }
 
-.star-checkmark{
+.nps-star-checkmark{
   font-size: 26px; 
   margin: 0;
   margin-top: 12px; 
