@@ -1,7 +1,13 @@
- <div class="nps-border" id="nps-borderid">
-        <p class="nps-border-title">Let us know how we're doing?</p> 
+ <div class="nps-border" id="nps-borderid"> 
+     <p id="langBtn" onclick=changeLang() style="text-decoration: underline; cursor: pointer;
+     text-align: right;color: #3498db;margin-right: 25px;margin-top: 20px;">Bahasa</p>
+ 
+    <p id="langBtnEn" onclick=changeLangEn() style="text-decoration: underline; cursor: pointer;
+    text-align: right;color: #3498db;margin-right: 25px;margin-top: 20px;display: none;">English</p>
+ 
+        <p id="test" class="nps-border-title">Let us know how we're doing?</p> 
         <p class="nps-border-sub-title">We are always trying to improve what we do and your feedback is important!</p>  
-
+        
         <div class="nps-alignStars"> 
             <img src="./stylesheets/on.svg" class="nps-star" id="star0" onclick="fillstar(this);setStars(1)" />
             <img src="./stylesheets/on.svg" class="nps-star" id="star1" onclick="fillstar(this);setStars(2)" />
@@ -9,10 +15,9 @@
             <img src="./stylesheets/on.svg" class="nps-star" id="star3" onclick="fillstar(this);setStars(4)" />
             <img src="./stylesheets/on.svg" class="nps-star" id="star4" onclick="fillstar(this);setStars(5)" />
         </div> 
-
  
-        <p id="star-msg" class="nps-star-5-msg"></p> 
-        <div id="status"></div>  
+        <p id="star-msg" class="nps-star-5-msg"></p>
+        <div id="status"></div>
 
         <div class="clearfix"></div> 
         <div class="nps-review-box"> 
@@ -24,13 +29,12 @@
         </div>
 
         <div class="nps-input">
-            <input type="text" id="nps-input" class="nps-border-input" placeholder="Share your experiences and help others make better choices!"> 
-        </div>   
+            <input type="text" id="nps-input" class="nps-border-input" placeholder="Share your experiences and help others make better choices!">
+        </div>
 
-        <div class="nps-href-box">  
-            <button class="nps-href" id="submit-btn" onclick="closeReview();sendReviews()">Submit Review</button>  
-        </div> 
- 
+        <div class="nps-href-box">
+            <button class="nps-href" id="submit-btn" onclick="closeReview();sendReviews()">Submit Review</button>
+        </div>  
 </div>
 
 <div class="nps-thankyou-msg" id="thankYouMsg">
@@ -41,7 +45,7 @@
     </div>
 </div> 
  
-<script> 
+<script>  
 //TABLE OF CONTENT 
 //1.0 Define shorthand id
 //2.0 Fill gold color for stars
@@ -65,20 +69,51 @@ var desc = [
     {descText: "DoctorOnCall meet my expectations, from good customer service and affordable price, will tell a friend!"},
     {descText: "I was looking for a specific supplement and managed to find the product in DoctorOnCall page in a few moments. Definitely going to recommend to family & friends."},
     {descText: "I often come to DoctorOnCall if I have any medical doubts. One of the trustworthy and reliable medical resources in Malaysia."}
-]
-//Desc options 
- var desc1 = "Difficult to Use"
- var desc2 = "Slow Delivery"
- var desc3 = "Complicated Purchase Steps"
- var desc4 = "Poor Customer Service"
- var desc5 = "Slow Website"
- var desc6 = "Good Look and Feel"
- var desc7 = "Fast Delivery"
- var desc8 = "Easy Purchase Steps"
- var desc9 = "Friendly Customer Service"
- var desc10 = "Fast Website"
- var tqMsg1 = "Thank you for rating us <br>Please provide us feedback for improvement"
- var tqMsg2 = "Thank you for rating us"
+] 
+
+ var optDesc = {
+     optDescText1 : [ "Difficult to Use" , "Sukar Digunakan" ], 
+     optDescText2 : [ "Slow Delivery" , "Penghantaran yang lambat" ],
+     optDescText3 : [ "Complicated Purchase Steps" , "Langkah Pembelian yang Rumit" ],
+     optDescText4 : [ "Poor Customer Service" , "Khidmat Pelanggan Yang Teruk" ],
+     optDescText5 : [ "Slow Website" , "Laman Sesawang yang Perlahan" ],
+     optDescText6 : [ "Good Look and Feel" , "Kelihatan Kemas dan Menarik" ],
+     optDescText7 : [ "Fast Delivery" , "Penghantaran yang cepat" ],
+     optDescText8 : [ "Easy Purchase Steps" , "Langkah Pembelian yang mudah" ],
+     optDescText9 : [ "Friendly Customer Service" , "Pegawai Khidmat Pelanggan yang mesra" ],
+     optDescText10 : [ "Fast Website" , "Laman Sesawang yang laju" ]
+ }
+
+ var langObj={
+ "en":{
+  abc:"Buy"
+  },
+ "bm":{
+  abc:"Beli"
+ }
+}
+
+    var optDescBm1 = optDesc.optDescText1[1]
+    var optDescBm2 = optDesc.optDescText2[1]
+    var optDescBm3 = optDesc.optDescText3[1]
+    var optDescBm4 = optDesc.optDescText4[1]
+    var optDescBm5 = optDesc.optDescText5[1]
+    var optDescBm6 = optDesc.optDescText6[1]
+    var optDescBm7 = optDesc.optDescText7[1]
+    var optDescBm8 = optDesc.optDescText8[1]
+    var optDescBm9 = optDesc.optDescText9[1]
+    var optDescBm10 = optDesc.optDescText10[1]
+
+    var optDescEn1 = optDesc.optDescText1[0]
+    var optDescEn2 = optDesc.optDescText2[0]
+    var optDescEn3 = optDesc.optDescText3[0]
+    var optDescEn4 = optDesc.optDescText4[0]
+    var optDescEn5 = optDesc.optDescText5[0]
+    var optDescEn6 = optDesc.optDescText6[0]
+    var optDescEn7 = optDesc.optDescText7[0]
+    var optDescEn8 = optDesc.optDescText8[0]
+    var optDescEn9 = optDesc.optDescText9[0]
+    var optDescEn10 = optDesc.optDescText10[0]
 
 //1.0 Define shorthand id
     function id(input){
@@ -97,7 +132,35 @@ function fillstar(obj){
                 stars[i].src="./stylesheets/off.svg"
             }
         }
-    }  
+    }   
+
+    function changeLang(){
+        var langBtn = id("langBtn")
+        var langBtnEn = id("langBtnEn")
+        if(langBtn.innerHTML == "Bahasa"){ 
+            
+            langBtn.style.display = "none"
+            langBtnEn.style.display = "block" 
+            console.log("changed to english")
+
+
+        }
+    }
+
+    function changeLangEn(){
+        var langBtn = id("langBtn")
+        var langBtnEn = id("langBtnEn")
+        if(langBtnEn.innerHTML == "English"){ 
+            
+            langBtn.style.display = "block"
+            langBtnEn.style.display = "none"
+
+
+            console.log("changed to bahasa") 
+
+
+        }
+    }
 
 //3.0 Get number of stars 
     function setStars(input){    
@@ -107,13 +170,26 @@ function fillstar(obj){
                 var starOpt = document.getElementsByClassName("nps-review-less")
                 for(var i=0; i< starOpt.length; i++){
                     starOpt[i].style.display = "inline-block"
-                } 
-                id("nps-review-less-1").innerHTML = desc1;
-                id("nps-review-less-2").innerHTML = desc2;
-                id("nps-review-less-3").innerHTML = desc3;
-                id("nps-review-less-4").innerHTML = desc4;
-                id("nps-review-less-5").innerHTML = desc5;
-                id("star-msg").innerHTML = tqMsg1
+                }  
+
+                if(id("langBtn")) { 
+
+                id("nps-review-less-1").innerHTML = optDescEn1
+                id("nps-review-less-2").innerHTML = optDescEn2
+                id("nps-review-less-3").innerHTML = optDescEn3
+                id("nps-review-less-4").innerHTML = optDescEn4
+                id("nps-review-less-5").innerHTML = optDescEn5
+                console.log("im here")
+                // id("star-msg").innerHTML = optDesc[10].optDescText;
+                }else{ 
+                id("nps-review-less-1").innerHTML = optDescBm1
+                id("nps-review-less-2").innerHTML = optDescBm2
+                id("nps-review-less-3").innerHTML = optDescBm3
+                id("nps-review-less-4").innerHTML = optDescBm4
+                id("nps-review-less-5").innerHTML = optDescBm5
+                // id("star-msg").innerHTML = optDesc[10].optDescText;
+                }
+
                 
                 //show and hide buttons for 1-4 stars
                 id("submit-btn").style.display="inline-block";                     
@@ -125,13 +201,23 @@ function fillstar(obj){
                 for(var i=0; i< starOpt.length; i++){
                     starOpt[i].style.display = "inline-block";
                 }
-                id("nps-review-less-1").innerHTML = desc6;
-                id("nps-review-less-2").innerHTML = desc7;
-                id("nps-review-less-3").innerHTML = desc8;
-                id("nps-review-less-4").innerHTML = desc9;
-                id("nps-review-less-5").innerHTML = desc10;
-                id("star-msg").innerHTML = tqMsg2
+                if(id("langBtn").innerHTML == ""){
+                    console.log("im here")
 
+                id("nps-review-less-1").innerHTML = optDescEn6
+                id("nps-review-less-2").innerHTML = optDescEn7
+                id("nps-review-less-3").innerHTML = optDescEn8
+                id("nps-review-less-4").innerHTML = optDescEn9
+                id("nps-review-less-5").innerHTML = optDescEn10
+                // id("star-msg").innerHTML = optDesc[11].optDescText;
+                }else{
+                id("nps-review-less-1").innerHTML = optDescBm6
+                id("nps-review-less-2").innerHTML = optDescBm7
+                id("nps-review-less-3").innerHTML = optDescBm8
+                id("nps-review-less-4").innerHTML = optDescBm9
+                id("nps-review-less-5").innerHTML = optDescBm10
+                // id("star-msg").innerHTML = optDesc[11].optDescText;
+                }
                 //show and hide buttons for 5 stars   
                 id("nps-input").style.display="inline-block";     
                 id("submit-btn").style.display="inline-block"; 
@@ -202,4 +288,7 @@ function fillstar(obj){
         id("nps-borderid").style.display = "none"
         id("thankYouMsg").style.display = "block"
     }   
+
+    document.addEventListener('DOMContentLoaded', function () { 
+          });
 </script>

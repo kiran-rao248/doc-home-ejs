@@ -354,7 +354,32 @@ var library = {
     mainpage_subscribe_health_insight: "Subscribe to our Free Health Insights",
     mainpage_subscribe_desc: "Get notified about new health articles, and any new offers and new promotions. You can unsubscribe at any time. ",
     mainpage_subscribe: "Subscribe", 
-    tanya: "/tanya/en"
+    tanya: "/tanya/en",
+
+    nps_opt1 : "Friendly customer service, people from DoctorOnCall are friendly and provided me satisfying customer service.",
+    nps_opt2 : "The delivery of products that I purchase was fast and next time I would definitely use DoctorOnCall service again.",
+    nps_opt3 : "Easy purchasing steps on DoctorOnCall page, elders can also purchase medicines because the steps aren't complicated.",
+    nps_opt4 : "The amount of effort that I personally have to put compared to a normal private clinic is little and I managed to save a lot of time.",
+    nps_opt5 : "Comfortable when I was using DoctorOnCall website. Not all websites give this feel, will recommend this to my family and friends.",
+    nps_opt6 : "Prices of products in DoctorOnCall is lower than the private clinic. Helpful customer service and my questions are answered quickly.",
+    nps_opt7 : "DoctorOnCall gives comprehensive medical information. The forum section and the doctors are all easy to approach and provide good answers and suggestions.",
+    nps_opt8 : "DoctorOnCall meet my expectations, from good customer service and affordable price, will tell a friend!",
+    nps_opt9 : "I was looking for a specific supplement and managed to find the product in DoctorOnCall page in a few moments. Definitely going to recommend to family & friends.",
+    nps_opt10 : "I often come to DoctorOnCall if I have any medical doubts. One of the trustworthy and reliable medical resources in Malaysia.",
+    
+    nps_desc1 : "Difficult to Use",
+    nps_desc2 : "Slow Delivery",
+    nps_desc3 : "Complicated Purchase Steps",
+    nps_desc4 : "Poor Customer Service",
+    nps_desc5 : "Slow Website",
+    nps_desc6 : "Good Look and Feel",
+    nps_desc7 : "Fast Delivery",
+    nps_desc8 : "Easy Purchase Steps",
+    nps_desc9 : "Friendly Customer Service",
+    nps_desc10 : "Fast Website",
+
+    nps_tqMsg : "Thank you for rating us",
+    nps_tqMsg1 : "Please provide us feedback for improvement"
     },
     
     
@@ -636,7 +661,32 @@ var library = {
     mainpage_subscribe_health_insight: "Langgan info kesihatan secara percuma",
     mainpage_subscribe_desc: "Dapatkan pemberitahun tentang artikel, tawaran dan promosi terbaru kami. Anda boleh berhenti melanggan pada bila-bila masa. ",
     mainpage_subscribe: "Langgan", 
-    tanya: "/tanya/"
+    tanya: "/tanya/",
+
+    nps_opt1 : "Khidmat Pelanggan yang mesra, para pegawai khidmat pelanggan DoctorOnCall memberikan layanan yang baik dan mesra.",
+    nps_opt2 : "Servis penghantaran produk cepat, saya pasti akan menggunakan servis DoctorOnCall pada masa akan datang.",
+    nps_opt3 : "Langkah pembelian yang mudah di laman DoctorOnCall, mereka yang lebih berusia juga boleh membeli kerana langkah yang perlu dilakukan tidak rumit.",
+    nps_opt4 : "Saya tidak perlu bersusah payah berbanding jika menggunakan khidmat klinik persendirian biasa dan dapat menjimatkan lebih banyak masa.",
+    nps_opt5 : "Selesa menggunakan laman sesawang DoctorOnCall. Tidak semua laman sesawang memberikan perasaan ini, saya amat menyarankan laman ini kepada keluarga dan rakan saya.",
+    nps_opt6 : "Harga produk di DoctorOnCall lebih rendah dari klinik swasta. Pegawai khidmat pelanggan yang cekap membantu serta menjawab soalan saya dengan cepat.",
+    nps_opt7 : "DoctorOnCall memberikan maklumat kesihatan yang menyeluruh. Laman forum dan para doktor yang mesra. Segala persoalan dijawab dengan baik dan saranan serta nasihat yang diberikan amat membantu.",
+    nps_opt8 : "DoctorOnCall memenuhi kehendak dan jangkaan saya, dari segi khidmat pelanggan yang baik serta harga yang berpatutan. Saya pasti akan mengesyorkan DoctorOnCall kepada rakan-rakan!",
+    nps_opt9 : "Saya telah lama mencari satu jenis suplemen ini dan akhirnya menemui produk ini di laman sesawang DoctorOnCall dalam jangka masa yang singkat. Saya pasti akan mengesyorkan perkhidmatan DoctorOnCall kepada keluarga dan rakan.",
+    nps_opt10 : "Saya sering merujuk kepada DoctorOnCall sekiranya terdapat sebarang persoalan tentang kesihatan. Ia adalah salah satu sumber rujukan berkaitan kesihatan dan perubatan yang boleh dipercayai.",
+    
+    nps_desc1 : "Sukar Digunakan",
+    nps_desc2 : "Penghantaran yang lambat",
+    nps_desc3 : "Langkah Pembelian yang Rumit",
+    nps_desc4 : "Khidmat Pelanggan Yang Teruk",
+    nps_desc5 : "Laman Sesawang yang Perlahan",
+    nps_desc6 : "Kelihatan Kemas dan Menarik",
+    nps_desc7 : "Penghantaran yang cepat",
+    nps_desc8 : "Langkah Pembelian yang mudah",
+    nps_desc9 : "Pegawai Khidmat Pelanggan yang mesra",
+    nps_desc10 : "Laman Sesawang yang laju",
+
+    nps_tqMsg : "Terima kasih atas penilaian anda",
+    nps_tqMsg1 : "Sila berikan maklum balas anda agar kami boleh memperbaiki perkhidmatan kami"
   }
 };
 

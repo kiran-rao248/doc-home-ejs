@@ -4012,7 +4012,7 @@ width: 8%;
   background-color: #F6F6F6;
   border: 1px solid #d6d6d6;
   padding: 15px;
-  width: 215px;
+  white-space: nowrap;
   border-radius: 5px;
   margin: 10px;
   color: #2E5AA9;
@@ -4110,3 +4110,9 @@ width: 8%;
   margin: 0;
   margin-top: 12px; 
 } 
+
+.nps-lang{
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 18px;
+}
