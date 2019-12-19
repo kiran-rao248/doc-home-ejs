@@ -1,9 +1,7 @@
  <div class="nps-border" id="nps-borderid"> 
-     <p id="langBtn" onclick="changeLang('bm')" style="text-decoration: underline; cursor: pointer;
-     text-align: right;color: #3498db;margin-right: 25px;margin-top: 20px;">Bahasa</p>
+     <p id="langBtn" onclick="changeLang('bm')" class="nps-lang-btn">Bahasa</p>
  
-    <p id="langBtnEn" onclick="changeLang('en')" style="text-decoration: underline; cursor: pointer;
-    text-align: right;color: #3498db;margin-right: 25px;margin-top: 20px;display: none;">English</p>
+    <p id="langBtnEn" onclick="changeLang('en')" class="nps-lang-btn-2">English</p>
  
         <p id="headText1" class="nps-border-title">Let us know how we're doing?</p> 
         <p id="headText2" class="nps-border-sub-title">We are always trying to improve what we do and your feedback is important!</p>  
@@ -56,7 +54,6 @@
 //7.0 Show Thank you message  
  
 //Set object for description
-
 var review = {"easeOfUse": "","deliverySpeed": "","easeOPurchaseStep": "","customerService": "","performanceOfWebsite": "", "feedback" : "" , "star" : 5 }
 //Create object for desc to be copied
 var desc = [
@@ -85,7 +82,9 @@ var desc = [
     optDescText9: "Friendly Customer Service",
     optDescText10: "Fast Website",
     headText1: "Let us know how we're doing?",
-    headText2: "We are always trying to impove what we do and your feedback is important!"
+    headText2: "We are always trying to impove what we do and your feedback is important!",
+    placeHolderText: "Share your experiences and help others make a better choice",
+    submitReview: "Submit Review"
   },
  "bm":{
     optDescText1:"Sukar Digunakan",
@@ -96,14 +95,16 @@ var desc = [
     optDescText6: "Kelihatan Kemas dan Menarik",
     optDescText7: "Penghantaran yang cepat",
     optDescText8: "Langkah Pembelian yang mudah",
-    optDescText9: "Pegawai Khidmat Pelanggan yang mesra",
-    optDescText10: "Laman Sesawang yang laju",
+    optDescText9: "Khidmat Pelanggan yang mesra",
+    optDescText10: "Website yang laju",
     headText1: "Sila beritahu pendapat anda tentang kami?",
-    headText2: "Kami sentiasa cuba memperbaiki apa yang kami lakukan dan maklum balas anda penting!"
+    headText2: "Kami sentiasa cuba memperbaiki apa yang kami lakukan dan maklum balas anda penting!",
+    placeHolderText: "Berkongsi pengalaman anda dan membantu orang lain membuat pilihan yang lebih baik",
+    submitReview: "Hantar Ulasan"
 
  }
 } 
-    var optDescText1 ,optDescText2,optDescText3,optDescText4,optDescText5,optDescText6, optDescText7, optDescText8, optDescText9, optDescText10, headText1, headText2
+    var optDescText1 ,optDescText2,optDescText3,optDescText4,optDescText5,optDescText6, optDescText7, optDescText8, optDescText9, optDescText10, headText1, headText2, placeHolderText, submitReview
     function loadLanguage(lang){
         optDescText1 = langObj[lang].optDescText1
         optDescText2 = langObj[lang].optDescText2
@@ -117,9 +118,13 @@ var desc = [
         optDescText10 = langObj[lang].optDescText10 
         headText1 = langObj[lang].headText1
         headText2 = langObj[lang].headText2
+        placeHolderText = langObj[lang].placeHolderText
+        submitReview = langObj[lang].submitReview
 
         id("headText1").innerHTML = headText1
         id("headText2").innerHTML = headText2
+        id("nps-input").placeholder = placeHolderText
+        id("submit-btn").innerHTML = submitReview
 
         if(review.star == 5){
             id("nps-review-less-1").innerHTML = optDescText6
@@ -152,7 +157,7 @@ var desc = [
             id("nps-review-less-4").innerHTML = optDescText4
             id("nps-review-less-5").innerHTML = optDescText5
         }
-    }
+    } 
 
 //1.0 Define shorthand id
     function id(input){
@@ -200,8 +205,7 @@ var desc = [
                 id("nps-review-less-2").innerHTML = optDescText2
                 id("nps-review-less-3").innerHTML = optDescText3
                 id("nps-review-less-4").innerHTML = optDescText4
-                id("nps-review-less-5").innerHTML = optDescText5 
-                // id("star-msg").innerHTML = optDesc[10].optDescText;
+                id("nps-review-less-5").innerHTML = optDescText5  
                 
                 //show and hide buttons for 1-4 stars
                 id("submit-btn").style.display="inline-block";                     
@@ -217,8 +221,7 @@ var desc = [
                 id("nps-review-less-2").innerHTML = optDescText7
                 id("nps-review-less-3").innerHTML = optDescText8
                 id("nps-review-less-4").innerHTML = optDescText9
-                id("nps-review-less-5").innerHTML = optDescText10
-                // id("star-msg").innerHTML = optDesc[11].optDescText;  
+                id("nps-review-less-5").innerHTML = optDescText10 
               
                 //show and hide buttons for 5 stars   
                 id("nps-input").style.display="inline-block";     
@@ -243,11 +246,14 @@ var desc = [
         var special_char = "*|\:<>[]{}`\;()@$#%";
 
         for (var i = 0; review.feedback.length > i; i++) {
-        if(review.feedback.length < 3 || special_char.indexOf(review.feedback.charAt(i)) != -1){
-        
-        return console.log("error description")
+        if(review.feedback.length < 3 || special_char.indexOf(review.feedback.charAt(i)) != -1){ 
+        alert("Not valid description")
+        id("nps-borderid").style.display = "block"
+        id("thankYouMsg").style.display = "none"
+        return console.log("Not valid description") 
         }
     }
+        review.location = window.location.href 
         sendPOSTAJAX(review)  
 
         if(review.star == 5 && feedback.value.length == 0){
@@ -301,6 +307,6 @@ var desc = [
     }   
 
     document.addEventListener('DOMContentLoaded', function(){ 
-        loadLanguage("en")
+        loadLanguage("en") 
     });
 </script>

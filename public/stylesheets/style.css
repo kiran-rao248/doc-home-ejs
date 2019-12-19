@@ -3977,14 +3977,17 @@ width: 8%;
   font-size: 20px;
   font-weight: bold; 
   text-align: center;
+  padding: 17px;
 }
 
 .nps-border-sub-title{
   text-align: center;
+  padding: 31px;
+  margin-top: -40px;
+  margin-bottom: -18px;
 } 
 
-.nps-border-input{  
-  display: none;
+.nps-border-input{   
   border-radius: 8px;
   border: 1px solid #d6d6d6;
   height: 50px;  
@@ -4008,14 +4011,14 @@ width: 8%;
 }  
 
 .nps-review-less{ 
-  display: none;
+  display: inline-block;
   background-color: #F6F6F6;
   border: 1px solid #d6d6d6;
-  padding: 15px;
+  padding: 13px;
   white-space: nowrap;
   border-radius: 5px;
-  margin: 10px;
-  color: #2E5AA9;
+  margin: 8px;
+  color: #bab5b5;
   cursor: pointer; 
   outline: none;
  text-align: center; 
@@ -4028,8 +4031,7 @@ width: 8%;
   width: 14px;  
 }
 
-.nps-href{
-  display: none;
+.nps-href{ 
   cursor: pointer;
   background-color: #5DC7F6;
   color: #fff;
@@ -4115,4 +4117,23 @@ width: 8%;
   text-align: right;
   margin-top: 10px;
   margin-right: 18px;
+}
+
+.nps-lang-btn{
+  outline: none;
+  cursor: pointer;
+  text-align: right;
+  color: #3498db;
+  margin-right: 25px;
+  margin-top: 20px;
+}
+
+.nps-lang-btn-2{
+  outline: none;
+  cursor: pointer;
+  text-align: right;
+  color: #3498db;
+  margin-right: 25px;
+  margin-top: 20px;
+  display: none;
 }
