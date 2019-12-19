@@ -127,35 +127,9 @@ var desc = [
         id("submit-btn").innerHTML = submitReview
 
         if(review.star == 5){
-            id("nps-review-less-1").innerHTML = optDescText6
-            id("nps-review-less-2").innerHTML = optDescText7
-            id("nps-review-less-3").innerHTML = optDescText8
-            id("nps-review-less-4").innerHTML = optDescText9
-            id("nps-review-less-5").innerHTML = optDescText10
-        }else if(review.star == 4){
-            id("nps-review-less-1").innerHTML = optDescText1
-            id("nps-review-less-2").innerHTML = optDescText2
-            id("nps-review-less-3").innerHTML = optDescText3
-            id("nps-review-less-4").innerHTML = optDescText4
-            id("nps-review-less-5").innerHTML = optDescText5
-        }else if(review.star == 3){
-            id("nps-review-less-1").innerHTML = optDescText1
-            id("nps-review-less-2").innerHTML = optDescText2
-            id("nps-review-less-3").innerHTML = optDescText3
-            id("nps-review-less-4").innerHTML = optDescText4
-            id("nps-review-less-5").innerHTML = optDescText5
-        }else if(review.star == 2){
-            id("nps-review-less-1").innerHTML = optDescText1
-            id("nps-review-less-2").innerHTML = optDescText2
-            id("nps-review-less-3").innerHTML = optDescText3
-            id("nps-review-less-4").innerHTML = optDescText4
-            id("nps-review-less-5").innerHTML = optDescText5
-        }else if(review.star == 1){
-            id("nps-review-less-1").innerHTML = optDescText1
-            id("nps-review-less-2").innerHTML = optDescText2
-            id("nps-review-less-3").innerHTML = optDescText3
-            id("nps-review-less-4").innerHTML = optDescText4
-            id("nps-review-less-5").innerHTML = optDescText5
+            fiveStarOpt()
+        }else if(review.star <= 4){
+            fourStarOpt()
         }
     } 
 
@@ -163,6 +137,22 @@ var desc = [
     function id(input){
       return document.getElementById(input)
     } 
+
+    function fiveStarOpt(){
+        id("nps-review-less-1").innerHTML = optDescText6
+        id("nps-review-less-2").innerHTML = optDescText7
+        id("nps-review-less-3").innerHTML = optDescText8
+        id("nps-review-less-4").innerHTML = optDescText9
+        id("nps-review-less-5").innerHTML = optDescText10
+    }
+
+    function fourStarOpt(){
+        id("nps-review-less-1").innerHTML = optDescText1
+        id("nps-review-less-2").innerHTML = optDescText2
+        id("nps-review-less-3").innerHTML = optDescText3
+        id("nps-review-less-4").innerHTML = optDescText4
+        id("nps-review-less-5").innerHTML = optDescText5
+    }
 
 //2.0 Fill gold color for stars  
     function fillstar(obj){
@@ -201,12 +191,7 @@ var desc = [
                 for(var i=0; i< starOpt.length; i++){
                     starOpt[i].style.display = "inline-block"
                 }   
-                id("nps-review-less-1").innerHTML = optDescText1
-                id("nps-review-less-2").innerHTML = optDescText2
-                id("nps-review-less-3").innerHTML = optDescText3
-                id("nps-review-less-4").innerHTML = optDescText4
-                id("nps-review-less-5").innerHTML = optDescText5  
-                
+                fourStarOpt()                
                 //show and hide buttons for 1-4 stars
                 id("submit-btn").style.display="inline-block";                     
                 id("nps-input").style.display="inline-block";     
@@ -217,12 +202,7 @@ var desc = [
                 for(var i=0; i< starOpt.length; i++){
                     starOpt[i].style.display = "inline-block";
                 }
-                id("nps-review-less-1").innerHTML = optDescText6
-                id("nps-review-less-2").innerHTML = optDescText7
-                id("nps-review-less-3").innerHTML = optDescText8
-                id("nps-review-less-4").innerHTML = optDescText9
-                id("nps-review-less-5").innerHTML = optDescText10 
-              
+                fiveStarOpt()               
                 //show and hide buttons for 5 stars   
                 id("nps-input").style.display="inline-block";     
                 id("submit-btn").style.display="inline-block"; 
@@ -241,30 +221,26 @@ var desc = [
     function sendReviews(){ 
         var feedback = id("nps-input")
         var feedbackValue = id("nps-input").value 
-        review.feedback = feedbackValue 
+        review.feedback = feedbackValue  
+        var special_char = "*|\:<>[]{}`\;$#%"; 
 
-        var special_char = "*|\:<>[]{}`\;()@$#%";
-
-        for (var i = 0; review.feedback.length > i; i++) {
-        if(review.feedback.length < 3 || special_char.indexOf(review.feedback.charAt(i)) != -1){ 
+    if(review.feedback.length<12 || review.feedback.match(/[-!$%^&*_|~=`{}\[\]:";'<>?,.\/]/)){
         alert("Not valid description")
         id("nps-borderid").style.display = "block"
         id("thankYouMsg").style.display = "none"
         return console.log("Not valid description") 
-        }
     }
         review.location = window.location.href 
-        sendPOSTAJAX(review)  
-
-        if(review.star == 5 && feedback.value.length == 0){
-        var randomDesc = desc[Math.round( Math.random()*desc.length)].descText;    
-        utilityCopyFeedback(randomDesc)  
+        sendPOSTAJAX(review)   
+        var randomDesc = desc[Math.round( Math.random()*desc.length)].descText;   
+        if(review.star == 5){
+            if(feedback.value.length == 0){
+                utilityCopyFeedback(randomDesc)
+            }else if(feedback.value.length != 0){
+                utilityCopyFeedback(feedbackValue) 
+            } 
         alert("Thank you for your feedback! We have copied the review for you. Please paste this at Google Review to help others to make better decision.")
-        window.location.href="https://www.google.com/search?q=doctoroncall&rlz=1C1CHBF_enMY868MY868&oq=doctoroncall&aqs=chrome..69i57j0l5.2171j1j7&sourceid=chrome&ie=UTF-8#lkt=LocalPoiReviews&lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,3,,,&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall"
-        }else if(review.star == 5 && feedback.value.length != 0){  
-        utilityCopyFeedback(feedbackValue) 
-        alert("Thank you for your feedback! We have copied the review for you. Please paste this at Google Review to help others to make better decision.")
-        window.location.href="https://www.google.com/search?q=doctoroncall&rlz=1C1CHBF_enMY868MY868&oq=doctoroncall&aqs=chrome..69i57j0l5.2171j1j7&sourceid=chrome&ie=UTF-8#lkt=LocalPoiReviews&lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,3,,,&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall"
+        window.location.href="https://www.google.com/search?q=doctoroncall&rlz=1C1CHBF_enMY868MY868&oq=doctoroncall&aqs=chrome..69i57j0l5.2171j1j7&sourceid=chrome&ie=UTF-8#lkt=LocalPoiReviews&lrd=0x31cc4ea1b0dc1491:0xdb4e3073e413ce5f,3,,,&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15802621416795524703,rc_q:DoctorOnCall,ru_q:DoctorOnCall"       
         } 
     }
 
