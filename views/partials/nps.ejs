@@ -224,7 +224,7 @@ var desc = [
         review.feedback = feedbackValue  
         var special_char = "*|\:<>[]{}`\;$#%"; 
 
-    if(review.feedback.length<5 || review.feedback.match(/[-!$%^&*_|~=`{}\[\]:";'<>?,.\/]/)){
+    if(review.feedback.length<5 || review.feedback.match(/[-$%^&*_|~=`{}\[\]:";'<>,.\/]/)){
         alert("Not valid description")
         id("nps-borderid").style.display = "block"
         id("thankYouMsg").style.display = "none"
