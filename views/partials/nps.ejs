@@ -1,12 +1,12 @@
  <div class="nps-border" id="nps-borderid"> 
-     <p id="langBtn" onclick=changeLang() style="text-decoration: underline; cursor: pointer;
+     <p id="langBtn" onclick="changeLang('bm')" style="text-decoration: underline; cursor: pointer;
      text-align: right;color: #3498db;margin-right: 25px;margin-top: 20px;">Bahasa</p>
  
-    <p id="langBtnEn" onclick=changeLangEn() style="text-decoration: underline; cursor: pointer;
+    <p id="langBtnEn" onclick="changeLang('en')" style="text-decoration: underline; cursor: pointer;
     text-align: right;color: #3498db;margin-right: 25px;margin-top: 20px;display: none;">English</p>
  
-        <p id="test" class="nps-border-title">Let us know how we're doing?</p> 
-        <p class="nps-border-sub-title">We are always trying to improve what we do and your feedback is important!</p>  
+        <p id="headText1" class="nps-border-title">Let us know how we're doing?</p> 
+        <p id="headText2" class="nps-border-sub-title">We are always trying to improve what we do and your feedback is important!</p>  
         
         <div class="nps-alignStars"> 
             <img src="./stylesheets/on.svg" class="nps-star" id="star0" onclick="fillstar(this);setStars(1)" />
@@ -56,6 +56,7 @@
 //7.0 Show Thank you message  
  
 //Set object for description
+
 var review = {"easeOfUse": "","deliverySpeed": "","easeOPurchaseStep": "","customerService": "","performanceOfWebsite": "", "feedback" : "" , "star" : 5 }
 //Create object for desc to be copied
 var desc = [
@@ -69,51 +70,89 @@ var desc = [
     {descText: "DoctorOnCall meet my expectations, from good customer service and affordable price, will tell a friend!"},
     {descText: "I was looking for a specific supplement and managed to find the product in DoctorOnCall page in a few moments. Definitely going to recommend to family & friends."},
     {descText: "I often come to DoctorOnCall if I have any medical doubts. One of the trustworthy and reliable medical resources in Malaysia."}
-] 
-
- var optDesc = {
-     optDescText1 : [ "Difficult to Use" , "Sukar Digunakan" ], 
-     optDescText2 : [ "Slow Delivery" , "Penghantaran yang lambat" ],
-     optDescText3 : [ "Complicated Purchase Steps" , "Langkah Pembelian yang Rumit" ],
-     optDescText4 : [ "Poor Customer Service" , "Khidmat Pelanggan Yang Teruk" ],
-     optDescText5 : [ "Slow Website" , "Laman Sesawang yang Perlahan" ],
-     optDescText6 : [ "Good Look and Feel" , "Kelihatan Kemas dan Menarik" ],
-     optDescText7 : [ "Fast Delivery" , "Penghantaran yang cepat" ],
-     optDescText8 : [ "Easy Purchase Steps" , "Langkah Pembelian yang mudah" ],
-     optDescText9 : [ "Friendly Customer Service" , "Pegawai Khidmat Pelanggan yang mesra" ],
-     optDescText10 : [ "Fast Website" , "Laman Sesawang yang laju" ]
- }
+]  
 
  var langObj={
  "en":{
-  abc:"Buy"
+    optDescText1:"Difficult to Use",
+    optDescText2: "Slow Delivery",
+    optDescText3: "Complicated Purchase Steps",
+    optDescText4: "Poor Customer Service",
+    optDescText5: "Slow Website",
+    optDescText6: "Good Look and Feel",
+    optDescText7: "Fast Delivery",
+    optDescText8: "Easy Purchase Steps",
+    optDescText9: "Friendly Customer Service",
+    optDescText10: "Fast Website",
+    headText1: "Let us know how we're doing?",
+    headText2: "We are always trying to impove what we do and your feedback is important!"
   },
  "bm":{
-  abc:"Beli"
+    optDescText1:"Sukar Digunakan",
+    optDescText2: "Penghantaran yang lambat",
+    optDescText3: "Langkah Pembelian yang Rumit",
+    optDescText4: "Khidmat Pelanggan Yang Teruk",
+    optDescText5: "Laman Sesawang yang Perlahan",
+    optDescText6: "Kelihatan Kemas dan Menarik",
+    optDescText7: "Penghantaran yang cepat",
+    optDescText8: "Langkah Pembelian yang mudah",
+    optDescText9: "Pegawai Khidmat Pelanggan yang mesra",
+    optDescText10: "Laman Sesawang yang laju",
+    headText1: "Sila beritahu pendapat anda tentang kami?",
+    headText2: "Kami sentiasa cuba memperbaiki apa yang kami lakukan dan maklum balas anda penting!"
+
  }
-}
+} 
+    var optDescText1 ,optDescText2,optDescText3,optDescText4,optDescText5,optDescText6, optDescText7, optDescText8, optDescText9, optDescText10, headText1, headText2
+    function loadLanguage(lang){
+        optDescText1 = langObj[lang].optDescText1
+        optDescText2 = langObj[lang].optDescText2
+        optDescText3 = langObj[lang].optDescText3
+        optDescText4 = langObj[lang].optDescText4
+        optDescText5 = langObj[lang].optDescText5
+        optDescText6 = langObj[lang].optDescText6
+        optDescText7 = langObj[lang].optDescText7
+        optDescText8 = langObj[lang].optDescText8
+        optDescText9 = langObj[lang].optDescText9
+        optDescText10 = langObj[lang].optDescText10 
+        headText1 = langObj[lang].headText1
+        headText2 = langObj[lang].headText2
 
-    var optDescBm1 = optDesc.optDescText1[1]
-    var optDescBm2 = optDesc.optDescText2[1]
-    var optDescBm3 = optDesc.optDescText3[1]
-    var optDescBm4 = optDesc.optDescText4[1]
-    var optDescBm5 = optDesc.optDescText5[1]
-    var optDescBm6 = optDesc.optDescText6[1]
-    var optDescBm7 = optDesc.optDescText7[1]
-    var optDescBm8 = optDesc.optDescText8[1]
-    var optDescBm9 = optDesc.optDescText9[1]
-    var optDescBm10 = optDesc.optDescText10[1]
+        id("headText1").innerHTML = headText1
+        id("headText2").innerHTML = headText2
 
-    var optDescEn1 = optDesc.optDescText1[0]
-    var optDescEn2 = optDesc.optDescText2[0]
-    var optDescEn3 = optDesc.optDescText3[0]
-    var optDescEn4 = optDesc.optDescText4[0]
-    var optDescEn5 = optDesc.optDescText5[0]
-    var optDescEn6 = optDesc.optDescText6[0]
-    var optDescEn7 = optDesc.optDescText7[0]
-    var optDescEn8 = optDesc.optDescText8[0]
-    var optDescEn9 = optDesc.optDescText9[0]
-    var optDescEn10 = optDesc.optDescText10[0]
+        if(review.star == 5){
+            id("nps-review-less-1").innerHTML = optDescText6
+            id("nps-review-less-2").innerHTML = optDescText7
+            id("nps-review-less-3").innerHTML = optDescText8
+            id("nps-review-less-4").innerHTML = optDescText9
+            id("nps-review-less-5").innerHTML = optDescText10
+        }else if(review.star == 4){
+            id("nps-review-less-1").innerHTML = optDescText1
+            id("nps-review-less-2").innerHTML = optDescText2
+            id("nps-review-less-3").innerHTML = optDescText3
+            id("nps-review-less-4").innerHTML = optDescText4
+            id("nps-review-less-5").innerHTML = optDescText5
+        }else if(review.star == 3){
+            id("nps-review-less-1").innerHTML = optDescText1
+            id("nps-review-less-2").innerHTML = optDescText2
+            id("nps-review-less-3").innerHTML = optDescText3
+            id("nps-review-less-4").innerHTML = optDescText4
+            id("nps-review-less-5").innerHTML = optDescText5
+        }else if(review.star == 2){
+            id("nps-review-less-1").innerHTML = optDescText1
+            id("nps-review-less-2").innerHTML = optDescText2
+            id("nps-review-less-3").innerHTML = optDescText3
+            id("nps-review-less-4").innerHTML = optDescText4
+            id("nps-review-less-5").innerHTML = optDescText5
+        }else if(review.star == 1){
+            id("nps-review-less-1").innerHTML = optDescText1
+            id("nps-review-less-2").innerHTML = optDescText2
+            id("nps-review-less-3").innerHTML = optDescText3
+            id("nps-review-less-4").innerHTML = optDescText4
+            id("nps-review-less-5").innerHTML = optDescText5
+        }
+    }
 
 //1.0 Define shorthand id
     function id(input){
@@ -121,7 +160,7 @@ var desc = [
     } 
 
 //2.0 Fill gold color for stars  
-function fillstar(obj){
+    function fillstar(obj){
         var stars=document.getElementsByClassName("nps-star")  
         for(i=0; i < stars.length; i++){ 
             var id = (obj.id).replace("star" , "")
@@ -132,35 +171,21 @@ function fillstar(obj){
                 stars[i].src="./stylesheets/off.svg"
             }
         }
-    }   
+    }     
 
-    function changeLang(){
+    function changeLang(input){
         var langBtn = id("langBtn")
         var langBtnEn = id("langBtnEn")
-        if(langBtn.innerHTML == "Bahasa"){ 
-            
-            langBtn.style.display = "none"
-            langBtnEn.style.display = "block" 
-            console.log("changed to english")
-
-
-        }
-    }
-
-    function changeLangEn(){
-        var langBtn = id("langBtn")
-        var langBtnEn = id("langBtnEn")
-        if(langBtnEn.innerHTML == "English"){ 
-            
+        if(input == "en"){  
             langBtn.style.display = "block"
-            langBtnEn.style.display = "none"
-
-
-            console.log("changed to bahasa") 
-
-
+            langBtnEn.style.display = "none"  
+            loadLanguage("en")
+        }else if(input == "bm"){ 
+            langBtn.style.display = "none"
+            langBtnEn.style.display = "block"  
+            loadLanguage("bm") 
         }
-    }
+    } 
 
 //3.0 Get number of stars 
     function setStars(input){    
@@ -170,26 +195,13 @@ function fillstar(obj){
                 var starOpt = document.getElementsByClassName("nps-review-less")
                 for(var i=0; i< starOpt.length; i++){
                     starOpt[i].style.display = "inline-block"
-                }  
-
-                if(id("langBtn")) { 
-
-                id("nps-review-less-1").innerHTML = optDescEn1
-                id("nps-review-less-2").innerHTML = optDescEn2
-                id("nps-review-less-3").innerHTML = optDescEn3
-                id("nps-review-less-4").innerHTML = optDescEn4
-                id("nps-review-less-5").innerHTML = optDescEn5
-                console.log("im here")
+                }   
+                id("nps-review-less-1").innerHTML = optDescText1
+                id("nps-review-less-2").innerHTML = optDescText2
+                id("nps-review-less-3").innerHTML = optDescText3
+                id("nps-review-less-4").innerHTML = optDescText4
+                id("nps-review-less-5").innerHTML = optDescText5 
                 // id("star-msg").innerHTML = optDesc[10].optDescText;
-                }else{ 
-                id("nps-review-less-1").innerHTML = optDescBm1
-                id("nps-review-less-2").innerHTML = optDescBm2
-                id("nps-review-less-3").innerHTML = optDescBm3
-                id("nps-review-less-4").innerHTML = optDescBm4
-                id("nps-review-less-5").innerHTML = optDescBm5
-                // id("star-msg").innerHTML = optDesc[10].optDescText;
-                }
-
                 
                 //show and hide buttons for 1-4 stars
                 id("submit-btn").style.display="inline-block";                     
@@ -201,23 +213,13 @@ function fillstar(obj){
                 for(var i=0; i< starOpt.length; i++){
                     starOpt[i].style.display = "inline-block";
                 }
-                if(id("langBtn").innerHTML == ""){
-                    console.log("im here")
-
-                id("nps-review-less-1").innerHTML = optDescEn6
-                id("nps-review-less-2").innerHTML = optDescEn7
-                id("nps-review-less-3").innerHTML = optDescEn8
-                id("nps-review-less-4").innerHTML = optDescEn9
-                id("nps-review-less-5").innerHTML = optDescEn10
-                // id("star-msg").innerHTML = optDesc[11].optDescText;
-                }else{
-                id("nps-review-less-1").innerHTML = optDescBm6
-                id("nps-review-less-2").innerHTML = optDescBm7
-                id("nps-review-less-3").innerHTML = optDescBm8
-                id("nps-review-less-4").innerHTML = optDescBm9
-                id("nps-review-less-5").innerHTML = optDescBm10
-                // id("star-msg").innerHTML = optDesc[11].optDescText;
-                }
+                id("nps-review-less-1").innerHTML = optDescText6
+                id("nps-review-less-2").innerHTML = optDescText7
+                id("nps-review-less-3").innerHTML = optDescText8
+                id("nps-review-less-4").innerHTML = optDescText9
+                id("nps-review-less-5").innerHTML = optDescText10
+                // id("star-msg").innerHTML = optDesc[11].optDescText;  
+              
                 //show and hide buttons for 5 stars   
                 id("nps-input").style.display="inline-block";     
                 id("submit-btn").style.display="inline-block"; 
@@ -236,7 +238,16 @@ function fillstar(obj){
     function sendReviews(){ 
         var feedback = id("nps-input")
         var feedbackValue = id("nps-input").value 
-        review.feedback = feedbackValue  
+        review.feedback = feedbackValue 
+
+        var special_char = "*|\:<>[]{}`\;()@$#%";
+
+        for (var i = 0; review.feedback.length > i; i++) {
+        if(review.feedback.length < 3 || special_char.indexOf(review.feedback.charAt(i)) != -1){
+        
+        return console.log("error description")
+        }
+    }
         sendPOSTAJAX(review)  
 
         if(review.star == 5 && feedback.value.length == 0){
@@ -289,6 +300,7 @@ function fillstar(obj){
         id("thankYouMsg").style.display = "block"
     }   
 
-    document.addEventListener('DOMContentLoaded', function () { 
-          });
+    document.addEventListener('DOMContentLoaded', function(){ 
+        loadLanguage("en")
+    });
 </script>
