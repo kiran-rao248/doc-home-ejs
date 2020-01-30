@@ -162,7 +162,7 @@ width: 31%;
   .star{
     position:relative;
     top:3px;
-    width:44px;
+    width:20px;
   }
   .star path{
     fill:gold;
@@ -760,6 +760,17 @@ _    _ ______          _____  ______ _____
   display: block;
   text-align: center;
 } 
+
+.main-partner-merchantrade{
+  height: 60px;
+  margin-left: 20px;
+  width: 170px;
+}
+
+.main-partner-doc-merhant img:nth-child(2){
+  width: 170px;
+}
+
 .main-partner-2{
   display: block;
   margin-top: 20px;
@@ -783,12 +794,6 @@ _    _ ______          _____  ______ _____
   margin-bottom: 20px;
   text-align: center; 
   width: 80vw;
-}
-
-.main-partner-image-group-2 img{ 
-  margin: 0 auto;
-  text-align: center; 
-  width: 255px;
 } 
 
 .main-partner-logo img{
@@ -3932,7 +3937,7 @@ width: 8%;
 }
 
 .product-rating-custom-2{
-  width: 61%;
+  width: 35%;
   }
 
   .category-title{
@@ -3955,6 +3960,14 @@ width: 8%;
   }
 }
 
+.media-great-takaful{
+  width: 80%;
+}
+
+.media-takaful{
+  background-color: #f4f4f4;
+  text-align: center;
+}
 
 
 /*26.0 NPS*/
