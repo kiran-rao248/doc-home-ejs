@@ -388,9 +388,25 @@ document.addEventListener('DOMContentLoaded', function () {
               ele.classList.toggle(className);
           }
 
+          var time=1500;
+          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+           time=3000;
+          }
+          setTimeout(function(){
+            //Add lazy-load class to element with data-src
+            var imgs = document.getElementsByClassName('lazy-load');
+            for(var i = 0; i < imgs.length; i++) {
+              var currentSrc = imgs[i].getAttribute('data-src');
+              imgs[i].setAttribute('src',currentSrc);
+              imgs[i].style.visibility="visible"
+              console.log("im executing")
+            }
+          },time)
+        
+
           //10. Add event listener
           document.addEventListener('DOMContentLoaded', function () {
             try{getCartQuantity()}catch(e){}
             try{handleAmpRedirect()}catch(e){}
-            try{checkLogin()}catch(e){}
+            try{checkLogin()}catch(e){} 
           });

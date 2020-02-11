@@ -756,6 +756,10 @@ _    _ ______          _____  ______ _____
  /*----------------------------------------------------
 6.0 Partnership Section*/
 
+.main-partner-merchan{
+  height: 67px;
+}
+
 .main-partner-1{
   display: block;
   text-align: center;
@@ -4149,4 +4153,75 @@ width: 8%;
   margin-right: 25px;
   margin-top: 20px;
   display: none;
+}
+
+
+/* Gov-Corona Virus */
+
+.main-moh-banner-bg {
+  background: linear-gradient(-90deg, #0ABEE8, #84C6E5); 
+  padding: 20px;
+}
+
+.main-moh-display-flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.government-img {
+  width: auto;
+  height: 79px;
+}
+
+.moh-img {
+  width: auto;
+  height: 90px;
+  margin-left: -25px;
+}
+
+.main-moh-text-section-color {
+  color: #fff;
+  font-size: 16px;
+}
+
+.main-moh-text {  
+  font-size: 26px;
+  margin-top: 10px; 
+}
+
+.main-moh-center{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.main-moh-button{
+  border: 1px solid #fff;
+  padding: 15px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.main-moh-info{
+  color: #fff;
+  margin-top: 20px;
+}
+
+.main-moh-inf-part{
+  padding-top: 13px;
+} 
+
+.main-moh-button:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-corona-moh-a:hover{
+  text-decoration: none;
+}
+
+@media(max-width:344px){
+  .moh-img{
+    margin-left: 0;
+  }
 }
