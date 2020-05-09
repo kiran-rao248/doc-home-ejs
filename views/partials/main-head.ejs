@@ -54,6 +54,58 @@
 
     <script src="/head-script.js"></script>
 
+    
+<!-- Script for Google Ads Manager -->
+<!-- <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script> -->
+<script>
+
+  function loadGoogleAds() {
+      var scriptTag = document.createElement('script');
+      scriptTag.setAttribute('src', 'https://securepubads.g.doubleclick.net/tag/js/gpt.js');
+      scriptTag.setAttribute('type', 'text/javascript');
+      scriptTag.setAttribute('async', 'async');
+      document.body.appendChild(scriptTag);
+
+      //Define all slots
+      window.googletag = window.googletag || {cmd: []};
+      googletag.cmd.push(function() {
+        try{googletag.defineSlot('/21826856561/doc_mediumrectangle_330x250', [300, 250], 'div-gpt-ad-1569397390412-0').addService(googletag.pubads());}catch(e){}
+        try{googletag.defineSlot('/21826856561/doc_halfpagead_300x600', [300, 600], 'div-gpt-ad-1569403709054-0').addService(googletag.pubads());}catch(e){}
+        try{googletag.defineSlot('/21826856561/doconcall_largerectangle_336x280', [336, 280], 'div-gpt-ad-1569810903527-0').addService(googletag.pubads());}catch(e){}
+        try{googletag.defineSlot('/21826856561/doc_leaderboard_728x90', [728, 90], 'div-gpt-ad-1569828755221-0').addService(googletag.pubads());}catch(e){}
+        try{googletag.defineSlot('/21826856561/doc_mobileleader_320x50', [320, 50], 'div-gpt-ad-1570442476637-0').addService(googletag.pubads());}catch(e){}
+        try{googletag.defineSlot('/21826856561/doc_largeleader_970x90', [970, 90], 'div-gpt-ad-1571034544144-0').addService(googletag.pubads());}catch(e){}
+        try{
+          googletag.defineSlot('/21826856561/doc_mobileleader_375x50', [375, 50], 'div-gpt-ad-1579753162709-0').addService(googletag.pubads());
+
+        }catch(e){}
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+
+      //Load mobile vs desktop
+      if(window.screen.width<=768){
+        //do mobile
+        try{googletag.cmd.push(function() { googletag.display('div-gpt-ad-1569810903527-0'); })}catch(e){}
+        try{googletag.cmd.push(function() { googletag.display('div-gpt-ad-1570442476637-0'); })}catch(e){}
+        try{googletag.cmd.push(function() { googletag.display('div-gpt-ad-1579753162709-0'); });}catch(e){}
+      }else{
+        //do desktop
+        try{googletag.cmd.push(function() { googletag.display('div-gpt-ad-1569397390412-0'); })}catch(e){}
+        try{googletag.cmd.push(function() { googletag.display('div-gpt-ad-1569403709054-0'); })}catch(e){}
+        try{googletag.cmd.push(function() { googletag.display('div-gpt-ad-1569828755221-0'); })}catch(e){}
+        try{googletag.cmd.push(function() { googletag.display('div-gpt-ad-1571034544144-0'); })}catch(e){}
+      } 
+  } 
+
+  document.addEventListener('DOMContentLoaded', function () {
+    try{loadGoogleAds()}catch(e){} 
+});
+
+</script> 
+
+
+
   <!-- End Facebook Pixel Code -->
 
     <!-- <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>

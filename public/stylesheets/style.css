@@ -4171,13 +4171,12 @@ width: 8%;
 
 .government-img {
   width: auto;
-  height: 79px;
+  height: 84px;
 }
 
 .moh-img {
   width: auto;
-  height: 90px;
-  margin-left: -25px;
+  height: 90px; 
 }
 
 .main-moh-text-section-color {
@@ -4186,12 +4185,10 @@ width: 8%;
 }
 
 .main-moh-text {  
-  font-size: 26px;
-  margin-top: 10px; 
+  font-size: 20px; 
 }
 
-.main-moh-center{
-  margin-top: 15px;
+.main-moh-center{ 
   text-align: center;
 }
 
@@ -4208,7 +4205,7 @@ width: 8%;
 }
 
 .main-moh-inf-part{
-  padding-top: 13px;
+  padding-top: 24px;
 } 
 
 .main-moh-button:hover{
@@ -4218,6 +4215,10 @@ width: 8%;
 
 .main-corona-moh-a:hover{
   text-decoration: none;
+}
+
+.main-moh-title{
+  font-size: 28px;
 }
 
 @media(max-width:344px){
